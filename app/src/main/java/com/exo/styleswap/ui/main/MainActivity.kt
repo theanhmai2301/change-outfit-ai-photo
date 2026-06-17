@@ -5,17 +5,13 @@ import android.content.ContentUris
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.graphics.drawable.GradientDrawable
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.provider.MediaStore
-import android.view.Gravity
 import android.view.View
-import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.LinearLayout
-import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.addCallback
 import androidx.activity.result.PickVisualMediaRequest
@@ -62,20 +58,6 @@ class MainActivity : AppCompatActivity() {
 
     private enum class CamMode { LOADING, LIVE, REVIEW, ERROR }
 
-    /** A trending style tile: label + emoji + a pair of gradient colors. */
-    private data class Style(val labelRes: Int, val emoji: String, val c0: Int, val c1: Int)
-
-    private val styles = listOf(
-        Style(R.string.style_casual, "👕", 0xFF8B5CF6.toInt(), 0xFFD946EF.toInt()),
-        Style(R.string.style_business, "👔", 0xFF3B82F6.toInt(), 0xFF06B6D4.toInt()),
-        Style(R.string.style_streetwear, "🧢", 0xFFF43F5E.toInt(), 0xFFF59E0B.toInt()),
-        Style(R.string.style_anime, "🌸", 0xFFEC4899.toInt(), 0xFF8B5CF6.toInt()),
-        Style(R.string.style_wedding, "💍", 0xFF06D6A0.toInt(), 0xFF3B82F6.toInt()),
-        Style(R.string.style_vintage, "🕰️", 0xFFF59E0B.toInt(), 0xFFEF4444.toInt()),
-        Style(R.string.style_party, "🎉", 0xFFD946EF.toInt(), 0xFF8B5CF6.toInt()),
-        Style(R.string.style_winter, "❄️", 0xFF06B6D4.toInt(), 0xFF6366F1.toInt())
-    )
-
     private val pickImage = registerForActivityResult(
         ActivityResultContracts.PickVisualMedia()
     ) { uri: Uri? ->
@@ -105,7 +87,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, SettingsActivity::class.java))
         }
         binding.btnUpload.setOnClickListener { launchGalleryPicker() }
-        binding.btnSeeAll.setOnClickListener { launchGalleryPicker() }
         binding.btnTakePhoto.setOnClickListener { showCamera() }
         binding.btnCameraClose.setOnClickListener { hideCamera() }
 
@@ -132,7 +113,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         applyHeroAccent()
-        buildTrendingTiles()
         updateNextState()
     }
 
@@ -162,58 +142,6 @@ class MainActivity : AppCompatActivity() {
             idx, idx + accent.length, android.text.Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
         )
         binding.heroTitle.text = span
-    }
-
-    // ── Trending styles ──────────────────────────────────────────────────
-
-    private fun buildTrendingTiles() {
-        val grid = binding.trendingGrid
-        grid.removeAllViews()
-        val gap = dp(6)
-        styles.forEach { style ->
-            val tile = LinearLayout(this).apply {
-                orientation = LinearLayout.VERTICAL
-                gravity = Gravity.CENTER_HORIZONTAL
-                isClickable = true
-                isFocusable = true
-                setOnClickListener { launchGalleryPicker() }
-            }
-            val thumb = FrameLayout(this).apply {
-                background = GradientDrawable(
-                    GradientDrawable.Orientation.TL_BR, intArrayOf(style.c0, style.c1)
-                ).apply { cornerRadius = dp(14).toFloat() }
-            }
-            val emoji = TextView(this).apply {
-                text = style.emoji
-                textSize = 24f
-                gravity = Gravity.CENTER
-            }
-            thumb.addView(
-                emoji,
-                FrameLayout.LayoutParams(
-                    FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT
-                ).apply { gravity = Gravity.CENTER }
-            )
-            tile.addView(thumb, LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, dp(72)))
-
-            val label = TextView(this).apply {
-                setText(style.labelRes)
-                textSize = 11f
-                gravity = Gravity.CENTER
-                maxLines = 1
-                setTextColor(ContextCompat.getColor(this@MainActivity, R.color.muted_foreground))
-                setPadding(0, dp(6), 0, 0)
-            }
-            tile.addView(label)
-
-            val lp = android.widget.GridLayout.LayoutParams().apply {
-                width = 0
-                height = android.widget.GridLayout.LayoutParams.WRAP_CONTENT
-                columnSpec = android.widget.GridLayout.spec(android.widget.GridLayout.UNDEFINED, 1f)
-                setMargins(gap, gap, gap, gap)
-            }
-            grid.addView(tile, lp)
-        }
     }
 
     private fun launchGalleryPicker() {
@@ -313,9 +241,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun showPersonPreview(file: File) {
         hideCamera()
-        binding.heroPlaceholder.visibility = View.GONE
-        binding.imgPreview.visibility = View.VISIBLE
-        binding.heroScrim.visibility = View.VISIBLE
+        binding.heroHint.visibility = View.GONE
         Glide.with(this)
             .load(file)
             .diskCacheStrategy(DiskCacheStrategy.NONE)
@@ -480,10 +406,8 @@ class MainActivity : AppCompatActivity() {
         personFile = null
         capturedFile = null
         Glide.with(this).clear(binding.imgPreview)
-        binding.imgPreview.setImageDrawable(null)
-        binding.imgPreview.visibility = View.GONE
-        binding.heroScrim.visibility = View.GONE
-        binding.heroPlaceholder.visibility = View.VISIBLE
+        binding.imgPreview.setImageResource(R.drawable.img_hero_person)
+        binding.heroHint.visibility = View.VISIBLE
         updateNextState()
     }
 
