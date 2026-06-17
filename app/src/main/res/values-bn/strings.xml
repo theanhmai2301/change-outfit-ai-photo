@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="language_title">ভাষা</string>
+    <string name="language_subtitle">আপনার প্রদর্শন ভাষা বেছে নিন</string>
+    <string name="lang_continue">চালিয়ে যান</string>
+    <string name="language_confirm">নিশ্চিত করুন</string>
+
+    <string name="ob_skip">এড়িয়ে যান</string>
+    <string name="ob_next">চালিয়ে যান</string>
+    <string name="ob_start">শুরু করুন</string>
+    <string name="ob_tagline">AI দিয়ে যেকোনো পোশাক কয়েক সেকেন্ডে পরে দেখুন।</string>
+
+    <string name="survey_title">আপনি কোন স্টাইল পছন্দ করেন?</string>
+    <string name="survey_subtitle">পছন্দের অন্তত ২টি বেছে নিন</string>
+    <string name="survey_select_hint">অনুগ্রহ করে অন্তত ২টি স্টাইল বেছে নিন</string>
+    <string name="survey_select_hint_one">অনুগ্রহ করে অন্তত ১টি বেছে নিন</string>
+    <string name="survey_casual">ক্যাজুয়াল</string>
+    <string name="survey_office">অফিস</string>
+    <string name="survey_party">পার্টি</string>
+    <string name="survey_sport">স্পোর্টস</string>
+    <string name="survey_streetwear">স্ট্রিটওয়্যার</string>
+    <string name="survey_elegant">এলিগ্যান্ট</string>
+
+    <string name="survey2_title">আপনি কীসের জন্য সাজেন?</string>
+    <string name="survey2_subtitle">প্রযোজ্য সবগুলো বেছে নিন</string>
+    <string name="survey2_work">কাজ</string>
+    <string name="survey2_date">ডেট</string>
+    <string name="survey2_travel">ভ্রমণ</string>
+    <string name="survey2_gym">জিম</string>
+    <string name="survey2_event">ইভেন্ট</string>
+    <string name="survey2_everyday">প্রতিদিন</string>
+
+    <string name="survey3_title">আপনাকে এখানে কী নিয়ে এসেছে?</string>
+    <string name="survey3_subtitle">প্রযোজ্য সবগুলো বেছে নিন</string>
+    <string name="survey3_tryon">পোশাক পরে দেখা</string>
+    <string name="survey3_shop">স্মার্টভাবে কেনাকাটা</string>
+    <string name="survey3_social">সোশ্যাল পোস্ট</string>
+    <string name="survey3_inspo">স্টাইলের আইডিয়া</string>
+    <string name="survey3_save">লুক সংরক্ষণ</string>
+    <string name="survey3_explore">শুধু ঘুরে দেখছি</string>
+
+    <string name="ob1_title">AI দিয়ে পরে দেখুন</string>
+    <string name="ob1_desc">নিজের একটি ছবি দিয়েই যেকোনো পোশাক পরে দেখুন।</string>
+    <string name="ob2_title">কয়েক সেকেন্ডে পোশাক বদলান</string>
+    <string name="ob2_desc">আপনার ছবি ও একটি পোশাকের ছবি বেছে নিন — বাকিটা AI করবে।</string>
+    <string name="ob3_title">সংরক্ষণ ও শেয়ার করুন</string>
+    <string name="ob3_desc">দারুণ ছবিগুলো আপনার গ্যালারিতে সংরক্ষণ করুন এবং সবাইকে দেখান।</string>
+
+    <string name="perm_notif_title">আপডেট থাকুন</string>
+    <string name="perm_notif_desc">নতুন স্টাইল এবং আপনার ছবি প্রস্তুত হলে জানাতে পারার জন্য বিজ্ঞপ্তির অনুমতি দিন।</string>
+    <string name="perm_notif_toggle">বিজ্ঞপ্তি চালু করুন</string>
+</resources>

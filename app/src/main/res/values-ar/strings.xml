@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Outfitly: AI Outfit Try On</string>
+
+    <string name="picker_subtitle">اختر صورة لبدء التعديل</string>
+    <string name="tab_library">المعرض</string>
+    <string name="tab_camera">الكاميرا</string>
+    <string name="upload_from_device">تحميل من الجهاز</string>
+    <string name="your_photo">صورتك</string>
+    <string name="library_hint">اختر صورة واضحة للجسم كامل للحصول على أفضل تجربة.</string>
+    <string name="starting_camera">جارٍ تشغيل الكاميرا…</string>
+    <string name="camera_permission_needed">يلزم إذن الكاميرا لالتقاط الصور.</string>
+    <string name="grant_permission">منح الإذن</string>
+    <string name="photo_captured">✓ تم التقاط الصورة</string>
+    <string name="retake">إعادة الالتقاط</string>
+    <string name="use_photo">استخدام الصورة</string>
+    <string name="next">التالي</string>
+
+    <string name="edit_title">تعديل الصورة</string>
+    <string name="edit_subtitle">جرّب الملابس بالذكاء الاصطناعي</string>
+    <string name="not_edited">غير معدّلة</string>
+    <string name="ai_generated">أُنشئت بالذكاء الاصطناعي</string>
+    <string name="garment_label">صورة الملابس</string>
+    <string name="choose_garment">اختر صورة الملابس</string>
+    <string name="change_garment">تغيير صورة الملابس</string>
+    <string name="garment_hint">صورة المنتج أو صورة شخص يرتديه — يأخذ الذكاء الاصطناعي الملابس فقط.</string>
+    <string name="category_label">نوع الملابس</string>
+    <string name="poses_label">الوضعيات</string>
+    <string name="quality_label">الجودة</string>
+    <string name="apply_ai">تطبيق الذكاء الاصطناعي</string>
+    <string name="select_garment_first">اختر صورة الملابس أولاً</string>
+    <string name="saved">تم الحفظ في المعرض</string>
+    <string name="save_failed">فشل الحفظ</string>
+    <string name="restored">تمت استعادة الصورة الأصلية</string>
+
+    <string name="save_dialog_title">تم حفظ الصورة</string>
+    <string name="save_dialog_msg">تم حفظ الصورة في المعرض. هل تريد اختيار صورة أخرى؟</string>
+    <string name="save_dialog_positive">اختيار أخرى</string>
+    <string name="save_dialog_negative">البقاء</string>
+    <string name="exit_dialog_title">صورة غير محفوظة</string>
+    <string name="exit_dialog_msg">لقد أنشأت صورة للتو لكنك لم تحفظها. الخروج الآن سيؤدي إلى فقدانها. هل تريد الخروج على أي حال؟</string>
+    <string name="exit_dialog_positive">خروج</string>
+    <string name="exit_dialog_negative">البقاء</string>
+
+    <string name="cat_auto">تلقائي</string>
+    <string name="cat_top">علوي</string>
+    <string name="cat_bottom">سفلي</string>
+    <string name="cat_dress">فستان</string>
+    <string name="cat_outerwear">معطف</string>
+    <string name="cat_full">إطلالة كاملة</string>
+
+    <string name="q_low">منخفضة</string>
+    <string name="q_medium">متوسطة</string>
+    <string name="q_high">عالية</string>
+
+    <string name="step_analyze">جارٍ تحليل الصورة…</string>
+    <string name="step_detect">جارٍ اكتشاف الجسم…</string>
+    <string name="step_apply">جارٍ تطبيق الملابس بالذكاء الاصطناعي…</string>
+    <string name="step_finish">جارٍ إنهاء التفاصيل…</string>
+
+    <string name="err_network">لا يوجد اتصال بالإنترنت. تحقق من Wi-Fi أو البيانات وحاول مرة أخرى.</string>
+    <string name="err_timeout">الشبكة بطيئة واستغرقت وقتًا طويلاً. حاول مرة أخرى.</string>
+    <string name="err_service_unavailable">ميزة التجربة متوقفة مؤقتًا. حاول مرة أخرى بعد دقائق.</string>
+    <string name="err_server_busy">خادم الذكاء الاصطناعي مشغول. حاول مرة أخرى قريبًا.</string>
+    <string name="err_rate_limited">أنت سريع جدًا. انتظر قليلاً ثم حاول مرة أخرى.</string>
+    <string name="err_too_large">الصورة كبيرة جدًا. اختر صورة أصغر وحاول مرة أخرى.</string>
+
+    <string name="err_garment_invalid">صورة الملابس غير صالحة. استخدم JPG أو PNG واضحًا يُظهر القطعة من الأمام.</string>
+    <string name="err_garment_unrecognized">لم يتعرّف الذكاء الاصطناعي على الملابس. استخدم صورة واضحة لقطعة واحدة (علوي، سفلي، فستان…) على خلفية بسيطة؛ وتجنّب المناظر والصور الداكنة أو المزدحمة.</string>
+    <string name="err_image_missing">الصورة مفقودة. أعد اختيار صورتك وصورة الملابس ثم حاول مرة أخرى.</string>
+    <string name="err_bad_request">هذه الصورة غير مناسبة للتجربة. استخدم صورة واضحة للجسم كامل وصورة واضحة للملابس.</string>
+
+    <string name="err_read_image">تعذّرت قراءة الصورة المختارة. جرّب أخرى.</string>
+    <string name="err_read_garment">تعذّرت قراءة صورة الملابس. اختر أخرى.</string>
+    <string name="err_capture">تعذّر التقاط الصورة. حاول مرة أخرى.</string>
+
+    <string name="err_generic">حدث خطأ أثناء التجربة. حاول مرة أخرى.</string>
+
+    <string name="checking_person">جارٍ فحص الصورة…</string>
+    <string name="err_no_person">لم يُعثر على شخص في الصورة. اختر صورة بوجه وجسم واضحين.</string>
+
+    <string name="report">إبلاغ</string>
+    <string name="report_dialog_title">الإبلاغ عن الصورة</string>
+    <string name="report_dialog_msg">هل النتيجة خاطئة أو غير لائقة أو مسيئة؟ أرسل بلاغًا لمساعدتنا على التحسين.</string>
+    <string name="report_send">إرسال البلاغ</string>
+    <string name="report_cancel">إلغاء</string>
+    <string name="report_subject">بلاغ صورة Outfitly</string>
+    <string name="report_thanks">شكرًا على بلاغك!</string>
+    <string name="no_email_app">لم يُعثر على تطبيق بريد.</string>
+
+    <string name="settings_title">الإعدادات</string>
+    <string name="settings_general">عام</string>
+    <string name="settings_language">اللغة</string>
+    <string name="settings_support">الدعم والمعلومات</string>
+    <string name="settings_share">مشاركة التطبيق</string>
+    <string name="settings_share_desc">أخبر أصدقاءك عن التطبيق</string>
+    <string name="settings_rate">تقييم التطبيق</string>
+    <string name="settings_rate_desc">امنحنا 5 نجوم</string>
+    <string name="settings_feedback">إرسال ملاحظات</string>
+    <string name="settings_feedback_desc">تواصل معنا عبر البريد</string>
+    <string name="settings_privacy">سياسة الخصوصية</string>
+    <string name="settings_privacy_desc">كيف نتعامل مع بياناتك</string>
+    <string name="settings_version">الإصدار</string>
+    <string name="feedback_subject">ملاحظات Outfitly</string>
+    <string name="share_text">جرّب الملابس بالذكاء الاصطناعي على Outfitly! حمّله الآن: https://play.google.com/store/apps/details?id=com.exo.styleswap</string>
+    <string name="cant_open_store">تعذّر فتح متجر التطبيقات.</string>
+
+    <string name="language_title">اللغة</string>
+    <string name="language_subtitle">اختر لغة العرض</string>
+    <string name="lang_continue">متابعة</string>
+
+    <string name="privacy_title">سياسة الخصوصية</string>
+
+    <string name="ob_next">متابعة</string>
+    <string name="ob_start">ابدأ</string>
+
+    <string name="survey_title">ما النمط الذي يهمك أكثر؟</string>
+    <string name="survey_subtitle">اختر نمطًا واحدًا أو أكثر مما يعجبك</string>
+    <string name="survey_casual">كاجوال</string>
+    <string name="survey_office">العمل</string>
+    <string name="survey_party">حفلة</string>
+    <string name="survey_sport">رياضة</string>
+
+    <string name="ob1_title">جرّب بالذكاء الاصطناعي</string>
+    <string name="ob1_desc">ارتدِ أي ملابس بصورة واحدة فقط لك.</string>
+    <string name="ob2_title">غيّر إطلالتك في ثوانٍ</string>
+    <string name="ob2_desc">اختر صورتك وصورة الملابس — والذكاء الاصطناعي يتولى الباقي.</string>
+    <string name="ob3_title">احفظ وشارك</string>
+    <string name="ob3_desc">احفظ صورًا رائعة في معرضك وشاركها مع الجميع.</string>
+
+    <string name="perm_notif_title">ابقَ على اطّلاع</string>
+    <string name="perm_notif_desc">اسمح بالإشعارات لنخبرك بالأنماط الجديدة وعندما تصبح صورتك جاهزة.</string>
+    <string name="perm_notif_toggle">تفعيل الإشعارات</string>
+
+    <string name="language_confirm">تأكيد</string>
+    <string name="ob_tagline">جرّب أي إطلالة بالذكاء الاصطناعي خلال ثوانٍ.</string>
+    <string name="survey_select_hint">يرجى اختيار نمطين على الأقل</string>
+    <string name="survey_select_hint_one">يرجى اختيار نمط واحد على الأقل</string>
+    <string name="survey_streetwear">ستريت وير</string>
+    <string name="survey_elegant">أنيق</string>
+    <string name="survey2_title">لماذا تتأنّق؟</string>
+    <string name="survey2_subtitle">اختر كل ما ينطبق</string>
+    <string name="survey2_work">العمل</string>
+    <string name="survey2_date">المواعيد</string>
+    <string name="survey2_travel">السفر</string>
+    <string name="survey2_gym">النادي الرياضي</string>
+    <string name="survey2_event">المناسبات</string>
+    <string name="survey2_everyday">كل يوم</string>
+    <string name="survey3_title">ما الذي جاء بك إلى هنا؟</string>
+    <string name="survey3_subtitle">اختر كل ما ينطبق</string>
+    <string name="survey3_tryon">تجربة الإطلالات</string>
+    <string name="survey3_shop">تسوّق بذكاء</string>
+    <string name="survey3_social">منشورات التواصل</string>
+    <string name="survey3_inspo">أفكار الأناقة</string>
+    <string name="survey3_save">حفظ الإطلالات</string>
+    <string name="survey3_explore">مجرد استكشاف</string>
+</resources>

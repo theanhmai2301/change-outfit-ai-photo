@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark palette (matches the Outfitly mockup) -->
+    <color name="background">#121212</color>
+    <color name="background_grad_top">#1B1726</color>
+    <color name="foreground">#F4F2FA</color>
+    <color name="card">#1F1B2E</color>
+    <color name="surface">#2A2440</color>
+    <color name="muted_foreground">#9A93B5</color>
+    <color name="disabled_foreground">#4A4560</color>
+    <color name="preview_bg">#17131F</color>
+
+    <color name="primary">#8B5CF6</color>
+    <color name="primary_dark">#7C3AED</color>
+    <color name="secondary">#D946EF</color>
+    <color name="accent">#06D6A0</color>
+    <color name="accent_dark">#059669</color>
+    <color name="destructive">#EF4444</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="border">#14FFFFFF</color>
+
+    <!-- First-open splash background (icon-on-solid system splash) -->
+    <color name="first_open_bg">#0A0A0F</color>
+
+    <color name="dialog_bg">#1B1B26</color>
+    <color name="btn_secondary_bg">#24FFFFFF</color>
+
+    <!-- Category accent colors -->
+    <color name="cat_auto">#A855F7</color>
+    <color name="cat_top">#06D6A0</color>
+    <color name="cat_bottom">#F43F5E</color>
+    <color name="cat_dress">#F59E0B</color>
+    <color name="cat_outerwear">#3B82F6</color>
+    <color name="cat_full">#EC4899</color>
+</resources>

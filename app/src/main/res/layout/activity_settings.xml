@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:paddingHorizontal="20dp"
+    android:paddingBottom="20dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/bg_icon_button"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_arrow_back"
+                app:tint="@color/foreground" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_title"
+            android:textColor="@color/foreground"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- General -->
+            <TextView
+                style="@style/SettingsSection"
+                android:text="@string/settings_general" />
+
+            <LinearLayout
+                android:id="@+id/rowLanguage"
+                style="@style/SettingsRow">
+
+                <FrameLayout style="@style/SettingsIcon">
+                    <ImageView style="@style/SettingsIconImg" android:src="@drawable/ic_language" />
+                </FrameLayout>
+
+                <LinearLayout style="@style/SettingsRowText">
+                    <TextView style="@style/SettingsRowTitle" android:text="@string/settings_language" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/settingsLangValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:textColor="@color/muted_foreground"
+                    android:textSize="14sp" />
+
+                <ImageView style="@style/SettingsChevron" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rowTheme"
+                style="@style/SettingsRow">
+
+                <FrameLayout style="@style/SettingsIcon">
+                    <ImageView style="@style/SettingsIconImg" android:src="@drawable/ic_theme" />
+                </FrameLayout>
+
+                <LinearLayout style="@style/SettingsRowText">
+                    <TextView style="@style/SettingsRowTitle" android:text="@string/settings_theme" />
+                    <TextView style="@style/SettingsRowDesc" android:text="@string/settings_theme_desc" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/settingsThemeValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:textColor="@color/muted_foreground"
+                    android:textSize="14sp" />
+
+                <ImageView style="@style/SettingsChevron" />
+            </LinearLayout>
+
+            <!-- Support & info -->
+            <TextView
+                style="@style/SettingsSection"
+                android:text="@string/settings_support" />
+
+            <LinearLayout
+                android:id="@+id/rowShare"
+                style="@style/SettingsRow">
+
+                <FrameLayout style="@style/SettingsIcon">
+                    <ImageView style="@style/SettingsIconImg" android:src="@drawable/ic_share" />
+                </FrameLayout>
+
+                <LinearLayout style="@style/SettingsRowText">
+                    <TextView style="@style/SettingsRowTitle" android:text="@string/settings_share" />
+                    <TextView style="@style/SettingsRowDesc" android:text="@string/settings_share_desc" />
+                </LinearLayout>
+
+                <ImageView style="@style/SettingsChevron" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rowRate"
+                style="@style/SettingsRow">
+
+                <FrameLayout style="@style/SettingsIcon">
+                    <ImageView style="@style/SettingsIconImg" android:src="@drawable/ic_star" />
+                </FrameLayout>
+
+                <LinearLayout style="@style/SettingsRowText">
+                    <TextView style="@style/SettingsRowTitle" android:text="@string/settings_rate" />
+                    <TextView style="@style/SettingsRowDesc" android:text="@string/settings_rate_desc" />
+                </LinearLayout>
+
+                <ImageView style="@style/SettingsChevron" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rowFeedback"
+                style="@style/SettingsRow">
+
+                <FrameLayout style="@style/SettingsIcon">
+                    <ImageView style="@style/SettingsIconImg" android:src="@drawable/ic_mail" />
+                </FrameLayout>
+
+                <LinearLayout style="@style/SettingsRowText">
+                    <TextView style="@style/SettingsRowTitle" android:text="@string/settings_feedback" />
+                    <TextView style="@style/SettingsRowDesc" android:text="@string/settings_feedback_desc" />
+                </LinearLayout>
+
+                <ImageView style="@style/SettingsChevron" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rowPrivacy"
+                style="@style/SettingsRow">
+
+                <FrameLayout style="@style/SettingsIcon">
+                    <ImageView style="@style/SettingsIconImg" android:src="@drawable/ic_shield" />
+                </FrameLayout>
+
+                <LinearLayout style="@style/SettingsRowText">
+                    <TextView style="@style/SettingsRowTitle" android:text="@string/settings_privacy" />
+                    <TextView style="@style/SettingsRowDesc" android:text="@string/settings_privacy_desc" />
+                </LinearLayout>
+
+                <ImageView style="@style/SettingsChevron" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/settingsVersion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:textColor="@color/muted_foreground"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

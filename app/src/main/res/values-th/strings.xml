@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="language_title">ภาษา</string>
+    <string name="language_subtitle">เลือกภาษาที่ต้องการแสดงผล</string>
+    <string name="lang_continue">ดำเนินการต่อ</string>
+    <string name="language_confirm">ยืนยัน</string>
+
+    <string name="ob_skip">ข้าม</string>
+    <string name="ob_next">ดำเนินการต่อ</string>
+    <string name="ob_start">เริ่มต้นใช้งาน</string>
+    <string name="ob_tagline">ลองสวมชุดไหนก็ได้ด้วย AI ภายในไม่กี่วินาที</string>
+
+    <string name="survey_title">คุณชอบสไตล์แบบไหน?</string>
+    <string name="survey_subtitle">เลือกที่คุณชอบอย่างน้อย 2 แบบ</string>
+    <string name="survey_select_hint">กรุณาเลือกสไตล์อย่างน้อย 2 แบบ</string>
+    <string name="survey_select_hint_one">กรุณาเลือกอย่างน้อย 1 แบบ</string>
+    <string name="survey_casual">ลำลอง</string>
+    <string name="survey_office">ออฟฟิศ</string>
+    <string name="survey_party">ปาร์ตี้</string>
+    <string name="survey_sport">สปอร์ต</string>
+    <string name="survey_streetwear">สตรีทแวร์</string>
+    <string name="survey_elegant">หรูหรา</string>
+
+    <string name="survey2_title">คุณแต่งตัวเพื่ออะไร?</string>
+    <string name="survey2_subtitle">เลือกได้ทุกข้อที่ตรงกับคุณ</string>
+    <string name="survey2_work">ทำงาน</string>
+    <string name="survey2_date">เดท</string>
+    <string name="survey2_travel">ท่องเที่ยว</string>
+    <string name="survey2_gym">ออกกำลังกาย</string>
+    <string name="survey2_event">งานอีเวนต์</string>
+    <string name="survey2_everyday">ใช้ในชีวิตประจำวัน</string>
+
+    <string name="survey3_title">อะไรทำให้คุณมาที่นี่?</string>
+    <string name="survey3_subtitle">เลือกได้ทุกข้อที่ตรงกับคุณ</string>
+    <string name="survey3_tryon">ลองสวมชุด</string>
+    <string name="survey3_shop">ช้อปอย่างชาญฉลาด</string>
+    <string name="survey3_social">โพสต์โซเชียล</string>
+    <string name="survey3_inspo">ไอเดียการแต่งตัว</string>
+    <string name="survey3_save">บันทึกลุค</string>
+    <string name="survey3_explore">แค่เข้ามาดูเฉย ๆ</string>
+
+    <string name="ob1_title">ลองสวมชุดด้วย AI</string>
+    <string name="ob1_desc">สวมชุดไหนก็ได้เพียงใช้รูปของคุณแค่รูปเดียว</string>
+    <string name="ob2_title">เปลี่ยนชุดได้ในไม่กี่วินาที</string>
+    <string name="ob2_desc">เลือกรูปของคุณและรูปเสื้อผ้า แล้วปล่อยให้ AI จัดการที่เหลือ</string>
+    <string name="ob3_title">บันทึก &amp; แชร์</string>
+    <string name="ob3_desc">บันทึกรูปสวย ๆ ลงในแกลเลอรีของคุณแล้วอวดให้คนอื่นได้เห็น</string>
+
+    <string name="perm_notif_title">รับข่าวสารล่าสุด</string>
+    <string name="perm_notif_desc">อนุญาตการแจ้งเตือนเพื่อให้เราบอกคุณเกี่ยวกับสไตล์ใหม่ ๆ และเมื่อรูปของคุณพร้อมแล้ว</string>
+    <string name="perm_notif_toggle">เปิดการแจ้งเตือน</string>
+</resources>

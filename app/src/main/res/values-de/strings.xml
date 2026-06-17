@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="language_title">Sprache</string>
+    <string name="language_subtitle">Wähle deine Anzeigesprache</string>
+    <string name="lang_continue">Weiter</string>
+    <string name="language_confirm">Bestätigen</string>
+
+    <string name="ob_skip">Überspringen</string>
+    <string name="ob_next">Weiter</string>
+    <string name="ob_start">Los geht\'s</string>
+    <string name="ob_tagline">Probiere jedes Outfit mit KI an – in Sekunden.</string>
+
+    <string name="survey_title">Welche Stile magst du?</string>
+    <string name="survey_subtitle">Wähle mindestens 2 aus, die dir gefallen</string>
+    <string name="survey_select_hint">Bitte wähle mindestens 2 Stile aus</string>
+    <string name="survey_select_hint_one">Bitte wähle mindestens 1 aus</string>
+    <string name="survey_casual">Casual</string>
+    <string name="survey_office">Büro</string>
+    <string name="survey_party">Party</string>
+    <string name="survey_sport">Sport</string>
+    <string name="survey_streetwear">Streetwear</string>
+    <string name="survey_elegant">Elegant</string>
+
+    <string name="survey2_title">Für welche Anlässe kleidest du dich?</string>
+    <string name="survey2_subtitle">Wähle alles Zutreffende aus</string>
+    <string name="survey2_work">Arbeit</string>
+    <string name="survey2_date">Dates</string>
+    <string name="survey2_travel">Reisen</string>
+    <string name="survey2_gym">Fitnessstudio</string>
+    <string name="survey2_event">Events</string>
+    <string name="survey2_everyday">Alltag</string>
+
+    <string name="survey3_title">Was führt dich her?</string>
+    <string name="survey3_subtitle">Wähle alles Zutreffende aus</string>
+    <string name="survey3_tryon">Outfits anprobieren</string>
+    <string name="survey3_shop">Cleverer shoppen</string>
+    <string name="survey3_social">Social-Media-Posts</string>
+    <string name="survey3_inspo">Stil-Ideen</string>
+    <string name="survey3_save">Looks speichern</string>
+    <string name="survey3_explore">Nur stöbern</string>
+
+    <string name="ob1_title">Anprobieren mit KI</string>
+    <string name="ob1_desc">Trage jedes Outfit mit nur einem einzigen Foto von dir.</string>
+    <string name="ob2_title">Outfits in Sekunden wechseln</string>
+    <string name="ob2_desc">Wähle dein Foto und ein Kleidungsstück – die KI erledigt den Rest.</string>
+    <string name="ob3_title">Speichern &amp; teilen</string>
+    <string name="ob3_desc">Speichere tolle Fotos in deiner Galerie und zeig sie her.</string>
+
+    <string name="perm_notif_title">Bleib auf dem Laufenden</string>
+    <string name="perm_notif_desc">Erlaube Benachrichtigungen, damit wir dich über neue Stile informieren können und wenn dein Foto fertig ist.</string>
+    <string name="perm_notif_toggle">Benachrichtigungen aktivieren</string>
+</resources>

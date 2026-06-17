@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Auto Backup (Android 11 and below).
+  Exclude the "first_open" SharedPreferences so a backup/restore onto a new
+  install never carries the completed-flow state across — a fresh install must
+  always replay the first-open flow. (A no-backup marker file is the primary
+  guard; see FirstOpenPrefs.ensureFreshInstallResetsFirstOpen.)
+-->
+<full-backup-content>
+    <exclude
+        domain="sharedpref"
+        path="first_open.xml" />
+</full-backup-content>

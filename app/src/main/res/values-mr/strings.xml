@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="language_title">भाषा</string>
+    <string name="language_subtitle">तुमची प्रदर्शन भाषा निवडा</string>
+    <string name="lang_continue">सुरू ठेवा</string>
+    <string name="language_confirm">निश्चित करा</string>
+
+    <string name="ob_skip">वगळा</string>
+    <string name="ob_next">सुरू ठेवा</string>
+    <string name="ob_start">सुरुवात करा</string>
+    <string name="ob_tagline">AI सह कोणताही पोशाख काही सेकंदांत वापरून पाहा.</string>
+
+    <string name="survey_title">तुम्हाला कोणत्या शैली आवडतात?</string>
+    <string name="survey_subtitle">तुम्हाला आवडणाऱ्या किमान 2 निवडा</string>
+    <string name="survey_select_hint">कृपया किमान 2 शैली निवडा</string>
+    <string name="survey_select_hint_one">कृपया किमान 1 निवडा</string>
+    <string name="survey_casual">कॅज्युअल</string>
+    <string name="survey_office">ऑफिस</string>
+    <string name="survey_party">पार्टी</string>
+    <string name="survey_sport">स्पोर्ट्स</string>
+    <string name="survey_streetwear">स्ट्रीटवेअर</string>
+    <string name="survey_elegant">शानदार</string>
+
+    <string name="survey2_title">तुम्ही कशासाठी पोशाख करता?</string>
+    <string name="survey2_subtitle">लागू होणारे सर्व निवडा</string>
+    <string name="survey2_work">काम</string>
+    <string name="survey2_date">डेट्स</string>
+    <string name="survey2_travel">प्रवास</string>
+    <string name="survey2_gym">जिम</string>
+    <string name="survey2_event">कार्यक्रम</string>
+    <string name="survey2_everyday">दैनंदिन</string>
+
+    <string name="survey3_title">तुम्ही येथे का आला आहात?</string>
+    <string name="survey3_subtitle">लागू होणारे सर्व निवडा</string>
+    <string name="survey3_tryon">पोशाख वापरून पाहा</string>
+    <string name="survey3_shop">हुशारीने खरेदी करा</string>
+    <string name="survey3_social">सोशल पोस्ट</string>
+    <string name="survey3_inspo">शैलीच्या कल्पना</string>
+    <string name="survey3_save">लूक जतन करा</string>
+    <string name="survey3_explore">फक्त शोध घेत आहे</string>
+
+    <string name="ob1_title">AI सह वापरून पाहा</string>
+    <string name="ob1_desc">तुमच्या फक्त एका फोटोसह कोणताही पोशाख घाला.</string>
+    <string name="ob2_title">काही सेकंदांत पोशाख बदला</string>
+    <string name="ob2_desc">तुमचा फोटो आणि कपड्याचा फोटो निवडा — बाकीचे AI करेल.</string>
+    <string name="ob3_title">जतन करा &amp; शेअर करा</string>
+    <string name="ob3_desc">उत्तम फोटो तुमच्या गॅलरीत जतन करा आणि ते दाखवा.</string>
+
+    <string name="perm_notif_title">अद्ययावत राहा</string>
+    <string name="perm_notif_desc">नवीन शैलींबद्दल आणि तुमचा फोटो तयार झाल्यावर आम्ही तुम्हाला कळवू शकू यासाठी सूचनांना परवानगी द्या.</string>
+    <string name="perm_notif_toggle">सूचना सक्षम करा</string>
+</resources>

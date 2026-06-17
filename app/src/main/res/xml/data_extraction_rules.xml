@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Backup & device-transfer rules (Android 12+).
+  Exclude the "first_open" SharedPreferences from both cloud backup and
+  device-to-device transfer so a fresh install always replays the flow.
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude
+            domain="sharedpref"
+            path="first_open.xml" />
+    </cloud-backup>
+    <device-transfer>
+        <exclude
+            domain="sharedpref"
+            path="first_open.xml" />
+    </device-transfer>
+</data-extraction-rules>

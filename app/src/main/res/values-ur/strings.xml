@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="language_title">زبان</string>
+    <string name="language_subtitle">اپنی ڈسپلے زبان منتخب کریں</string>
+    <string name="lang_continue">جاری رکھیں</string>
+    <string name="language_confirm">تصدیق کریں</string>
+
+    <string name="ob_skip">چھوڑ دیں</string>
+    <string name="ob_next">جاری رکھیں</string>
+    <string name="ob_start">شروع کریں</string>
+    <string name="ob_tagline">AI کے ساتھ کوئی بھی لباس چند سیکنڈ میں آزمائیں۔</string>
+
+    <string name="survey_title">آپ کو کون سے انداز پسند ہیں؟</string>
+    <string name="survey_subtitle">کم از کم 2 منتخب کریں جو آپ کو پسند ہوں</string>
+    <string name="survey_select_hint">براہِ کرم کم از کم 2 انداز منتخب کریں</string>
+    <string name="survey_select_hint_one">براہِ کرم کم از کم 1 منتخب کریں</string>
+    <string name="survey_casual">کیژوئل</string>
+    <string name="survey_office">دفتر</string>
+    <string name="survey_party">پارٹی</string>
+    <string name="survey_sport">اسپورٹس</string>
+    <string name="survey_streetwear">اسٹریٹ ویئر</string>
+    <string name="survey_elegant">شاندار</string>
+
+    <string name="survey2_title">آپ کس موقع کے لیے تیار ہوتے ہیں؟</string>
+    <string name="survey2_subtitle">تمام لاگو ہونے والے منتخب کریں</string>
+    <string name="survey2_work">کام</string>
+    <string name="survey2_date">ڈیٹس</string>
+    <string name="survey2_travel">سفر</string>
+    <string name="survey2_gym">جم</string>
+    <string name="survey2_event">تقریبات</string>
+    <string name="survey2_everyday">روزمرہ</string>
+
+    <string name="survey3_title">آپ یہاں کیوں آئے ہیں؟</string>
+    <string name="survey3_subtitle">تمام لاگو ہونے والے منتخب کریں</string>
+    <string name="survey3_tryon">لباس آزمائیں</string>
+    <string name="survey3_shop">سمجھداری سے خریداری کریں</string>
+    <string name="survey3_social">سوشل پوسٹس</string>
+    <string name="survey3_inspo">انداز کے خیالات</string>
+    <string name="survey3_save">لُکس محفوظ کریں</string>
+    <string name="survey3_explore">صرف دریافت کر رہا ہوں</string>
+
+    <string name="ob1_title">AI کے ساتھ آزمائیں</string>
+    <string name="ob1_desc">اپنی صرف ایک تصویر کے ساتھ کوئی بھی لباس پہنیں۔</string>
+    <string name="ob2_title">چند سیکنڈ میں لباس تبدیل کریں</string>
+    <string name="ob2_desc">اپنی تصویر اور لباس کی تصویر منتخب کریں — باقی کام AI کرے گا۔</string>
+    <string name="ob3_title">محفوظ کریں &amp; شیئر کریں</string>
+    <string name="ob3_desc">بہترین تصاویر اپنی گیلری میں محفوظ کریں اور انہیں دکھائیں۔</string>
+
+    <string name="perm_notif_title">باخبر رہیں</string>
+    <string name="perm_notif_desc">اطلاعات کی اجازت دیں تاکہ ہم آپ کو نئے اندازوں اور آپ کی تصویر تیار ہونے کے بارے میں بتا سکیں۔</string>
+    <string name="perm_notif_toggle">اطلاعات فعال کریں</string>
+</resources>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Outfitly: AI Outfit Try On</string>
+
+    <!-- Picker -->
+    <string name="picker_subtitle">Chọn ảnh để bắt đầu chỉnh sửa</string>
+    <string name="tab_library">Thư viện</string>
+    <string name="tab_camera">Camera</string>
+    <string name="upload_from_device">Tải ảnh từ thiết bị</string>
+    <string name="your_photo">Ảnh của bạn</string>
+    <string name="library_hint">Chọn ảnh chân dung rõ mặt, đủ thân để thử đồ.</string>
+    <string name="starting_camera">Đang khởi động camera…</string>
+    <string name="camera_permission_needed">Cần cấp quyền camera để chụp ảnh.</string>
+    <string name="grant_permission">Cấp quyền</string>
+    <string name="photo_captured">✓ Đã chụp ảnh thành công</string>
+    <string name="retake">Chụp lại</string>
+    <string name="use_photo">Dùng ảnh</string>
+    <string name="next">Tiếp theo</string>
+
+    <!-- Edit -->
+    <string name="edit_title">Chỉnh sửa ảnh</string>
+    <string name="edit_subtitle">Thử trang phục bằng AI</string>
+    <string name="not_edited">Chưa chỉnh sửa</string>
+    <string name="ai_generated">AI Generated</string>
+    <string name="garment_label">Ảnh trang phục</string>
+    <string name="choose_garment">Chọn ảnh trang phục</string>
+    <string name="change_garment">Đổi ảnh trang phục</string>
+    <string name="garment_hint">Ảnh sản phẩm hoặc ảnh người đang mặc — AI chỉ lấy trang phục.</string>
+    <string name="category_label">Kiểu trang phục</string>
+    <string name="poses_label">Số tư thế</string>
+    <string name="quality_label">Chất lượng</string>
+    <string name="apply_ai">Áp dụng AI</string>
+    <string name="select_garment_first">Hãy chọn ảnh trang phục trước</string>
+    <string name="saved">Đã lưu vào thư viện</string>
+    <string name="save_failed">Lưu ảnh thất bại</string>
+    <string name="restored">Đã khôi phục ảnh gốc</string>
+
+    <!-- Dialogs -->
+    <string name="save_dialog_title">Đã lưu ảnh</string>
+    <string name="save_dialog_msg">Ảnh đã được lưu vào thư viện. Bạn muốn quay lại chọn ảnh khác?</string>
+    <string name="save_dialog_positive">Chọn ảnh khác</string>
+    <string name="save_dialog_negative">Ở lại</string>
+    <string name="exit_dialog_title">Chưa lưu ảnh</string>
+    <string name="exit_dialog_msg">Bạn vừa tạo ảnh nhưng chưa lưu. Thoát bây giờ sẽ mất ảnh đã tạo. Bạn vẫn muốn thoát?</string>
+    <string name="exit_dialog_positive">Thoát</string>
+    <string name="exit_dialog_negative">Ở lại</string>
+
+    <!-- Categories -->
+    <string name="cat_auto">Tự động</string>
+    <string name="cat_top">Áo trên</string>
+    <string name="cat_bottom">Quần/Váy</string>
+    <string name="cat_dress">Váy liền</string>
+    <string name="cat_outerwear">Áo khoác</string>
+    <string name="cat_full">Toàn thân</string>
+
+    <!-- Quality -->
+    <string name="q_low">Thấp</string>
+    <string name="q_medium">Vừa</string>
+    <string name="q_high">Cao</string>
+
+    <!-- Processing -->
+    <string name="step_analyze">Phân tích hình ảnh…</string>
+    <string name="step_detect">Phát hiện cơ thể…</string>
+    <string name="step_apply">Áp dụng trang phục AI…</string>
+    <string name="step_finish">Hoàn thiện chi tiết…</string>
+
+    <!-- Errors (thân thiện với người dùng — không hiển thị mã lỗi kỹ thuật) -->
+    <string name="err_network">Không có kết nối mạng. Vui lòng kiểm tra Wi-Fi/dữ liệu và thử lại.</string>
+    <string name="err_timeout">Mạng đang chậm nên xử lý quá lâu. Vui lòng thử lại.</string>
+    <string name="err_service_unavailable">Tính năng thử đồ đang tạm nghỉ. Vui lòng thử lại sau ít phút.</string>
+    <string name="err_server_busy">Máy chủ AI đang bận. Vui lòng thử lại sau giây lát.</string>
+    <string name="err_rate_limited">Bạn đang thử quá nhanh. Vui lòng chờ một lát rồi thử lại.</string>
+    <string name="err_too_large">Ảnh quá lớn. Vui lòng chọn ảnh khác nhẹ hơn rồi thử lại.</string>
+
+    <!-- Ảnh trang phục có vấn đề -->
+    <string name="err_garment_invalid">Ảnh trang phục chưa hợp lệ. Hãy chọn ảnh JPG hoặc PNG rõ nét, chụp thẳng món đồ.</string>
+    <string name="err_garment_unrecognized">AI chưa nhận ra món đồ trong ảnh trang phục. Hãy dùng ảnh chụp rõ một món (áo, quần, váy…) trên nền đơn giản — tránh ảnh phong cảnh, ảnh quá tối hoặc quá nhiều chi tiết.</string>
+    <string name="err_image_missing">Thiếu ảnh. Vui lòng chọn lại ảnh của bạn và ảnh trang phục rồi thử lại.</string>
+    <string name="err_bad_request">Ảnh chưa phù hợp để thử đồ. Hãy dùng ảnh người đứng rõ toàn thân và ảnh trang phục chụp rõ món đồ.</string>
+
+    <!-- Lỗi đọc ảnh / chụp ảnh -->
+    <string name="err_read_image">Không đọc được ảnh đã chọn. Vui lòng thử ảnh khác.</string>
+    <string name="err_read_garment">Không đọc được ảnh trang phục. Vui lòng chọn ảnh khác.</string>
+    <string name="err_capture">Chụp ảnh không thành công. Vui lòng thử lại.</string>
+
+    <!-- Lỗi chung (không bao giờ hiển thị chi tiết kỹ thuật) -->
+    <string name="err_generic">Đã có sự cố khi thử đồ. Vui lòng thử lại.</string>
+
+    <!-- Kiểm tra ảnh người -->
+    <string name="checking_person">Đang kiểm tra ảnh…</string>
+    <string name="err_no_person">Không tìm thấy người trong ảnh. Hãy chọn ảnh có khuôn mặt &amp; thân người rõ ràng để thử đồ.</string>
+
+    <!-- Báo cáo ảnh -->
+    <string name="report">Báo cáo</string>
+    <string name="report_dialog_title">Báo cáo ảnh</string>
+    <string name="report_dialog_msg">Ảnh kết quả có vấn đề (lỗi, không phù hợp, phản cảm…)? Gửi báo cáo để chúng tôi cải thiện.</string>
+    <string name="report_send">Gửi báo cáo</string>
+    <string name="report_cancel">Huỷ</string>
+    <string name="report_subject">Báo cáo ảnh Outfitly</string>
+    <string name="report_thanks">Cảm ơn bạn đã báo cáo!</string>
+    <string name="no_email_app">Không tìm thấy ứng dụng email.</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Cài đặt</string>
+    <string name="settings_general">Chung</string>
+    <string name="settings_language">Ngôn ngữ</string>
+    <string name="settings_theme">Giao diện</string>
+    <string name="settings_theme_desc">Sáng, tối hoặc theo hệ thống</string>
+    <string name="theme_light">Sáng</string>
+    <string name="theme_dark">Tối</string>
+    <string name="theme_system">Theo hệ thống</string>
+    <string name="settings_support">Hỗ trợ &amp; Thông tin</string>
+    <string name="settings_share">Chia sẻ ứng dụng</string>
+    <string name="settings_share_desc">Giới thiệu app cho bạn bè</string>
+    <string name="settings_rate">Đánh giá ứng dụng</string>
+    <string name="settings_rate_desc">Cho chúng tôi 5 sao nhé</string>
+    <string name="settings_feedback">Gửi phản hồi</string>
+    <string name="settings_feedback_desc">Góp ý qua email</string>
+    <string name="settings_privacy">Chính sách bảo mật</string>
+    <string name="settings_privacy_desc">Cách chúng tôi xử lý dữ liệu</string>
+    <string name="settings_version">Phiên bản</string>
+    <string name="feedback_subject">Phản hồi Outfitly</string>
+    <string name="share_text">Thử trang phục bằng AI cực vui với Outfitly! Tải ngay: https://play.google.com/store/apps/details?id=com.exo.styleswap</string>
+    <string name="cant_open_store">Không mở được cửa hàng ứng dụng.</string>
+
+    <!-- Language -->
+    <string name="language_title">Ngôn ngữ</string>
+    <string name="language_subtitle">Chọn ngôn ngữ hiển thị</string>
+    <string name="lang_continue">Tiếp tục</string>
+    <string name="lang_vi">Tiếng Việt</string>
+    <string name="lang_en">English</string>
+
+    <!-- Privacy -->
+    <string name="privacy_title">Chính sách bảo mật</string>
+    <string name="privacy_body">Outfitly tôn trọng quyền riêng tư của bạn. Chính sách này mô tả cách chúng tôi xử lý dữ liệu.\n\n1. Dữ liệu chúng tôi xử lý\nẢnh bạn chọn hoặc chụp được dùng để tạo ảnh thử đồ. Ảnh được gửi đến dịch vụ AI để xử lý và trả về kết quả.\n\n2. Lưu trữ\nChúng tôi không lưu trữ ảnh của bạn lâu dài; ảnh chỉ được xử lý tạm thời để tạo kết quả. Ảnh kết quả chỉ được lưu vào thư viện thiết bị khi bạn bấm Lưu.\n\n3. Quyền truy cập\nỨng dụng xin quyền Máy ảnh (để chụp ảnh) và truy cập Ảnh (để chọn và lưu ảnh). Bạn có thể từ chối và vẫn dùng các tính năng khác.\n\n4. Bên thứ ba\nẢnh được xử lý bởi dịch vụ AI để tạo kết quả thử đồ. Chúng tôi không bán dữ liệu cá nhân của bạn.\n\n5. Trẻ em\nỨng dụng không hướng đến trẻ em dưới 13 tuổi.\n\n6. Liên hệ\nMọi thắc mắc, vui lòng liên hệ: exostudio24@gmail.com\n\n7. Thay đổi\nChính sách có thể được cập nhật theo thời gian. Vui lòng kiểm tra lại định kỳ.</string>
+
+    <!-- Onboarding / first open -->
+    <string name="ob_skip">Bỏ qua</string>
+    <string name="ob_next">Tiếp tục</string>
+    <string name="ob_start">Bắt đầu</string>
+
+    <string name="survey_title">Bạn quan tâm phong cách nào nhất?</string>
+    <string name="survey_subtitle">Chọn một hoặc nhiều phong cách bạn thích</string>
+    <string name="survey_casual">Thường ngày</string>
+    <string name="survey_office">Công sở</string>
+    <string name="survey_party">Dự tiệc</string>
+    <string name="survey_sport">Thể thao</string>
+
+    <string name="ob1_title">Thử đồ bằng AI</string>
+    <string name="ob1_desc">Mặc thử mọi trang phục chỉ với một tấm ảnh của bạn.</string>
+    <string name="ob2_title">Đổi outfit trong vài giây</string>
+    <string name="ob2_desc">Chọn ảnh người và ảnh trang phục — AI lo phần còn lại.</string>
+    <string name="ob3_title">Lưu &amp; chia sẻ</string>
+    <string name="ob3_desc">Lưu ảnh đẹp vào thư viện và khoe với bạn bè.</string>
+
+    <string name="perm_title">Cấp quyền để bắt đầu</string>
+    <string name="perm_desc">Ứng dụng cần một số quyền để hoạt động tốt nhất.</string>
+    <string name="perm_camera_title">Máy ảnh</string>
+    <string name="perm_camera_desc">Để chụp ảnh trực tiếp khi thử đồ</string>
+    <string name="perm_photos_title">Ảnh &amp; thư viện</string>
+    <string name="perm_photos_desc">Để chọn ảnh và lưu ảnh kết quả</string>
+    <string name="perm_allow_start">Cho phép &amp; Bắt đầu</string>
+
+    <!-- Notification permission screen -->
+    <string name="perm_notif_title">Luôn cập nhật</string>
+    <string name="perm_notif_desc">Cho phép thông báo để chúng tôi báo bạn khi có kiểu mới và khi ảnh của bạn đã sẵn sàng.</string>
+    <string name="perm_notif_toggle">Bật thông báo</string>
+
+    <string name="language_confirm">Xác nhận</string>
+    <string name="ob_tagline">Thử mọi trang phục bằng AI chỉ trong vài giây.</string>
+    <string name="survey_select_hint">Vui lòng chọn ít nhất 2 phong cách</string>
+    <string name="survey_select_hint_one">Vui lòng chọn ít nhất 1</string>
+    <string name="survey_streetwear">Streetwear</string>
+    <string name="survey_elegant">Thanh lịch</string>
+    <string name="survey2_title">Bạn diện đồ cho dịp nào?</string>
+    <string name="survey2_subtitle">Chọn tất cả mục phù hợp</string>
+    <string name="survey2_work">Đi làm</string>
+    <string name="survey2_date">Hẹn hò</string>
+    <string name="survey2_travel">Du lịch</string>
+    <string name="survey2_gym">Tập gym</string>
+    <string name="survey2_event">Sự kiện</string>
+    <string name="survey2_everyday">Hằng ngày</string>
+    <string name="survey3_title">Điều gì đưa bạn đến đây?</string>
+    <string name="survey3_subtitle">Chọn tất cả mục phù hợp</string>
+    <string name="survey3_tryon">Thử trang phục</string>
+    <string name="survey3_shop">Mua sắm thông minh hơn</string>
+    <string name="survey3_social">Đăng mạng xã hội</string>
+    <string name="survey3_inspo">Ý tưởng phong cách</string>
+    <string name="survey3_save">Lưu các look</string>
+    <string name="survey3_explore">Chỉ khám phá thôi</string>
+
+    <!-- Home (redesign) -->
+    <string name="home_hero_title">Biến đổi trang phục với AI</string>
+    <string name="home_hero_accent">với AI</string>
+    <string name="home_hero_subtitle">Tạo outfit đẹp trong vài giây</string>
+    <string name="home_upload_gallery">Tải ảnh từ thư viện</string>
+    <string name="home_take_photo">Chụp ảnh</string>
+    <string name="home_trending">Phong cách thịnh hành</string>
+    <string name="home_see_all">Xem tất cả</string>
+    <string name="home_recent">Sáng tạo gần đây</string>
+
+    <!-- Trending style names -->
+    <string name="style_casual">Thường ngày</string>
+    <string name="style_business">Công sở</string>
+    <string name="style_streetwear">Đường phố</string>
+    <string name="style_anime">Anime</string>
+    <string name="style_wedding">Cưới</string>
+    <string name="style_vintage">Cổ điển</string>
+    <string name="style_party">Dự tiệc</string>
+    <string name="style_winter">Mùa đông</string>
+
+    <!-- Edit (redesign) -->
+    <string name="edit_outfit">Chỉnh trang phục</string>
+    <string name="edit_section_type">Chọn kiểu trang phục</string>
+    <string name="edit_section_count">Số lượng kết quả</string>
+    <string name="generate_outfit">Tạo trang phục</string>
+    <string name="before">Trước</string>
+    <string name="after">Sau</string>
+    <string name="vip">VIP</string>
+    <string name="result_singular">Kết quả</string>
+    <string name="result_plural">Kết quả</string>
+
+    <!-- Result (redesign) -->
+    <string name="result_title">Kết quả</string>
+    <string name="result_all">Tất cả</string>
+    <string name="action_save">Lưu</string>
+    <string name="action_share">Chia sẻ</string>
+    <string name="action_regenerate">Tạo lại</string>
+    <string name="action_try_another">Thử kiểu khác</string>
+    <string name="share_via">Chia sẻ ảnh</string>
+</resources>

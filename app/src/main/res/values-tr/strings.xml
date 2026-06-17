@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="language_title">Dil</string>
+    <string name="language_subtitle">Görüntüleme dilinizi seçin</string>
+    <string name="lang_continue">Devam et</string>
+    <string name="language_confirm">Onayla</string>
+
+    <string name="ob_skip">Atla</string>
+    <string name="ob_next">Devam et</string>
+    <string name="ob_start">Başla</string>
+    <string name="ob_tagline">Yapay zeka ile saniyeler içinde her kombini dene.</string>
+
+    <string name="survey_title">Hangi tarzları seviyorsun?</string>
+    <string name="survey_subtitle">Beğendiğin en az 2 tane seç</string>
+    <string name="survey_select_hint">Lütfen en az 2 tarz seç</string>
+    <string name="survey_select_hint_one">Lütfen en az 1 tane seç</string>
+    <string name="survey_casual">Günlük</string>
+    <string name="survey_office">Ofis</string>
+    <string name="survey_party">Parti</string>
+    <string name="survey_sport">Spor</string>
+    <string name="survey_streetwear">Sokak stili</string>
+    <string name="survey_elegant">Şık</string>
+
+    <string name="survey2_title">Ne için giyiniyorsun?</string>
+    <string name="survey2_subtitle">Uygun olanların tümünü seç</string>
+    <string name="survey2_work">İş</string>
+    <string name="survey2_date">Buluşmalar</string>
+    <string name="survey2_travel">Seyahat</string>
+    <string name="survey2_gym">Spor salonu</string>
+    <string name="survey2_event">Etkinlikler</string>
+    <string name="survey2_everyday">Her gün</string>
+
+    <string name="survey3_title">Seni buraya ne getirdi?</string>
+    <string name="survey3_subtitle">Uygun olanların tümünü seç</string>
+    <string name="survey3_tryon">Kombinleri dene</string>
+    <string name="survey3_shop">Daha akıllı alışveriş</string>
+    <string name="survey3_social">Sosyal paylaşımlar</string>
+    <string name="survey3_inspo">Stil fikirleri</string>
+    <string name="survey3_save">Görünümleri kaydet</string>
+    <string name="survey3_explore">Sadece keşfediyorum</string>
+
+    <string name="ob1_title">Yapay zeka ile dene</string>
+    <string name="ob1_desc">Tek bir fotoğrafınla her kombini üzerinde gör.</string>
+    <string name="ob2_title">Kombinleri saniyeler içinde değiştir</string>
+    <string name="ob2_desc">Fotoğrafını ve bir kıyafet fotoğrafını seç — gerisini yapay zeka halleder.</string>
+    <string name="ob3_title">Kaydet ve paylaş</string>
+    <string name="ob3_desc">Harika fotoğrafları galerine kaydet ve herkese göster.</string>
+
+    <string name="perm_notif_title">Güncel kal</string>
+    <string name="perm_notif_desc">Yeni stilleri ve fotoğrafının hazır olduğunu sana bildirebilmemiz için bildirimlere izin ver.</string>
+    <string name="perm_notif_toggle">Bildirimleri etkinleştir</string>
+</resources>

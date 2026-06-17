@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Outfitly: AI Outfit Try On</string>
+
+    <string name="picker_subtitle">एडिटिंग शुरू करने के लिए एक फ़ोटो चुनें</string>
+    <string name="tab_library">गैलरी</string>
+    <string name="tab_camera">कैमरा</string>
+    <string name="upload_from_device">डिवाइस से अपलोड करें</string>
+    <string name="your_photo">आपकी फ़ोटो</string>
+    <string name="library_hint">बेहतर ट्राय-ऑन के लिए पूरे शरीर वाली साफ़ तस्वीर चुनें।</string>
+    <string name="starting_camera">कैमरा शुरू हो रहा है…</string>
+    <string name="camera_permission_needed">फ़ोटो लेने के लिए कैमरा अनुमति ज़रूरी है।</string>
+    <string name="grant_permission">अनुमति दें</string>
+    <string name="photo_captured">✓ फ़ोटो ले ली गई</string>
+    <string name="retake">फिर से लें</string>
+    <string name="use_photo">इस फ़ोटो का उपयोग करें</string>
+    <string name="next">आगे</string>
+
+    <string name="edit_title">फ़ोटो एडिट करें</string>
+    <string name="edit_subtitle">AI से कपड़े आज़माएँ</string>
+    <string name="not_edited">एडिट नहीं हुआ</string>
+    <string name="ai_generated">AI द्वारा बनाया गया</string>
+    <string name="garment_label">कपड़े की फ़ोटो</string>
+    <string name="choose_garment">कपड़े की फ़ोटो चुनें</string>
+    <string name="change_garment">कपड़े की फ़ोटो बदलें</string>
+    <string name="garment_hint">प्रोडक्ट फ़ोटो या किसी के पहने हुए की फ़ोटो — AI केवल कपड़ा लेता है।</string>
+    <string name="category_label">कपड़े का प्रकार</string>
+    <string name="poses_label">पोज़</string>
+    <string name="quality_label">गुणवत्ता</string>
+    <string name="apply_ai">AI लागू करें</string>
+    <string name="select_garment_first">पहले कपड़े की फ़ोटो चुनें</string>
+    <string name="saved">गैलरी में सहेजा गया</string>
+    <string name="save_failed">सहेजना विफल</string>
+    <string name="restored">मूल फ़ोटो बहाल की गई</string>
+
+    <string name="save_dialog_title">फ़ोटो सहेजी गई</string>
+    <string name="save_dialog_msg">फ़ोटो आपकी गैलरी में सहेज ली गई। क्या आप दूसरी फ़ोटो चुनना चाहते हैं?</string>
+    <string name="save_dialog_positive">दूसरी चुनें</string>
+    <string name="save_dialog_negative">यहीं रहें</string>
+    <string name="exit_dialog_title">फ़ोटो सहेजी नहीं गई</string>
+    <string name="exit_dialog_msg">आपने अभी फ़ोटो बनाई है पर सहेजी नहीं। अभी बाहर निकलने पर यह चली जाएगी। फिर भी बाहर निकलें?</string>
+    <string name="exit_dialog_positive">बाहर निकलें</string>
+    <string name="exit_dialog_negative">यहीं रहें</string>
+
+    <string name="cat_auto">ऑटो</string>
+    <string name="cat_top">ऊपरी कपड़े</string>
+    <string name="cat_bottom">निचले कपड़े</string>
+    <string name="cat_dress">ड्रेस</string>
+    <string name="cat_outerwear">जैकेट</string>
+    <string name="cat_full">पूरा पहनावा</string>
+
+    <string name="q_low">कम</string>
+    <string name="q_medium">मध्यम</string>
+    <string name="q_high">उच्च</string>
+
+    <string name="step_analyze">इमेज का विश्लेषण हो रहा है…</string>
+    <string name="step_detect">शरीर पहचाना जा रहा है…</string>
+    <string name="step_apply">AI कपड़े लागू हो रहे हैं…</string>
+    <string name="step_finish">विवरण पूरे हो रहे हैं…</string>
+
+    <string name="err_network">इंटरनेट कनेक्शन नहीं है। Wi-Fi या डेटा जाँचें और फिर कोशिश करें।</string>
+    <string name="err_timeout">नेटवर्क धीमा है और बहुत समय लग गया। फिर कोशिश करें।</string>
+    <string name="err_service_unavailable">ट्राय-ऑन कुछ देर के लिए बंद है। कुछ मिनट बाद कोशिश करें।</string>
+    <string name="err_server_busy">AI सर्वर व्यस्त है। थोड़ी देर में फिर कोशिश करें।</string>
+    <string name="err_rate_limited">आप बहुत तेज़ चल रहे हैं। थोड़ा रुककर फिर कोशिश करें।</string>
+    <string name="err_too_large">इमेज बहुत बड़ी है। छोटी चुनें और फिर कोशिश करें।</string>
+
+    <string name="err_garment_invalid">कपड़े की फ़ोटो मान्य नहीं है। सामने से साफ़ JPG या PNG उपयोग करें।</string>
+    <string name="err_garment_unrecognized">AI कपड़े को पहचान नहीं पाया। सादे बैकग्राउंड पर एक कपड़े (टॉप, बॉटम, ड्रेस…) की साफ़ फ़ोटो उपयोग करें; नज़ारे, बहुत गहरी या भरी हुई फ़ोटो से बचें।</string>
+    <string name="err_image_missing">इमेज नहीं है। अपनी फ़ोटो और कपड़े की फ़ोटो फिर से चुनें और कोशिश करें।</string>
+    <string name="err_bad_request">यह फ़ोटो ट्राय-ऑन के लिए सही नहीं है। पूरे शरीर की साफ़ फ़ोटो और कपड़े की साफ़ फ़ोटो उपयोग करें।</string>
+
+    <string name="err_read_image">चुनी गई फ़ोटो पढ़ी नहीं जा सकी। दूसरी आज़माएँ।</string>
+    <string name="err_read_garment">कपड़े की फ़ोटो पढ़ी नहीं जा सकी। दूसरी चुनें।</string>
+    <string name="err_capture">फ़ोटो नहीं ली जा सकी। फिर कोशिश करें।</string>
+
+    <string name="err_generic">ट्राय-ऑन में कुछ गड़बड़ हुई। फिर कोशिश करें।</string>
+
+    <string name="checking_person">फ़ोटो जाँची जा रही है…</string>
+    <string name="err_no_person">फ़ोटो में कोई व्यक्ति नहीं मिला। साफ़ चेहरे और शरीर वाली फ़ोटो चुनें।</string>
+
+    <string name="report">रिपोर्ट करें</string>
+    <string name="report_dialog_title">इमेज की रिपोर्ट करें</string>
+    <string name="report_dialog_msg">नतीजा गलत, अनुचित या आपत्तिजनक है? सुधार के लिए रिपोर्ट भेजें।</string>
+    <string name="report_send">रिपोर्ट भेजें</string>
+    <string name="report_cancel">रद्द करें</string>
+    <string name="report_subject">Outfitly इमेज रिपोर्ट</string>
+    <string name="report_thanks">रिपोर्ट के लिए धन्यवाद!</string>
+    <string name="no_email_app">कोई ईमेल ऐप नहीं मिला।</string>
+
+    <string name="settings_title">सेटिंग्स</string>
+    <string name="settings_general">सामान्य</string>
+    <string name="settings_language">भाषा</string>
+    <string name="settings_support">सहायता और जानकारी</string>
+    <string name="settings_share">ऐप शेयर करें</string>
+    <string name="settings_share_desc">दोस्तों को ऐप बताएँ</string>
+    <string name="settings_rate">ऐप को रेट करें</string>
+    <string name="settings_rate_desc">हमें 5 स्टार दें</string>
+    <string name="settings_feedback">फ़ीडबैक भेजें</string>
+    <string name="settings_feedback_desc">ईमेल से संपर्क करें</string>
+    <string name="settings_privacy">गोपनीयता नीति</string>
+    <string name="settings_privacy_desc">हम आपके डेटा का उपयोग कैसे करते हैं</string>
+    <string name="settings_version">वर्शन</string>
+    <string name="feedback_subject">Outfitly फ़ीडबैक</string>
+    <string name="share_text">Outfitly पर AI से कपड़े आज़माएँ! अभी डाउनलोड करें: https://play.google.com/store/apps/details?id=com.exo.styleswap</string>
+    <string name="cant_open_store">ऐप स्टोर नहीं खुल सका।</string>
+
+    <string name="language_title">भाषा</string>
+    <string name="language_subtitle">प्रदर्शन भाषा चुनें</string>
+    <string name="lang_continue">जारी रखें</string>
+
+    <string name="privacy_title">गोपनीयता नीति</string>
+
+    <string name="ob_next">जारी रखें</string>
+    <string name="ob_start">शुरू करें</string>
+
+    <string name="survey_title">आपको कौन-सा स्टाइल सबसे ज़्यादा पसंद है?</string>
+    <string name="survey_subtitle">एक या अधिक पसंदीदा स्टाइल चुनें</string>
+    <string name="survey_casual">कैज़ुअल</string>
+    <string name="survey_office">ऑफ़िस</string>
+    <string name="survey_party">पार्टी</string>
+    <string name="survey_sport">स्पोर्ट्स</string>
+
+    <string name="ob1_title">AI से ट्राय-ऑन</string>
+    <string name="ob1_desc">अपनी एक फ़ोटो से कोई भी कपड़ा पहनें।</string>
+    <string name="ob2_title">कुछ सेकंड में लुक बदलें</string>
+    <string name="ob2_desc">अपनी फ़ोटो और कपड़े की फ़ोटो चुनें — बाकी AI करेगा।</string>
+    <string name="ob3_title">सहेजें और शेयर करें</string>
+    <string name="ob3_desc">बढ़िया फ़ोटो गैलरी में सहेजें और दोस्तों को दिखाएँ।</string>
+
+    <string name="perm_notif_title">अपडेट पाते रहें</string>
+    <string name="perm_notif_desc">नई स्टाइल और आपकी फ़ोटो तैयार होने पर बताने के लिए नोटिफ़िकेशन की अनुमति दें।</string>
+    <string name="perm_notif_toggle">नोटिफ़िकेशन चालू करें</string>
+
+    <string name="language_confirm">पुष्टि करें</string>
+    <string name="ob_tagline">AI से सेकंडों में कोई भी पहनावा आज़माएँ।</string>
+    <string name="survey_select_hint">कृपया कम से कम 2 स्टाइल चुनें</string>
+    <string name="survey_select_hint_one">कृपया कम से कम 1 चुनें</string>
+    <string name="survey_streetwear">स्ट्रीटवियर</string>
+    <string name="survey_elegant">एलिगेंट</string>
+    <string name="survey2_title">आप किसके लिए तैयार होते हैं?</string>
+    <string name="survey2_subtitle">जो भी लागू हो वे सभी चुनें</string>
+    <string name="survey2_work">काम</string>
+    <string name="survey2_date">डेट</string>
+    <string name="survey2_travel">यात्रा</string>
+    <string name="survey2_gym">जिम</string>
+    <string name="survey2_event">इवेंट</string>
+    <string name="survey2_everyday">रोज़मर्रा</string>
+    <string name="survey3_title">आप यहाँ क्यों आए हैं?</string>
+    <string name="survey3_subtitle">जो भी लागू हो वे सभी चुनें</string>
+    <string name="survey3_tryon">कपड़े आज़माएँ</string>
+    <string name="survey3_shop">समझदारी से खरीदें</string>
+    <string name="survey3_social">सोशल पोस्ट</string>
+    <string name="survey3_inspo">स्टाइल आइडिया</string>
+    <string name="survey3_save">लुक सहेजें</string>
+    <string name="survey3_explore">बस देख रहे हैं</string>
+</resources>

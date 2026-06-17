@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Outfitly: AI Outfit Try On</string>
+
+    <string name="picker_subtitle">写真を選んで編集を始めましょう</string>
+    <string name="tab_library">ライブラリ</string>
+    <string name="tab_camera">カメラ</string>
+    <string name="upload_from_device">デバイスからアップロード</string>
+    <string name="your_photo">あなたの写真</string>
+    <string name="library_hint">試着の精度を上げるため、全身がはっきり写ったポートレートを選んでください。</string>
+    <string name="starting_camera">カメラを起動中…</string>
+    <string name="camera_permission_needed">写真を撮るにはカメラの許可が必要です。</string>
+    <string name="grant_permission">許可する</string>
+    <string name="photo_captured">✓ 撮影しました</string>
+    <string name="retake">撮り直す</string>
+    <string name="use_photo">この写真を使う</string>
+    <string name="next">次へ</string>
+
+    <string name="edit_title">写真を編集</string>
+    <string name="edit_subtitle">AIで服を試着</string>
+    <string name="not_edited">未編集</string>
+    <string name="ai_generated">AI生成</string>
+    <string name="garment_label">服の写真</string>
+    <string name="choose_garment">服の写真を選ぶ</string>
+    <string name="change_garment">服の写真を変更</string>
+    <string name="garment_hint">商品写真や着用写真でOK。AIは服だけを使います。</string>
+    <string name="category_label">服の種類</string>
+    <string name="poses_label">ポーズ数</string>
+    <string name="quality_label">画質</string>
+    <string name="apply_ai">AIを適用</string>
+    <string name="select_garment_first">先に服の写真を選んでください</string>
+    <string name="saved">ギャラリーに保存しました</string>
+    <string name="save_failed">保存に失敗しました</string>
+    <string name="restored">元の写真に戻しました</string>
+
+    <string name="save_dialog_title">写真を保存しました</string>
+    <string name="save_dialog_msg">写真をギャラリーに保存しました。別の写真を選びますか？</string>
+    <string name="save_dialog_positive">別の写真</string>
+    <string name="save_dialog_negative">そのまま</string>
+    <string name="exit_dialog_title">未保存の写真</string>
+    <string name="exit_dialog_msg">作成した写真がまだ保存されていません。今出ると失われます。それでも出ますか？</string>
+    <string name="exit_dialog_positive">出る</string>
+    <string name="exit_dialog_negative">残る</string>
+
+    <string name="cat_auto">自動</string>
+    <string name="cat_top">トップス</string>
+    <string name="cat_bottom">ボトムス</string>
+    <string name="cat_dress">ワンピース</string>
+    <string name="cat_outerwear">アウター</string>
+    <string name="cat_full">全身コーデ</string>
+
+    <string name="q_low">低</string>
+    <string name="q_medium">中</string>
+    <string name="q_high">高</string>
+
+    <string name="step_analyze">画像を解析中…</string>
+    <string name="step_detect">体を検出中…</string>
+    <string name="step_apply">AIで服を適用中…</string>
+    <string name="step_finish">仕上げ中…</string>
+
+    <string name="err_network">インターネットに接続されていません。Wi-Fiまたはデータを確認して再試行してください。</string>
+    <string name="err_timeout">ネットワークが遅く時間がかかりすぎました。再試行してください。</string>
+    <string name="err_service_unavailable">試着機能は一時休止中です。数分後に再試行してください。</string>
+    <string name="err_server_busy">AIサーバーが混み合っています。まもなく再試行してください。</string>
+    <string name="err_rate_limited">操作が速すぎます。少し待ってから再試行してください。</string>
+    <string name="err_too_large">画像が大きすぎます。小さい画像を選んで再試行してください。</string>
+
+    <string name="err_garment_invalid">服の写真が無効です。服を正面から写した鮮明なJPGまたはPNGを使ってください。</string>
+    <string name="err_garment_unrecognized">AIが服を認識できませんでした。1点の服（トップス、ボトムス、ワンピースなど）をシンプルな背景で鮮明に撮った写真を使い、風景や暗い・情報量が多い写真は避けてください。</string>
+    <string name="err_image_missing">画像がありません。あなたの写真と服の写真を選び直して再試行してください。</string>
+    <string name="err_bad_request">この写真は試着に適していません。鮮明な全身写真と鮮明な服の写真を使ってください。</string>
+
+    <string name="err_read_image">選んだ写真を読み込めませんでした。別の写真でお試しください。</string>
+    <string name="err_read_garment">服の写真を読み込めませんでした。別の写真を選んでください。</string>
+    <string name="err_capture">撮影できませんでした。再試行してください。</string>
+
+    <string name="err_generic">試着中に問題が発生しました。再試行してください。</string>
+
+    <string name="checking_person">写真を確認中…</string>
+    <string name="err_no_person">写真に人物が見つかりません。顔と体がはっきり写った写真を選んでください。</string>
+
+    <string name="report">報告</string>
+    <string name="report_dialog_title">画像を報告</string>
+    <string name="report_dialog_msg">結果が誤り・不適切・不快ですか？改善のため報告を送ってください。</string>
+    <string name="report_send">報告を送る</string>
+    <string name="report_cancel">キャンセル</string>
+    <string name="report_subject">Outfitly 画像の報告</string>
+    <string name="report_thanks">報告ありがとうございます！</string>
+    <string name="no_email_app">メールアプリが見つかりません。</string>
+
+    <string name="settings_title">設定</string>
+    <string name="settings_general">一般</string>
+    <string name="settings_language">言語</string>
+    <string name="settings_support">サポートと情報</string>
+    <string name="settings_share">アプリを共有</string>
+    <string name="settings_share_desc">友だちにアプリを紹介</string>
+    <string name="settings_rate">アプリを評価</string>
+    <string name="settings_rate_desc">星5つをお願いします</string>
+    <string name="settings_feedback">フィードバックを送る</string>
+    <string name="settings_feedback_desc">メールでご連絡ください</string>
+    <string name="settings_privacy">プライバシーポリシー</string>
+    <string name="settings_privacy_desc">データの取り扱いについて</string>
+    <string name="settings_version">バージョン</string>
+    <string name="feedback_subject">Outfitly フィードバック</string>
+    <string name="share_text">OutfitlyでAI試着を楽しもう！今すぐダウンロード：https://play.google.com/store/apps/details?id=com.exo.styleswap</string>
+    <string name="cant_open_store">アプリストアを開けませんでした。</string>
+
+    <string name="language_title">言語</string>
+    <string name="language_subtitle">表示言語を選択</string>
+    <string name="lang_continue">続ける</string>
+
+    <string name="privacy_title">プライバシーポリシー</string>
+
+    <string name="ob_next">続ける</string>
+    <string name="ob_start">始める</string>
+
+    <string name="survey_title">一番気になるスタイルは？</string>
+    <string name="survey_subtitle">好きなスタイルを1つ以上選んでください</string>
+    <string name="survey_casual">カジュアル</string>
+    <string name="survey_office">オフィス</string>
+    <string name="survey_party">パーティー</string>
+    <string name="survey_sport">スポーツ</string>
+
+    <string name="ob1_title">AIで試着</string>
+    <string name="ob1_desc">あなたの写真1枚で、どんな服も着られます。</string>
+    <string name="ob2_title">数秒でコーデ変更</string>
+    <string name="ob2_desc">あなたの写真と服の写真を選ぶだけ。あとはAIにおまかせ。</string>
+    <string name="ob3_title">保存して共有</string>
+    <string name="ob3_desc">お気に入りの写真をギャラリーに保存して自慢しよう。</string>
+
+    <string name="perm_notif_title">最新情報を受け取る</string>
+    <string name="perm_notif_desc">通知を許可すると、新しいスタイルや写真の準備完了をお知らせします。</string>
+    <string name="perm_notif_toggle">通知をオンにする</string>
+
+    <string name="language_confirm">確認</string>
+    <string name="ob_tagline">AIで、どんな服も数秒で試着。</string>
+    <string name="survey_select_hint">スタイルを2つ以上選んでください</string>
+    <string name="survey_select_hint_one">1つ以上選んでください</string>
+    <string name="survey_streetwear">ストリート</string>
+    <string name="survey_elegant">エレガント</string>
+    <string name="survey2_title">どんなシーンで着ますか？</string>
+    <string name="survey2_subtitle">当てはまるものをすべて選択</string>
+    <string name="survey2_work">仕事</string>
+    <string name="survey2_date">デート</string>
+    <string name="survey2_travel">旅行</string>
+    <string name="survey2_gym">ジム</string>
+    <string name="survey2_event">イベント</string>
+    <string name="survey2_everyday">普段着</string>
+    <string name="survey3_title">何のために来ましたか？</string>
+    <string name="survey3_subtitle">当てはまるものをすべて選択</string>
+    <string name="survey3_tryon">服を試着</string>
+    <string name="survey3_shop">賢くお買い物</string>
+    <string name="survey3_social">SNS投稿</string>
+    <string name="survey3_inspo">スタイルのヒント</string>
+    <string name="survey3_save">コーデを保存</string>
+    <string name="survey3_explore">とりあえず見るだけ</string>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="language_title">Lingua</string>
+    <string name="language_subtitle">Scegli la lingua di visualizzazione</string>
+    <string name="lang_continue">Continua</string>
+    <string name="language_confirm">Conferma</string>
+
+    <string name="ob_skip">Salta</string>
+    <string name="ob_next">Continua</string>
+    <string name="ob_start">Inizia</string>
+    <string name="ob_tagline">Prova qualsiasi outfit con l\'IA, in pochi secondi.</string>
+
+    <string name="survey_title">Quali stili ti piacciono?</string>
+    <string name="survey_subtitle">Scegline almeno 2 che ti piacciono</string>
+    <string name="survey_select_hint">Scegli almeno 2 stili</string>
+    <string name="survey_select_hint_one">Scegline almeno 1</string>
+    <string name="survey_casual">Casual</string>
+    <string name="survey_office">Ufficio</string>
+    <string name="survey_party">Festa</string>
+    <string name="survey_sport">Sport</string>
+    <string name="survey_streetwear">Streetwear</string>
+    <string name="survey_elegant">Elegante</string>
+
+    <string name="survey2_title">Per cosa ti vesti?</string>
+    <string name="survey2_subtitle">Seleziona tutte le opzioni pertinenti</string>
+    <string name="survey2_work">Lavoro</string>
+    <string name="survey2_date">Appuntamenti</string>
+    <string name="survey2_travel">Viaggi</string>
+    <string name="survey2_gym">Palestra</string>
+    <string name="survey2_event">Eventi</string>
+    <string name="survey2_everyday">Ogni giorno</string>
+
+    <string name="survey3_title">Cosa ti porta qui?</string>
+    <string name="survey3_subtitle">Seleziona tutte le opzioni pertinenti</string>
+    <string name="survey3_tryon">Provare outfit</string>
+    <string name="survey3_shop">Acquistare in modo intelligente</string>
+    <string name="survey3_social">Post sui social</string>
+    <string name="survey3_inspo">Idee di stile</string>
+    <string name="survey3_save">Salvare i look</string>
+    <string name="survey3_explore">Solo curiosare</string>
+
+    <string name="ob1_title">Prova con l\'IA</string>
+    <string name="ob1_desc">Indossa qualsiasi outfit con una sola foto di te stesso.</string>
+    <string name="ob2_title">Cambia outfit in pochi secondi</string>
+    <string name="ob2_desc">Scegli la tua foto e la foto di un capo – l\'IA fa il resto.</string>
+    <string name="ob3_title">Salva &amp; condividi</string>
+    <string name="ob3_desc">Salva le foto migliori nella tua galleria e mostrale a tutti.</string>
+
+    <string name="perm_notif_title">Resta aggiornato</string>
+    <string name="perm_notif_desc">Consenti le notifiche così potremo informarti sui nuovi stili e quando la tua foto è pronta.</string>
+    <string name="perm_notif_toggle">Attiva le notifiche</string>
+</resources>

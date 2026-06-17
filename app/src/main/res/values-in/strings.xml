@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="language_title">Bahasa</string>
+    <string name="language_subtitle">Pilih bahasa tampilan Anda</string>
+    <string name="lang_continue">Lanjutkan</string>
+    <string name="language_confirm">Konfirmasi</string>
+
+    <string name="ob_skip">Lewati</string>
+    <string name="ob_next">Lanjutkan</string>
+    <string name="ob_start">Mulai</string>
+    <string name="ob_tagline">Coba pakai busana apa pun dengan AI, dalam hitungan detik.</string>
+
+    <string name="survey_title">Gaya apa yang Anda suka?</string>
+    <string name="survey_subtitle">Pilih minimal 2 yang Anda suka</string>
+    <string name="survey_select_hint">Silakan pilih minimal 2 gaya</string>
+    <string name="survey_select_hint_one">Silakan pilih minimal 1</string>
+    <string name="survey_casual">Kasual</string>
+    <string name="survey_office">Kantor</string>
+    <string name="survey_party">Pesta</string>
+    <string name="survey_sport">Olahraga</string>
+    <string name="survey_streetwear">Streetwear</string>
+    <string name="survey_elegant">Elegan</string>
+
+    <string name="survey2_title">Untuk acara apa Anda berbusana?</string>
+    <string name="survey2_subtitle">Pilih semua yang sesuai</string>
+    <string name="survey2_work">Kerja</string>
+    <string name="survey2_date">Kencan</string>
+    <string name="survey2_travel">Bepergian</string>
+    <string name="survey2_gym">Gym</string>
+    <string name="survey2_event">Acara</string>
+    <string name="survey2_everyday">Sehari-hari</string>
+
+    <string name="survey3_title">Apa yang membawa Anda ke sini?</string>
+    <string name="survey3_subtitle">Pilih semua yang sesuai</string>
+    <string name="survey3_tryon">Coba busana</string>
+    <string name="survey3_shop">Belanja lebih cerdas</string>
+    <string name="survey3_social">Unggahan media sosial</string>
+    <string name="survey3_inspo">Ide gaya</string>
+    <string name="survey3_save">Simpan tampilan</string>
+    <string name="survey3_explore">Sekadar menjelajah</string>
+
+    <string name="ob1_title">Coba dengan AI</string>
+    <string name="ob1_desc">Kenakan busana apa pun hanya dengan satu foto diri Anda.</string>
+    <string name="ob2_title">Ganti busana dalam hitungan detik</string>
+    <string name="ob2_desc">Pilih foto Anda dan foto busana — AI yang mengerjakan sisanya.</string>
+    <string name="ob3_title">Simpan &amp; bagikan</string>
+    <string name="ob3_desc">Simpan foto-foto keren ke galeri Anda dan pamerkan.</string>
+
+    <string name="perm_notif_title">Tetap dapatkan info terbaru</string>
+    <string name="perm_notif_desc">Izinkan notifikasi agar kami dapat memberi tahu Anda tentang gaya baru dan saat foto Anda siap.</string>
+    <string name="perm_notif_toggle">Aktifkan notifikasi</string>
+</resources>

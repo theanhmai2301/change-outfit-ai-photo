@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Outfitly: AI Outfit Try On</string>
+
+    <string name="picker_subtitle">Выберите фото, чтобы начать редактирование</string>
+    <string name="tab_library">Галерея</string>
+    <string name="tab_camera">Камера</string>
+    <string name="upload_from_device">Загрузить с устройства</string>
+    <string name="your_photo">Ваше фото</string>
+    <string name="library_hint">Выберите чёткий портрет в полный рост для лучшего результата.</string>
+    <string name="starting_camera">Запуск камеры…</string>
+    <string name="camera_permission_needed">Для съёмки нужно разрешение на камеру.</string>
+    <string name="grant_permission">Разрешить</string>
+    <string name="photo_captured">✓ Фото сделано</string>
+    <string name="retake">Переснять</string>
+    <string name="use_photo">Использовать</string>
+    <string name="next">Далее</string>
+
+    <string name="edit_title">Редактировать фото</string>
+    <string name="edit_subtitle">Примеряйте одежду с ИИ</string>
+    <string name="not_edited">Без изменений</string>
+    <string name="ai_generated">Создано ИИ</string>
+    <string name="garment_label">Фото одежды</string>
+    <string name="choose_garment">Выбрать фото одежды</string>
+    <string name="change_garment">Изменить фото одежды</string>
+    <string name="garment_hint">Фото товара или человека в одежде — ИИ берёт только одежду.</string>
+    <string name="category_label">Тип одежды</string>
+    <string name="poses_label">Позы</string>
+    <string name="quality_label">Качество</string>
+    <string name="apply_ai">Применить ИИ</string>
+    <string name="select_garment_first">Сначала выберите фото одежды</string>
+    <string name="saved">Сохранено в галерею</string>
+    <string name="save_failed">Не удалось сохранить</string>
+    <string name="restored">Исходное фото восстановлено</string>
+
+    <string name="save_dialog_title">Фото сохранено</string>
+    <string name="save_dialog_msg">Фото сохранено в галерею. Хотите выбрать другое фото?</string>
+    <string name="save_dialog_positive">Выбрать другое</string>
+    <string name="save_dialog_negative">Остаться</string>
+    <string name="exit_dialog_title">Фото не сохранено</string>
+    <string name="exit_dialog_msg">Вы создали фото, но не сохранили его. Если выйти сейчас, оно будет потеряно. Всё равно выйти?</string>
+    <string name="exit_dialog_positive">Выйти</string>
+    <string name="exit_dialog_negative">Остаться</string>
+
+    <string name="cat_auto">Авто</string>
+    <string name="cat_top">Верх</string>
+    <string name="cat_bottom">Низ</string>
+    <string name="cat_dress">Платье</string>
+    <string name="cat_outerwear">Верхняя одежда</string>
+    <string name="cat_full">Полный образ</string>
+
+    <string name="q_low">Низкое</string>
+    <string name="q_medium">Среднее</string>
+    <string name="q_high">Высокое</string>
+
+    <string name="step_analyze">Анализ изображения…</string>
+    <string name="step_detect">Распознавание тела…</string>
+    <string name="step_apply">Применение одежды ИИ…</string>
+    <string name="step_finish">Завершение деталей…</string>
+
+    <string name="err_network">Нет подключения к интернету. Проверьте Wi-Fi или мобильные данные и повторите.</string>
+    <string name="err_timeout">Сеть медленная, обработка заняла слишком много времени. Повторите.</string>
+    <string name="err_service_unavailable">Примерка временно недоступна. Повторите через несколько минут.</string>
+    <string name="err_server_busy">Сервер ИИ занят. Повторите чуть позже.</string>
+    <string name="err_rate_limited">Слишком быстро. Подождите немного и повторите.</string>
+    <string name="err_too_large">Изображение слишком большое. Выберите меньше и повторите.</string>
+
+    <string name="err_garment_invalid">Фото одежды недействительно. Используйте чёткий JPG или PNG с одеждой спереди.</string>
+    <string name="err_garment_unrecognized">ИИ не распознал одежду. Используйте чёткое фото одной вещи (верх, низ, платье…) на простом фоне; избегайте пейзажей, тёмных или перегруженных фото.</string>
+    <string name="err_image_missing">Нет изображения. Выберите заново своё фото и фото одежды, затем повторите.</string>
+    <string name="err_bad_request">Фото не подходит для примерки. Используйте чёткое фото в полный рост и чёткое фото одежды.</string>
+
+    <string name="err_read_image">Не удалось прочитать выбранное фото. Попробуйте другое.</string>
+    <string name="err_read_garment">Не удалось прочитать фото одежды. Выберите другое.</string>
+    <string name="err_capture">Не удалось сделать фото. Повторите.</string>
+
+    <string name="err_generic">Произошла ошибка при примерке. Повторите.</string>
+
+    <string name="checking_person">Проверка фото…</string>
+    <string name="err_no_person">На фото не найден человек. Выберите фото с чётким лицом и телом.</string>
+
+    <string name="report">Пожаловаться</string>
+    <string name="report_dialog_title">Пожаловаться на изображение</string>
+    <string name="report_dialog_msg">Результат неверный, неуместный или оскорбительный? Отправьте жалобу, чтобы мы улучшили сервис.</string>
+    <string name="report_send">Отправить жалобу</string>
+    <string name="report_cancel">Отмена</string>
+    <string name="report_subject">Жалоба на изображение Outfitly</string>
+    <string name="report_thanks">Спасибо за вашу жалобу!</string>
+    <string name="no_email_app">Приложение почты не найдено.</string>
+
+    <string name="settings_title">Настройки</string>
+    <string name="settings_general">Общие</string>
+    <string name="settings_language">Язык</string>
+    <string name="settings_support">Поддержка и информация</string>
+    <string name="settings_share">Поделиться приложением</string>
+    <string name="settings_share_desc">Расскажите друзьям о приложении</string>
+    <string name="settings_rate">Оценить приложение</string>
+    <string name="settings_rate_desc">Поставьте нам 5 звёзд</string>
+    <string name="settings_feedback">Отправить отзыв</string>
+    <string name="settings_feedback_desc">Свяжитесь с нами по почте</string>
+    <string name="settings_privacy">Политика конфиденциальности</string>
+    <string name="settings_privacy_desc">Как мы обрабатываем ваши данные</string>
+    <string name="settings_version">Версия</string>
+    <string name="feedback_subject">Отзыв Outfitly</string>
+    <string name="share_text">Примеряйте одежду с ИИ в Outfitly! Скачайте сейчас: https://play.google.com/store/apps/details?id=com.exo.styleswap</string>
+    <string name="cant_open_store">Не удалось открыть магазин приложений.</string>
+
+    <string name="language_title">Язык</string>
+    <string name="language_subtitle">Выберите язык интерфейса</string>
+    <string name="lang_continue">Продолжить</string>
+
+    <string name="privacy_title">Политика конфиденциальности</string>
+
+    <string name="ob_next">Продолжить</string>
+    <string name="ob_start">Начать</string>
+
+    <string name="survey_title">Какой стиль вам ближе всего?</string>
+    <string name="survey_subtitle">Выберите один или несколько стилей</string>
+    <string name="survey_casual">Повседневный</string>
+    <string name="survey_office">Офис</string>
+    <string name="survey_party">Вечеринка</string>
+    <string name="survey_sport">Спорт</string>
+
+    <string name="ob1_title">Примерка с ИИ</string>
+    <string name="ob1_desc">Наденьте любую одежду всего по одному вашему фото.</string>
+    <string name="ob2_title">Смена образа за секунды</string>
+    <string name="ob2_desc">Выберите своё фото и фото одежды — остальное сделает ИИ.</string>
+    <string name="ob3_title">Сохраняйте и делитесь</string>
+    <string name="ob3_desc">Сохраняйте отличные фото в галерею и хвастайтесь ими.</string>
+
+    <string name="perm_notif_title">Будьте в курсе</string>
+    <string name="perm_notif_desc">Разрешите уведомления, чтобы узнавать о новых стилях и когда ваше фото готово.</string>
+    <string name="perm_notif_toggle">Включить уведомления</string>
+
+    <string name="language_confirm">Подтвердить</string>
+    <string name="ob_tagline">Примеряйте любую одежду с ИИ за секунды.</string>
+    <string name="survey_select_hint">Выберите хотя бы 2 стиля</string>
+    <string name="survey_select_hint_one">Выберите хотя бы 1</string>
+    <string name="survey_streetwear">Уличный</string>
+    <string name="survey_elegant">Элегантный</string>
+    <string name="survey2_title">Для чего вы одеваетесь?</string>
+    <string name="survey2_subtitle">Выберите все подходящие варианты</string>
+    <string name="survey2_work">Работа</string>
+    <string name="survey2_date">Свидания</string>
+    <string name="survey2_travel">Путешествия</string>
+    <string name="survey2_gym">Спортзал</string>
+    <string name="survey2_event">Мероприятия</string>
+    <string name="survey2_everyday">Каждый день</string>
+    <string name="survey3_title">Что привело вас сюда?</string>
+    <string name="survey3_subtitle">Выберите все подходящие варианты</string>
+    <string name="survey3_tryon">Примерять одежду</string>
+    <string name="survey3_shop">Умные покупки</string>
+    <string name="survey3_social">Посты в соцсети</string>
+    <string name="survey3_inspo">Идеи для стиля</string>
+    <string name="survey3_save">Сохранять образы</string>
+    <string name="survey3_explore">Просто смотрю</string>
+</resources>

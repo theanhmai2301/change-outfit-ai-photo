@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Outfitly: AI Outfit Try On</string>
+
+    <string name="picker_subtitle">Choisissez une photo pour commencer</string>
+    <string name="tab_library">Galerie</string>
+    <string name="tab_camera">Caméra</string>
+    <string name="upload_from_device">Importer depuis l’appareil</string>
+    <string name="your_photo">Votre photo</string>
+    <string name="library_hint">Choisissez un portrait net en pied pour un meilleur essayage.</string>
+    <string name="starting_camera">Démarrage de la caméra…</string>
+    <string name="camera_permission_needed">L’autorisation caméra est requise pour prendre des photos.</string>
+    <string name="grant_permission">Autoriser</string>
+    <string name="photo_captured">✓ Photo prise</string>
+    <string name="retake">Reprendre</string>
+    <string name="use_photo">Utiliser</string>
+    <string name="next">Suivant</string>
+
+    <string name="edit_title">Modifier la photo</string>
+    <string name="edit_subtitle">Essayez des tenues avec l’IA</string>
+    <string name="not_edited">Non modifiée</string>
+    <string name="ai_generated">Généré par IA</string>
+    <string name="garment_label">Photo du vêtement</string>
+    <string name="choose_garment">Choisir une photo de vêtement</string>
+    <string name="change_garment">Changer la photo de vêtement</string>
+    <string name="garment_hint">Une photo du produit ou de quelqu’un qui le porte : l’IA ne prend que le vêtement.</string>
+    <string name="category_label">Type de vêtement</string>
+    <string name="poses_label">Poses</string>
+    <string name="quality_label">Qualité</string>
+    <string name="apply_ai">Appliquer l’IA</string>
+    <string name="select_garment_first">Choisissez d’abord une photo de vêtement</string>
+    <string name="saved">Enregistré dans la galerie</string>
+    <string name="save_failed">Échec de l’enregistrement</string>
+    <string name="restored">Photo d’origine restaurée</string>
+
+    <string name="save_dialog_title">Photo enregistrée</string>
+    <string name="save_dialog_msg">La photo a été enregistrée dans votre galerie. Voulez-vous choisir une autre photo ?</string>
+    <string name="save_dialog_positive">Choisir une autre</string>
+    <string name="save_dialog_negative">Rester</string>
+    <string name="exit_dialog_title">Photo non enregistrée</string>
+    <string name="exit_dialog_msg">Vous venez de créer une photo mais ne l’avez pas enregistrée. Quitter maintenant la supprimera. Quitter quand même ?</string>
+    <string name="exit_dialog_positive">Quitter</string>
+    <string name="exit_dialog_negative">Rester</string>
+
+    <string name="cat_auto">Auto</string>
+    <string name="cat_top">Haut</string>
+    <string name="cat_bottom">Bas</string>
+    <string name="cat_dress">Robe</string>
+    <string name="cat_outerwear">Manteau</string>
+    <string name="cat_full">Tenue complète</string>
+
+    <string name="q_low">Basse</string>
+    <string name="q_medium">Moyenne</string>
+    <string name="q_high">Haute</string>
+
+    <string name="step_analyze">Analyse de l’image…</string>
+    <string name="step_detect">Détection du corps…</string>
+    <string name="step_apply">Application de la tenue IA…</string>
+    <string name="step_finish">Finalisation des détails…</string>
+
+    <string name="err_network">Pas de connexion Internet. Vérifiez le Wi-Fi ou les données et réessayez.</string>
+    <string name="err_timeout">Le réseau est lent et le traitement a été trop long. Réessayez.</string>
+    <string name="err_service_unavailable">L’essayage fait une pause. Réessayez dans quelques minutes.</string>
+    <string name="err_server_busy">Le serveur IA est occupé. Réessayez bientôt.</string>
+    <string name="err_rate_limited">Vous allez trop vite. Patientez un instant et réessayez.</string>
+    <string name="err_too_large">L’image est trop grande. Choisissez-en une plus petite et réessayez.</string>
+
+    <string name="err_garment_invalid">La photo du vêtement n’est pas valide. Utilisez un JPG ou PNG net montrant le vêtement de face.</string>
+    <string name="err_garment_unrecognized">L’IA n’a pas reconnu le vêtement. Utilisez une photo claire d’un seul vêtement (haut, bas, robe…) sur fond simple ; évitez les paysages et les photos sombres ou chargées.</string>
+    <string name="err_image_missing">Image manquante. Sélectionnez à nouveau votre photo et celle du vêtement, puis réessayez.</string>
+    <string name="err_bad_request">La photo ne convient pas à l’essayage. Utilisez une photo nette en pied et une photo nette du vêtement.</string>
+
+    <string name="err_read_image">Impossible de lire la photo choisie. Essayez-en une autre.</string>
+    <string name="err_read_garment">Impossible de lire la photo du vêtement. Choisissez-en une autre.</string>
+    <string name="err_capture">Impossible de prendre la photo. Réessayez.</string>
+
+    <string name="err_generic">Un problème est survenu lors de l’essayage. Réessayez.</string>
+
+    <string name="checking_person">Vérification de la photo…</string>
+    <string name="err_no_person">Aucune personne détectée sur la photo. Choisissez une photo avec un visage et un corps nets.</string>
+
+    <string name="report">Signaler</string>
+    <string name="report_dialog_title">Signaler l’image</string>
+    <string name="report_dialog_msg">Le résultat est incorrect, inapproprié ou choquant ? Envoyez un signalement pour nous aider à améliorer.</string>
+    <string name="report_send">Envoyer le signalement</string>
+    <string name="report_cancel">Annuler</string>
+    <string name="report_subject">Signalement d’image Outfitly</string>
+    <string name="report_thanks">Merci pour votre signalement !</string>
+    <string name="no_email_app">Aucune application e-mail trouvée.</string>
+
+    <string name="settings_title">Paramètres</string>
+    <string name="settings_general">Général</string>
+    <string name="settings_language">Langue</string>
+    <string name="settings_support">Aide et informations</string>
+    <string name="settings_share">Partager l’app</string>
+    <string name="settings_share_desc">Parlez de l’app à vos amis</string>
+    <string name="settings_rate">Noter l’app</string>
+    <string name="settings_rate_desc">Mettez-nous 5 étoiles</string>
+    <string name="settings_feedback">Envoyer un avis</string>
+    <string name="settings_feedback_desc">Contactez-nous par e-mail</string>
+    <string name="settings_privacy">Politique de confidentialité</string>
+    <string name="settings_privacy_desc">Comment nous traitons vos données</string>
+    <string name="settings_version">Version</string>
+    <string name="feedback_subject">Avis sur Outfitly</string>
+    <string name="share_text">Essayez des tenues avec l’IA sur Outfitly ! Téléchargez maintenant : https://play.google.com/store/apps/details?id=com.exo.styleswap</string>
+    <string name="cant_open_store">Impossible d’ouvrir la boutique d’applications.</string>
+
+    <string name="language_title">Langue</string>
+    <string name="language_subtitle">Choisissez la langue d’affichage</string>
+    <string name="lang_continue">Continuer</string>
+
+    <string name="privacy_title">Politique de confidentialité</string>
+
+    <string name="ob_next">Continuer</string>
+    <string name="ob_start">Commencer</string>
+
+    <string name="survey_title">Quel style vous intéresse le plus ?</string>
+    <string name="survey_subtitle">Choisissez un ou plusieurs styles que vous aimez</string>
+    <string name="survey_casual">Décontracté</string>
+    <string name="survey_office">Bureau</string>
+    <string name="survey_party">Soirée</string>
+    <string name="survey_sport">Sport</string>
+
+    <string name="ob1_title">Essayez avec l’IA</string>
+    <string name="ob1_desc">Portez n’importe quelle tenue avec une seule photo de vous.</string>
+    <string name="ob2_title">Changez de tenue en quelques secondes</string>
+    <string name="ob2_desc">Choisissez votre photo et une photo de vêtement : l’IA fait le reste.</string>
+    <string name="ob3_title">Enregistrez et partagez</string>
+    <string name="ob3_desc">Enregistrez de belles photos dans votre galerie et montrez-les.</string>
+
+    <string name="perm_notif_title">Restez informé</string>
+    <string name="perm_notif_desc">Autorisez les notifications pour être prévenu des nouveaux styles et quand votre photo est prête.</string>
+    <string name="perm_notif_toggle">Activer les notifications</string>
+
+    <string name="language_confirm">Confirmer</string>
+    <string name="ob_tagline">Essayez n\'importe quelle tenue avec l\'IA, en quelques secondes.</string>
+    <string name="survey_select_hint">Choisissez au moins 2 styles</string>
+    <string name="survey_select_hint_one">Choisissez au moins 1</string>
+    <string name="survey_streetwear">Streetwear</string>
+    <string name="survey_elegant">Élégant</string>
+    <string name="survey2_title">Pour quelles occasions vous habillez-vous ?</string>
+    <string name="survey2_subtitle">Cochez tout ce qui s\'applique</string>
+    <string name="survey2_work">Travail</string>
+    <string name="survey2_date">Rendez-vous</string>
+    <string name="survey2_travel">Voyage</string>
+    <string name="survey2_gym">Sport</string>
+    <string name="survey2_event">Événements</string>
+    <string name="survey2_everyday">Quotidien</string>
+    <string name="survey3_title">Qu\'est-ce qui vous amène ?</string>
+    <string name="survey3_subtitle">Cochez tout ce qui s\'applique</string>
+    <string name="survey3_tryon">Essayer des tenues</string>
+    <string name="survey3_shop">Acheter plus malin</string>
+    <string name="survey3_social">Posts sur les réseaux</string>
+    <string name="survey3_inspo">Idées de style</string>
+    <string name="survey3_save">Enregistrer des looks</string>
+    <string name="survey3_explore">Juste explorer</string>
+</resources>
