@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Flat illustration of a person — sample placeholder for the Home hero card. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="300dp"
+    android:height="300dp"
+    android:viewportWidth="300"
+    android:viewportHeight="300">
+
+    <!-- Soft studio backdrop -->
+    <path android:pathData="M0,0 L300,0 L300,300 L0,300 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="0" android:startY="0"
+                android:endX="0" android:endY="300"
+                android:type="linear">
+                <item android:offset="0" android:color="#FFEDE3FB" />
+                <item android:offset="1" android:color="#FFFBF2F6" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Hair (back) -->
+    <path
+        android:fillColor="#34243F"
+        android:pathData="M150,46 C104,46 80,86 80,140 C80,196 96,232 120,256 L180,256 C204,232 220,196 220,140 C220,86 196,46 150,46 Z" />
+
+    <!-- Neck -->
+    <path
+        android:fillColor="#E7BE97"
+        android:pathData="M132,150 C132,170 134,182 150,186 C166,182 168,170 168,150 Z" />
+
+    <!-- T-shirt -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M150,176 C122,176 99,189 86,214 C74,238 66,268 62,300 L238,300 C234,268 226,238 214,214 C201,189 178,176 150,176 Z" />
+    <!-- Collar shadow -->
+    <path
+        android:fillColor="#ECECF4"
+        android:pathData="M132,178 C138,190 162,190 168,178 C162,184 138,184 132,178 Z" />
+
+    <!-- Face -->
+    <path
+        android:fillColor="#F2CDA6"
+        android:pathData="M150,60 C116,60 98,88 98,120 C98,154 122,170 150,170 C178,170 202,154 202,120 C202,88 184,60 150,60 Z" />
+
+    <!-- Blush -->
+    <path
+        android:fillColor="#55EF9E86"
+        android:pathData="M122,135 C122,132 124,130 127,130 C130,130 132,132 132,135 C132,138 130,140 127,140 C124,140 122,138 122,135 Z" />
+    <path
+        android:fillColor="#55EF9E86"
+        android:pathData="M168,135 C168,132 170,130 173,130 C176,130 178,132 178,135 C178,138 176,140 173,140 C170,140 168,138 168,135 Z" />
+
+    <!-- Hair (front cap) -->
+    <path
+        android:fillColor="#3C2A4B"
+        android:pathData="M150,44 C108,44 84,80 84,128 C84,128 100,96 150,96 C200,96 216,128 216,128 C216,80 192,44 150,44 Z" />
+
+    <!-- Eyes -->
+    <path
+        android:fillColor="#3A2D42"
+        android:pathData="M129,119 C129,116 131,114 134,114 C137,114 139,116 139,119 C139,122 137,124 134,124 C131,124 129,122 129,119 Z" />
+    <path
+        android:fillColor="#3A2D42"
+        android:pathData="M161,119 C161,116 163,114 166,114 C169,114 171,116 171,119 C171,122 169,124 166,124 C163,124 161,122 161,119 Z" />
+
+    <!-- Smile -->
+    <path
+        android:strokeColor="#C77B68"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M140,141 C145,147 155,147 160,141" />
+</vector>

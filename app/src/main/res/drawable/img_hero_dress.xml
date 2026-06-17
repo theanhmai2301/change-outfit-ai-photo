@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Flat illustration of a dress — the AI "outfit preview" in the hero mini-card. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="100dp"
+    android:height="140dp"
+    android:viewportWidth="100"
+    android:viewportHeight="140">
+
+    <!-- Straps -->
+    <path
+        android:strokeColor="#F472B6"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M44,24 L47,9" />
+    <path
+        android:strokeColor="#F472B6"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M56,24 L53,9" />
+
+    <!-- Dress body (A-line) -->
+    <path android:pathData="M50,16 C44,16 40,20 39,27 L36,54 C26,77 18,106 15,129 C15,133 19,135 25,135 L75,135 C81,135 85,133 85,129 C82,106 74,77 64,54 L61,27 C60,20 56,16 50,16 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="20" android:startY="16"
+                android:endX="80" android:endY="135"
+                android:type="linear">
+                <item android:offset="0" android:color="#FFF472B6" />
+                <item android:offset="1" android:color="#FFD946EF" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Waist highlight -->
+    <path
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M39,53 C45,58 55,58 61,53" />
+</vector>
