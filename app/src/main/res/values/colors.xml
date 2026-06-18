@@ -22,7 +22,7 @@
     <color name="border">#1A000000</color>
 
     <!-- First-open splash background (icon-on-solid system splash) -->
-    <color name="first_open_bg">#F3F3F8</color>
+    <color name="first_open_bg">#8B5CF6</color>
 
     <color name="dialog_bg">#FFFFFF</color>
     <color name="btn_secondary_bg">#14000000</color>
