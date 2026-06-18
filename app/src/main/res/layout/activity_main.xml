@@ -87,7 +87,8 @@
                     android:textColor="@color/foreground"
                     android:textSize="30sp"
                     android:textStyle="bold"
-                    android:lineSpacingExtra="2dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
                     android:letterSpacing="-0.02" />
 
                 <TextView

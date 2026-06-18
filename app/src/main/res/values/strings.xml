@@ -192,8 +192,8 @@
     <string name="perm_notif_toggle">Enable notifications</string>
 
     <!-- Home (redesign) -->
-    <string name="home_hero_title">Transform Your Outfit With AI</string>
-    <string name="home_hero_accent">With AI</string>
+    <string name="home_hero_title">Try on with AI</string>
+    <string name="home_hero_accent">with AI</string>
     <string name="home_hero_subtitle">Create stunning outfits in seconds</string>
     <string name="home_upload_gallery">Upload From Gallery</string>
     <string name="home_take_photo">Take Photo</string>
