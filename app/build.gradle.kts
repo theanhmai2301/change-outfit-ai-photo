@@ -11,7 +11,7 @@ android {
         applicationId = "com.exo.styleswap"
         minSdk = 24
         targetSdk = 34
-        versionCode = 1
+        versionCode = 2
         versionName = "1.0"
 
         // Try-On API config (overridable). Kept here so it is not hard-coded in source.

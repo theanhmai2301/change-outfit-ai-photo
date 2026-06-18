@@ -406,7 +406,7 @@ class MainActivity : AppCompatActivity() {
         personFile = null
         capturedFile = null
         Glide.with(this).clear(binding.imgPreview)
-        binding.imgPreview.setImageResource(R.drawable.img_hero_person)
+        binding.imgPreview.setImageResource(R.drawable.change_outfit)
         binding.heroHint.visibility = View.VISIBLE
         updateNextState()
     }

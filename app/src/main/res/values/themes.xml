@@ -16,7 +16,7 @@
     <!-- Android 12+ system splash. Routes to Theme.StyleSwap after SplashActivity. -->
     <style name="Theme.StyleSwap.Splash" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/first_open_bg</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ai_photo_change_outfit</item>
         <item name="postSplashScreenTheme">@style/Theme.StyleSwap</item>
     </style>
 
