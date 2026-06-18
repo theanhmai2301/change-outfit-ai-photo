@@ -240,7 +240,7 @@ class EditActivity : AppCompatActivity() {
 
     private fun tileBackground(selected: Boolean): GradientDrawable {
         return GradientDrawable().apply {
-            cornerRadius = dp(18).toFloat()
+            cornerRadius = dp(12).toFloat()
             if (selected) {
                 setColor(ContextCompat.getColor(this@EditActivity, R.color.surface_selected))
                 setStroke(dp(2), ContextCompat.getColor(this@EditActivity, R.color.border_selected))

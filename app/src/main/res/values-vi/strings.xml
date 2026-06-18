@@ -44,6 +44,9 @@
     <string name="exit_dialog_msg">Bạn vừa tạo ảnh nhưng chưa lưu. Thoát bây giờ sẽ mất ảnh đã tạo. Bạn vẫn muốn thoát?</string>
     <string name="exit_dialog_positive">Thoát</string>
     <string name="exit_dialog_negative">Ở lại</string>
+    <string name="restore_confirm_title">Khôi phục ảnh gốc?</string>
+    <string name="restore_confirm_msg">Thao tác này sẽ bỏ kết quả AI và hiển thị lại ảnh gốc của bạn.</string>
+    <string name="restore_confirm_yes">Khôi phục</string>
 
     <!-- Categories -->
     <string name="cat_auto">Tự động</string>

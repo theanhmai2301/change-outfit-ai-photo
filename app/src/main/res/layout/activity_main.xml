@@ -105,7 +105,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="18dp"
                     app:cardBackgroundColor="@color/preview_bg"
-                    app:cardCornerRadius="28dp"
+                    app:cardCornerRadius="16dp"
                     app:cardElevation="0dp">
 
                     <FrameLayout
