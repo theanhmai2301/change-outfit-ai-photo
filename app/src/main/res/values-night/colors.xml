@@ -1,34 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Dark palette (matches the Outfitly mockup) -->
-    <color name="background">#121212</color>
-    <color name="background_grad_top">#1B1726</color>
-    <color name="foreground">#F4F2FA</color>
-    <color name="card">#1F1B2E</color>
-    <color name="surface">#2A2440</color>
-    <color name="muted_foreground">#9A93B5</color>
-    <color name="disabled_foreground">#4A4560</color>
-    <color name="preview_bg">#17131F</color>
+    <!-- Dark palette — premium AI theme (depth between layers, no pure black) -->
+    <color name="background">#0D0D16</color>
+    <color name="background_grad_top">#14111E</color>
+    <color name="foreground">#FFFFFF</color>
+    <color name="card">#1E1C31</color>
+    <color name="surface">#171726</color>
+    <color name="muted_foreground">#A7A4C0</color>
+    <color name="disabled_foreground">#66637D</color>
+    <color name="preview_bg">#171726</color>
 
     <color name="primary">#8B5CF6</color>
     <color name="primary_dark">#7C3AED</color>
     <color name="secondary">#D946EF</color>
-    <color name="accent">#06D6A0</color>
-    <color name="accent_dark">#059669</color>
+    <color name="accent">#38BDF8</color>
+    <color name="accent_dark">#0EA5E9</color>
     <color name="destructive">#EF4444</color>
 
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
-    <color name="border">#14FFFFFF</color>
+    <color name="border">#2E2B47</color>
+
+    <!-- Stateful surfaces -->
+    <color name="surface_selected">#2B234A</color>
+    <color name="border_selected">#9D5FFF</color>
+    <color name="btn_secondary_bg">#221C3A</color>
+    <color name="btn_secondary_border">#3A3357</color>
+    <color name="disabled_btn_bg">#2A2740</color>
+    <color name="glow_purple">#338B5CF6</color>
 
     <!-- First-open splash background (icon-on-solid system splash) -->
     <color name="first_open_bg">#160A2E</color>
 
-    <color name="dialog_bg">#1B1B26</color>
-    <color name="btn_secondary_bg">#24FFFFFF</color>
+    <color name="dialog_bg">#1E1C31</color>
 
     <!-- Category accent colors -->
-    <color name="cat_auto">#A855F7</color>
+    <color name="cat_auto">#8B5CF6</color>
     <color name="cat_top">#06D6A0</color>
     <color name="cat_bottom">#F43F5E</color>
     <color name="cat_dress">#F59E0B</color>

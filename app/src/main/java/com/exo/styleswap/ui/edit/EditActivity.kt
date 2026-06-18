@@ -67,6 +67,7 @@ class EditActivity : AppCompatActivity() {
     private var resultBase64: String? = null
     private var resultMime: String = "image/png"
     private var resultRequestId: String? = null
+    private var resultBytes: ByteArray? = null
 
     private val categories = listOf(
         Category("auto", R.string.cat_auto, "✨", R.color.cat_auto),
@@ -114,7 +115,7 @@ class EditActivity : AppCompatActivity() {
         }
         binding.btnClearGarment.setOnClickListener { clearGarment() }
         binding.btnApply.setOnClickListener { applyTryOn() }
-        binding.btnRestore.setOnClickListener { restore() }
+        binding.btnRestore.setOnClickListener { confirmRestore() }
         binding.btnSave.setOnClickListener { saveResult() }
         binding.btnReport.setOnClickListener { showReportDialog() }
 
@@ -227,24 +228,22 @@ class EditActivity : AppCompatActivity() {
     }
 
     private fun refreshCategorySelection() {
-        categories.forEachIndexed { index, cat ->
-            val tile = categoryTiles[index] as LinearLayout
+        categoryTiles.forEachIndexed { index, tile ->
             val selected = index == selectedCategory
-            val color = ContextCompat.getColor(this, cat.colorRes)
-            tile.background = tileBackground(color, selected)
-            val label = tile.getChildAt(1) as TextView
+            tile.background = tileBackground(selected)
+            val label = (tile as LinearLayout).getChildAt(1) as TextView
             label.setTextColor(
-                if (selected) color else ContextCompat.getColor(this, R.color.muted_foreground)
+                ContextCompat.getColor(this, if (selected) R.color.foreground else R.color.muted_foreground)
             )
         }
     }
 
-    private fun tileBackground(color: Int, selected: Boolean): GradientDrawable {
+    private fun tileBackground(selected: Boolean): GradientDrawable {
         return GradientDrawable().apply {
-            cornerRadius = dp(14).toFloat()
+            cornerRadius = dp(18).toFloat()
             if (selected) {
-                setColor(withAlpha(color, 0x22))
-                setStroke(dp(2), color)
+                setColor(ContextCompat.getColor(this@EditActivity, R.color.surface_selected))
+                setStroke(dp(2), ContextCompat.getColor(this@EditActivity, R.color.border_selected))
             } else {
                 setColor(ContextCompat.getColor(this@EditActivity, R.color.surface))
                 setStroke(dp(2), Color.TRANSPARENT)
@@ -370,8 +369,14 @@ class EditActivity : AppCompatActivity() {
                     quality = selectedQuality,
                     responseFormat = "url"
                 )
+                val bytes = withContext(Dispatchers.IO) { fetchResultBytes(result) }
                 animJob.cancel()
-                onTryOnSuccess(result)
+                when {
+                    bytes != null -> onTryOnSuccess(result, bytes)
+                    result.url == null && result.imageBase64 == null ->
+                        onTryOnError(getString(R.string.err_garment_unrecognized))
+                    else -> onTryOnError(getString(R.string.err_network))
+                }
             } catch (e: TryOnException) {
                 animJob.cancel()
                 onTryOnError(friendlyTryOnError(e))
@@ -385,20 +390,28 @@ class EditActivity : AppCompatActivity() {
         }
     }
 
-    private fun onTryOnSuccess(result: TryOnResult) {
-        // Server trả 200 nhưng không có ảnh kết quả => coi như chưa nhận ra trang phục.
-        val model: Any? = when {
-            result.url != null -> TryOnApi.absoluteUrl(result.url)
-            result.imageBase64 != null -> Base64.decode(result.imageBase64, Base64.DEFAULT)
-            else -> null
+    /**
+     * Materializes the result image to bytes once, here, so the preview and Save
+     * both use the same in-memory copy. The /v1/tryon URL can briefly 404 right
+     * after the call returns, so retry a few times before giving up.
+     */
+    private suspend fun fetchResultBytes(result: TryOnResult): ByteArray? {
+        result.imageBase64?.let {
+            return runCatching { Base64.decode(it, Base64.DEFAULT) }.getOrNull()
         }
-        if (model == null) {
-            onTryOnError(getString(R.string.err_garment_unrecognized))
-            return
+        val url = result.url ?: return null
+        repeat(4) {
+            val bytes = runCatching { TryOnApi.downloadBytes(url) }.getOrNull()
+            if (bytes != null && bytes.isNotEmpty()) return bytes
+            delay(1500)
         }
+        return null
+    }
 
+    private fun onTryOnSuccess(result: TryOnResult, bytes: ByteArray) {
         isProcessing = false
         isEdited = true
+        resultBytes = bytes
         resultUrl = result.url
         resultBase64 = result.imageBase64
         resultMime = result.mimeType
@@ -406,7 +419,7 @@ class EditActivity : AppCompatActivity() {
         showProcessing(false)
         binding.btnReport.visibility = View.VISIBLE
 
-        Glide.with(this).load(model)
+        Glide.with(this).load(bytes)
             .diskCacheStrategy(DiskCacheStrategy.NONE)
             .skipMemoryCache(true)
             .into(binding.imgPreview)
@@ -463,12 +476,25 @@ class EditActivity : AppCompatActivity() {
 
     // ── Restore / Save ───────────────────────────────────────────────────
 
+    /** Confirm before reverting — the Restore button sits next to Save and is easy to mis-tap. */
+    private fun confirmRestore() {
+        if (!isEdited || isProcessing) return
+        showStyledConfirm(
+            title = getString(R.string.restore_confirm_title),
+            message = getString(R.string.restore_confirm_msg),
+            positiveText = getString(R.string.restore_confirm_yes),
+            negativeText = getString(R.string.report_cancel),
+            destructive = true
+        ) { restore() }
+    }
+
     private fun restore() {
         if (!isEdited || isProcessing) return
         isEdited = false
         saved = false
         resultUrl = null
         resultBase64 = null
+        resultBytes = null
         showPerson()
         updateActionButtons()
         toast(getString(R.string.restored))
@@ -476,24 +502,12 @@ class EditActivity : AppCompatActivity() {
 
     private fun saveResult() {
         if (!isEdited || isProcessing) return
-        val url = resultUrl
-        val b64 = resultBase64
+        val bytes = resultBytes
+        if (bytes == null) {
+            toast(getString(R.string.save_failed))
+            return
+        }
         lifecycleScope.launch {
-            val bytes: ByteArray? = withContext(Dispatchers.IO) {
-                try {
-                    when {
-                        url != null -> TryOnApi.downloadBytes(url)
-                        b64 != null -> Base64.decode(b64, Base64.DEFAULT)
-                        else -> null
-                    }
-                } catch (e: Exception) {
-                    null
-                }
-            }
-            if (bytes == null) {
-                toast(getString(R.string.save_failed))
-                return@launch
-            }
             val ext = if (resultMime.contains("jpeg") || resultMime.contains("jpg")) "jpg" else "png"
             val name = "styleswap_${System.currentTimeMillis()}.$ext"
             val ok = withContext(Dispatchers.IO) {

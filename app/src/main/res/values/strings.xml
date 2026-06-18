@@ -45,6 +45,9 @@
     <string name="exit_dialog_msg">You just created a photo but haven\'t saved it. Leaving now will lose it. Leave anyway?</string>
     <string name="exit_dialog_positive">Leave</string>
     <string name="exit_dialog_negative">Stay</string>
+    <string name="restore_confirm_title">Restore original?</string>
+    <string name="restore_confirm_msg">This discards the AI result and shows your original photo again.</string>
+    <string name="restore_confirm_yes">Restore</string>
 
     <!-- Categories -->
     <string name="cat_auto">Auto</string>

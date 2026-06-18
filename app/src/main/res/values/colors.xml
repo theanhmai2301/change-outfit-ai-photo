@@ -1,34 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Light palette (default). Dark variants live in values-night/colors.xml -->
-    <color name="background">#F3F3F8</color>
+    <!-- Light palette — premium AI theme. Dark variants live in values-night/colors.xml -->
+    <color name="background">#FCFCFF</color>
     <color name="background_grad_top">#FFFFFF</color>
-    <color name="foreground">#16161F</color>
+    <color name="foreground">#1D1B26</color>
     <color name="card">#FFFFFF</color>
-    <color name="surface">#ECECF3</color>
-    <color name="muted_foreground">#6C6C80</color>
-    <color name="disabled_foreground">#BFBFCE</color>
-    <color name="preview_bg">#E7E7EF</color>
+    <color name="surface">#F7F7FB</color>
+    <color name="muted_foreground">#77758A</color>
+    <color name="disabled_foreground">#B8B6C5</color>
+    <color name="preview_bg">#F4F2FB</color>
 
     <color name="primary">#8B5CF6</color>
     <color name="primary_dark">#7C3AED</color>
     <color name="secondary">#D946EF</color>
-    <color name="accent">#06D6A0</color>
-    <color name="accent_dark">#059669</color>
+    <color name="accent">#38BDF8</color>
+    <color name="accent_dark">#0EA5E9</color>
     <color name="destructive">#EF4444</color>
 
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
-    <color name="border">#1A000000</color>
+    <color name="border">#ECEAF6</color>
+
+    <!-- Stateful surfaces -->
+    <color name="surface_selected">#ECE3FF</color>
+    <color name="border_selected">#9D5FFF</color>
+    <color name="btn_secondary_bg">#F4F1FF</color>
+    <color name="btn_secondary_border">#DCCEFF</color>
+    <color name="disabled_btn_bg">#ECEAF6</color>
+    <color name="glow_purple">#2E8B5CF6</color>
 
     <!-- First-open splash background (icon-on-solid system splash) -->
     <color name="first_open_bg">#160A2E</color>
 
     <color name="dialog_bg">#FFFFFF</color>
-    <color name="btn_secondary_bg">#14000000</color>
 
     <!-- Category accent colors -->
-    <color name="cat_auto">#A855F7</color>
+    <color name="cat_auto">#8B5CF6</color>
     <color name="cat_top">#06D6A0</color>
     <color name="cat_bottom">#F43F5E</color>
     <color name="cat_dress">#F59E0B</color>

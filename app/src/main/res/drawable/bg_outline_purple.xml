@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Secondary button: soft lavender fill + subtle purple border. -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
-    <solid android:color="#148B5CF6" />
+    <solid android:color="@color/btn_secondary_bg" />
     <stroke
         android:width="1.5dp"
-        android:color="#668B5CF6" />
-    <corners android:radius="16dp" />
+        android:color="@color/btn_secondary_border" />
+    <corners android:radius="24dp" />
 </shape>
