@@ -1,15 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Outfitly: AI Outfit Try On</string>
+    <string name="app_brand">Outfitly</string>
+
+    <!-- Picker -->
+    <string name="picker_subtitle">திருத்தத் தொடங்க ஒரு புகைப்படத்தைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="tab_library">லைப்ரரி</string>
+    <string name="tab_camera">கேமரா</string>
+    <string name="upload_from_device">சாதனத்திலிருந்து பதிவேற்றவும்</string>
+    <string name="your_photo">உங்கள் புகைப்படம்</string>
+    <string name="library_hint">சிறந்த ட்ரை-ஆனுக்கு முழு உடல் தெரியும் தெளிவான போர்ட்ரெய்ட்டைத் தேர்ந்தெடுக்கவும்.</string>
+    <string name="starting_camera">கேமராவைத் தொடங்குகிறது…</string>
+    <string name="camera_permission_needed">புகைப்படம் எடுக்க கேமரா அனுமதி தேவை.</string>
+    <string name="grant_permission">அனுமதி வழங்கவும்</string>
+    <string name="photo_captured">✓ புகைப்படம் எடுக்கப்பட்டது</string>
+    <string name="retake">மீண்டும் எடுக்கவும்</string>
+    <string name="use_photo">புகைப்படத்தைப் பயன்படுத்தவும்</string>
+    <string name="next">அடுத்து</string>
+
+    <!-- Edit -->
+    <string name="edit_title">புகைப்படத்தைத் திருத்தவும்</string>
+    <string name="edit_subtitle">AI மூலம் உடைகளை அணிந்து பாருங்கள்</string>
+    <string name="not_edited">திருத்தப்படவில்லை</string>
+    <string name="ai_generated">AI உருவாக்கியது</string>
+    <string name="garment_label">உடைப் புகைப்படம்</string>
+    <string name="choose_garment">உடைப் புகைப்படத்தைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="change_garment">உடைப் புகைப்படத்தை மாற்றவும்</string>
+    <string name="garment_hint">தயாரிப்பு படம் அல்லது யாரோ அணிந்திருக்கும் புகைப்படம் — AI உடையை மட்டுமே எடுக்கும்.</string>
+    <string name="category_label">உடை வகை</string>
+    <string name="poses_label">போஸ்கள்</string>
+    <string name="quality_label">தரம்</string>
+    <string name="apply_ai">AI பயன்படுத்தவும்</string>
+    <string name="select_garment_first">முதலில் ஒரு உடைப் புகைப்படத்தைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="saved">கேலரியில் சேமிக்கப்பட்டது</string>
+    <string name="save_failed">சேமிக்க முடியவில்லை</string>
+    <string name="restored">அசல் புகைப்படம் மீட்டமைக்கப்பட்டது</string>
+
+    <!-- Dialogs -->
+    <string name="save_dialog_title">புகைப்படம் சேமிக்கப்பட்டது</string>
+    <string name="save_dialog_msg">புகைப்படம் உங்கள் கேலரியில் சேமிக்கப்பட்டது. மற்றொரு புகைப்படத்தைத் தேர்ந்தெடுக்க விரும்புகிறீர்களா?</string>
+    <string name="save_dialog_positive">மற்றொன்றைத் தேர்ந்தெடு</string>
+    <string name="save_dialog_negative">இங்கேயே இரு</string>
+    <string name="exit_dialog_title">சேமிக்கப்படாத புகைப்படம்</string>
+    <string name="exit_dialog_msg">நீங்கள் ஒரு புகைப்படத்தை உருவாக்கியுள்ளீர்கள், ஆனால் அதைச் சேமிக்கவில்லை. இப்போது வெளியேறினால் அது இழக்கப்படும். எப்படியும் வெளியேறவா?</string>
+    <string name="exit_dialog_positive">வெளியேறு</string>
+    <string name="exit_dialog_negative">இங்கேயே இரு</string>
+    <string name="restore_confirm_title">அசலை மீட்டமைக்கவா?</string>
+    <string name="restore_confirm_msg">இது AI முடிவை நீக்கி, உங்கள் அசல் புகைப்படத்தை மீண்டும் காட்டும்.</string>
+    <string name="restore_confirm_yes">மீட்டமை</string>
+
+    <!-- Categories -->
+    <string name="cat_auto">தானாக</string>
+    <string name="cat_top">மேல் உடை</string>
+    <string name="cat_bottom">கீழ் உடை</string>
+    <string name="cat_dress">ஆடை</string>
+    <string name="cat_outerwear">வெளி உடை</string>
+    <string name="cat_full">முழு உடை</string>
+
+    <!-- Quality -->
+    <string name="q_low">குறைவு</string>
+    <string name="q_medium">நடுத்தரம்</string>
+    <string name="q_high">அதிகம்</string>
+
+    <!-- Processing -->
+    <string name="step_analyze">படத்தை பகுப்பாய்வு செய்கிறது…</string>
+    <string name="step_detect">உடலைக் கண்டறிகிறது…</string>
+    <string name="step_apply">AI உடையைப் பயன்படுத்துகிறது…</string>
+    <string name="step_finish">விவரங்களை நிறைவு செய்கிறது…</string>
+
+    <!-- Errors -->
+    <string name="err_network">இணைய இணைப்பு இல்லை. Wi-Fi/டேட்டாவைச் சரிபார்த்து மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="err_timeout">நெட்வொர்க் மெதுவாக உள்ளதால் அதிக நேரம் எடுத்தது. மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="err_service_unavailable">ட்ரை-ஆன் சிறிது இடைவேளை எடுக்கிறது. சில நிமிடங்களில் மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="err_server_busy">AI சர்வர் பிஸியாக உள்ளது. சிறிது நேரத்தில் மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="err_rate_limited">நீங்கள் மிக வேகமாகச் செல்கிறீர்கள். சிறிது நேரம் காத்திருந்து மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="err_too_large">படம் மிகப் பெரியது. சிறிய ஒன்றைத் தேர்ந்தெடுத்து மீண்டும் முயற்சிக்கவும்.</string>
+
+    <string name="err_garment_invalid">உடைப் புகைப்படம் தவறானது. பொருளை நேராகக் காட்டும் தெளிவான JPG அல்லது PNG-ஐப் பயன்படுத்தவும்.</string>
+    <string name="err_garment_unrecognized">AI-ஆல் உடையை அடையாளம் காண முடியவில்லை. எளிய பின்னணியில் ஒரே ஒரு பொருளை (மேல் உடை, கீழ் உடை, ஆடை…) காட்டும் தெளிவான புகைப்படத்தைப் பயன்படுத்தவும் — காட்சிகள், இருண்ட அல்லது நெரிசலான புகைப்படங்களைத் தவிர்க்கவும்.</string>
+    <string name="err_image_missing">படம் இல்லை. உங்கள் புகைப்படத்தையும் உடைப் புகைப்படத்தையும் மீண்டும் தேர்ந்தெடுத்து முயற்சிக்கவும்.</string>
+    <string name="err_bad_request">இந்தப் புகைப்படம் ட்ரை-ஆனுக்கு ஏற்றதல்ல. தெளிவான முழு உடல் புகைப்படத்தையும் தெளிவான உடைப் புகைப்படத்தையும் பயன்படுத்தவும்.</string>
+
+    <string name="err_read_image">தேர்ந்தெடுத்த புகைப்படத்தைப் படிக்க முடியவில்லை. மற்றொன்றை முயற்சிக்கவும்.</string>
+    <string name="err_read_garment">உடைப் புகைப்படத்தைப் படிக்க முடியவில்லை. மற்றொன்றைத் தேர்ந்தெடுக்கவும்.</string>
+    <string name="err_capture">புகைப்படத்தை எடுக்க முடியவில்லை. மீண்டும் முயற்சிக்கவும்.</string>
+
+    <string name="err_generic">ட்ரை-ஆனில் ஏதோ தவறு ஏற்பட்டது. மீண்டும் முயற்சிக்கவும்.</string>
+
+    <!-- Person check -->
+    <string name="checking_person">புகைப்படத்தைச் சரிபார்க்கிறது…</string>
+    <string name="err_no_person">புகைப்படத்தில் நபர் காணப்படவில்லை. ட்ரை-ஆனுக்கு தெளிவான முகம் &amp; உடல் தெரியும் புகைப்படத்தைத் தேர்ந்தெடுக்கவும்.</string>
+
+    <!-- Report -->
+    <string name="report">புகார் செய்</string>
+    <string name="report_dialog_title">படத்தைப் புகார் செய்</string>
+    <string name="report_dialog_msg">முடிவு தவறானதா, பொருத்தமற்றதா அல்லது புண்படுத்துவதா? நாங்கள் மேம்படுத்த ஒரு புகாரை அனுப்பவும்.</string>
+    <string name="report_send">புகாரை அனுப்பு</string>
+    <string name="report_cancel">ரத்து செய்</string>
+    <string name="report_subject">Outfitly படப் புகார்</string>
+    <string name="report_thanks">உங்கள் புகாருக்கு நன்றி!</string>
+    <string name="no_email_app">மின்னஞ்சல் ஆப் எதுவும் கிடைக்கவில்லை.</string>
+
+    <!-- Settings -->
+    <string name="settings_title">அமைப்புகள்</string>
+    <string name="settings_general">பொது</string>
+    <string name="settings_language">மொழி</string>
+    <string name="settings_theme">தீம்</string>
+    <string name="settings_theme_desc">வெளிர், கரும் அல்லது சிஸ்டம்</string>
+    <string name="theme_light">வெளிர்</string>
+    <string name="theme_dark">கரும்</string>
+    <string name="theme_system">சிஸ்டம் இயல்புநிலை</string>
+    <string name="settings_support">ஆதரவு &amp; தகவல்</string>
+    <string name="settings_share">ஆப்-ஐப் பகிரவும்</string>
+    <string name="settings_share_desc">உங்கள் நண்பர்களிடம் ஆப் பற்றிக் கூறுங்கள்</string>
+    <string name="settings_rate">ஆப்-ஐ மதிப்பிடவும்</string>
+    <string name="settings_rate_desc">எங்களுக்கு 5 நட்சத்திரங்கள் கொடுங்கள்</string>
+    <string name="settings_feedback">கருத்தை அனுப்பவும்</string>
+    <string name="settings_feedback_desc">மின்னஞ்சல் மூலம் எங்களைத் தொடர்பு கொள்ளவும்</string>
+    <string name="settings_privacy">தனியுரிமைக் கொள்கை</string>
+    <string name="settings_privacy_desc">உங்கள் தரவை நாங்கள் எவ்வாறு கையாளுகிறோம்</string>
+    <string name="settings_version">பதிப்பு</string>
+    <string name="feedback_subject">Outfitly கருத்து</string>
+    <string name="share_text">Outfitly-இல் AI மூலம் உடைகளை அணிந்து பாருங்கள்! இப்போதே பதிவிறக்கவும்: https://play.google.com/store/apps/details?id=com.exo.outfitly</string>
+    <string name="cant_open_store">ஆப் ஸ்டோரைத் திறக்க முடியவில்லை.</string>
+
+    <!-- Language -->
     <string name="language_title">மொழி</string>
     <string name="language_subtitle">உங்கள் காட்சி மொழியைத் தேர்ந்தெடுக்கவும்</string>
     <string name="lang_continue">தொடரவும்</string>
     <string name="language_confirm">உறுதிப்படுத்தவும்</string>
 
-    <string name="ob_skip">தவிர்க்கவும்</string>
+    <!-- Privacy -->
+    <string name="privacy_title">தனியுரிமைக் கொள்கை</string>
+    <string name="privacy_body">Outfitly உங்கள் தனியுரிமையை மதிக்கிறது. உங்கள் தரவை நாங்கள் எவ்வாறு கையாளுகிறோம் என்பதை இந்தக் கொள்கை விளக்குகிறது.\n\n1. நாங்கள் செயலாக்கும் தரவு\nநீங்கள் தேர்ந்தெடுக்கும் அல்லது எடுக்கும் புகைப்படங்கள் ட்ரை-ஆன் படங்களை உருவாக்கப் பயன்படுத்தப்படுகின்றன. புகைப்படங்கள் செயலாக்கம் மற்றும் முடிவைத் திருப்பித் தர எங்கள் AI சேவைக்கு அனுப்பப்படுகின்றன.\n\n2. சேமிப்பு\nநாங்கள் உங்கள் புகைப்படங்களை நீண்ட காலத்திற்குச் சேமிக்கவில்லை; அவை முடிவை உருவாக்கத் தற்காலிகமாக மட்டுமே செயலாக்கப்படுகின்றன. முடிவுப் படங்கள் நீங்கள் சேமி என்பதைத் தட்டும்போது மட்டுமே உங்கள் சாதன கேலரியில் சேமிக்கப்படுகின்றன.\n\n3. அனுமதிகள்\nஆப் கேமரா (புகைப்படம் எடுக்க) மற்றும் புகைப்படங்கள் அணுகலை (படங்களைத் தேர்ந்தெடுக்கவும் சேமிக்கவும்) கோருகிறது. நீங்கள் மறுத்தாலும் மற்ற அம்சங்களைப் பயன்படுத்தலாம்.\n\n4. மூன்றாம் தரப்பினர்\nட்ரை-ஆன் முடிவுகளை உருவாக்க புகைப்படங்கள் எங்கள் AI சேவையால் செயலாக்கப்படுகின்றன. உங்கள் தனிப்பட்ட தரவை நாங்கள் விற்பதில்லை.\n\n5. குழந்தைகள்\nஇந்த ஆப் 13 வயதுக்குட்பட்ட குழந்தைகளை இலக்காகக் கொண்டது அல்ல.\n\n6. தொடர்பு\nஏதேனும் கேள்விகளுக்கு, எங்களை இங்கு தொடர்பு கொள்ளவும்: exostudio24@gmail.com\n\n7. மாற்றங்கள்\nஇந்தக் கொள்கை காலப்போக்கில் புதுப்பிக்கப்படலாம். தயவுசெய்து அவ்வப்போது மதிப்பாய்வு செய்யவும்.</string>
+
+    <!-- Onboarding / first open -->
     <string name="ob_next">தொடரவும்</string>
     <string name="ob_start">தொடங்குங்கள்</string>
     <string name="ob_tagline">AI மூலம் எந்த உடையையும் சில நொடிகளில் அணிந்து பாருங்கள்.</string>
 
+    <!-- Survey step 1: styles (pick at least 2) -->
     <string name="survey_title">எந்த ஸ்டைல்களை விரும்புகிறீர்கள்?</string>
     <string name="survey_subtitle">நீங்கள் விரும்பும் குறைந்தது 2-ஐத் தேர்ந்தெடுக்கவும்</string>
     <string name="survey_select_hint">தயவுசெய்து குறைந்தது 2 ஸ்டைல்களைத் தேர்ந்தெடுக்கவும்</string>
@@ -21,6 +151,7 @@
     <string name="survey_streetwear">ஸ்ட்ரீட்வேர்</string>
     <string name="survey_elegant">நேர்த்தியான</string>
 
+    <!-- Survey step 2: occasions -->
     <string name="survey2_title">எதற்காக உடை அணிகிறீர்கள்?</string>
     <string name="survey2_subtitle">பொருந்தும் அனைத்தையும் தேர்ந்தெடுக்கவும்</string>
     <string name="survey2_work">வேலை</string>
@@ -30,6 +161,7 @@
     <string name="survey2_event">நிகழ்வுகள்</string>
     <string name="survey2_everyday">தினசரி</string>
 
+    <!-- Survey step 3: goals -->
     <string name="survey3_title">உங்களை இங்கு கொண்டுவந்தது எது?</string>
     <string name="survey3_subtitle">பொருந்தும் அனைத்தையும் தேர்ந்தெடுக்கவும்</string>
     <string name="survey3_tryon">உடைகளை அணிந்து பார்க்க</string>
@@ -46,7 +178,16 @@
     <string name="ob3_title">சேமித்து பகிரவும்</string>
     <string name="ob3_desc">அருமையான புகைப்படங்களை உங்கள் கேலரியில் சேமித்து அனைவருக்கும் காட்டுங்கள்.</string>
 
+    <!-- Notification permission screen -->
     <string name="perm_notif_title">புதுப்பித்த நிலையில் இருங்கள்</string>
     <string name="perm_notif_desc">புதிய ஸ்டைல்கள் மற்றும் உங்கள் புகைப்படம் தயாராகும்போது தெரிவிக்க அறிவிப்புகளை அனுமதிக்கவும்.</string>
     <string name="perm_notif_toggle">அறிவிப்புகளை இயக்கவும்</string>
+
+    <!-- Home (redesign) -->
+    <string name="home_hero_title">AI மூலம் அணிந்து பாருங்கள்</string>
+    <string name="home_hero_accent">AI மூலம்</string>
+    <string name="home_hero_subtitle">சில நொடிகளில் அழகான உடைகளை உருவாக்குங்கள்</string>
+    <string name="home_upload_gallery">கேலரியிலிருந்து பதிவேற்றவும்</string>
+    <string name="home_take_photo">புகைப்படம் எடுக்கவும்</string>
+    <string name="home_recent">சமீபத்திய உருவாக்கங்கள்</string>
 </resources>

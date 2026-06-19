@@ -102,7 +102,7 @@
     <string name="settings_privacy_desc">كيف نتعامل مع بياناتك</string>
     <string name="settings_version">الإصدار</string>
     <string name="feedback_subject">ملاحظات Outfitly</string>
-    <string name="share_text">جرّب الملابس بالذكاء الاصطناعي على Outfitly! حمّله الآن: https://play.google.com/store/apps/details?id=com.exo.styleswap</string>
+    <string name="share_text">جرّب الملابس بالذكاء الاصطناعي على Outfitly! حمّله الآن: https://play.google.com/store/apps/details?id=com.exo.outfitly</string>
     <string name="cant_open_store">تعذّر فتح متجر التطبيقات.</string>
 
     <string name="language_title">اللغة</string>
@@ -154,4 +154,25 @@
     <string name="survey3_inspo">أفكار الأناقة</string>
     <string name="survey3_save">حفظ الإطلالات</string>
     <string name="survey3_explore">مجرد استكشاف</string>
+
+    <string name="app_brand">Outfitly</string>
+
+    <string name="restore_confirm_title">استعادة الصورة الأصلية؟</string>
+    <string name="restore_confirm_msg">سيؤدي ذلك إلى تجاهل نتيجة الذكاء الاصطناعي وإظهار صورتك الأصلية مرة أخرى.</string>
+    <string name="restore_confirm_yes">استعادة</string>
+
+    <string name="settings_theme">المظهر</string>
+    <string name="settings_theme_desc">فاتح أو داكن أو حسب النظام</string>
+    <string name="theme_light">فاتح</string>
+    <string name="theme_dark">داكن</string>
+    <string name="theme_system">إعداد النظام الافتراضي</string>
+
+    <string name="privacy_body">يحترم Outfitly خصوصيتك. توضّح هذه السياسة كيفية تعاملنا مع بياناتك.\n\n1. البيانات التي نعالجها\nتُستخدم الصور التي تختارها أو تلتقطها لإنشاء صور التجربة. تُرسَل الصور إلى خدمة الذكاء الاصطناعي لدينا لمعالجتها وإرجاع النتيجة.\n\n2. التخزين\nنحن لا نخزّن صورك على المدى الطويل؛ تتم معالجتها مؤقتًا فقط لإنشاء النتيجة. تُحفَظ صور النتيجة في معرض جهازك فقط عند الضغط على حفظ.\n\n3. الأذونات\nيطلب التطبيق إذن الكاميرا (لالتقاط الصور) وإذن الصور (لاختيار الصور وحفظها). يمكنك الرفض ومتابعة استخدام الميزات الأخرى.\n\n4. الأطراف الثالثة\nتتم معالجة الصور بواسطة خدمة الذكاء الاصطناعي لدينا لإنشاء نتائج التجربة. نحن لا نبيع بياناتك الشخصية.\n\n5. الأطفال\nهذا التطبيق غير موجَّه للأطفال دون سن 13 عامًا.\n\n6. التواصل\nلأي استفسارات، تواصل معنا على: exostudio24@gmail.com\n\n7. التغييرات\nقد يتم تحديث هذه السياسة بمرور الوقت. يرجى مراجعتها بشكل دوري.</string>
+
+    <string name="home_hero_title">جرّب بالذكاء الاصطناعي</string>
+    <string name="home_hero_accent">بالذكاء الاصطناعي</string>
+    <string name="home_hero_subtitle">أنشئ إطلالات مذهلة في ثوانٍ</string>
+    <string name="home_upload_gallery">التحميل من المعرض</string>
+    <string name="home_take_photo">التقاط صورة</string>
+    <string name="home_recent">أحدث الإبداعات</string>
 </resources>

@@ -102,7 +102,7 @@
     <string name="settings_privacy_desc">हम आपके डेटा का उपयोग कैसे करते हैं</string>
     <string name="settings_version">वर्शन</string>
     <string name="feedback_subject">Outfitly फ़ीडबैक</string>
-    <string name="share_text">Outfitly पर AI से कपड़े आज़माएँ! अभी डाउनलोड करें: https://play.google.com/store/apps/details?id=com.exo.styleswap</string>
+    <string name="share_text">Outfitly पर AI से कपड़े आज़माएँ! अभी डाउनलोड करें: https://play.google.com/store/apps/details?id=com.exo.outfitly</string>
     <string name="cant_open_store">ऐप स्टोर नहीं खुल सका।</string>
 
     <string name="language_title">भाषा</string>
@@ -154,4 +154,25 @@
     <string name="survey3_inspo">स्टाइल आइडिया</string>
     <string name="survey3_save">लुक सहेजें</string>
     <string name="survey3_explore">बस देख रहे हैं</string>
+
+    <string name="app_brand">Outfitly</string>
+
+    <string name="restore_confirm_title">मूल फ़ोटो बहाल करें?</string>
+    <string name="restore_confirm_msg">इससे AI नतीजा हट जाएगा और आपकी मूल फ़ोटो फिर से दिखेगी।</string>
+    <string name="restore_confirm_yes">बहाल करें</string>
+
+    <string name="settings_theme">थीम</string>
+    <string name="settings_theme_desc">लाइट, डार्क या सिस्टम</string>
+    <string name="theme_light">लाइट</string>
+    <string name="theme_dark">डार्क</string>
+    <string name="theme_system">सिस्टम डिफ़ॉल्ट</string>
+
+    <string name="privacy_body">Outfitly आपकी गोपनीयता का सम्मान करता है। यह नीति बताती है कि हम आपके डेटा को कैसे संभालते हैं।\n\n1. हम कौन-सा डेटा संसाधित करते हैं\nआप जो फ़ोटो चुनते या लेते हैं, उनका उपयोग ट्राय-ऑन इमेज बनाने के लिए किया जाता है। फ़ोटो को संसाधित करने और नतीजा लौटाने के लिए हमारी AI सेवा को भेजा जाता है।\n\n2. भंडारण\nहम आपकी फ़ोटो को लंबे समय तक संग्रहीत नहीं करते; उन्हें नतीजा बनाने के लिए केवल अस्थायी रूप से संसाधित किया जाता है। नतीजे की इमेज आपके डिवाइस की गैलरी में तभी सहेजी जाती है जब आप सहेजें पर टैप करते हैं।\n\n3. अनुमतियाँ\nऐप कैमरा (फ़ोटो लेने के लिए) और फ़ोटो (इमेज चुनने और सहेजने के लिए) की अनुमति माँगता है। आप मना कर सकते हैं और फिर भी अन्य सुविधाओं का उपयोग कर सकते हैं।\n\n4. तीसरे पक्ष\nफ़ोटो को ट्राय-ऑन नतीजे बनाने के लिए हमारी AI सेवा द्वारा संसाधित किया जाता है। हम आपका व्यक्तिगत डेटा नहीं बेचते।\n\n5. बच्चे\nयह ऐप 13 वर्ष से कम उम्र के बच्चों के लिए नहीं है।\n\n6. संपर्क\nकिसी भी प्रश्न के लिए हमसे यहाँ संपर्क करें: exostudio24@gmail.com\n\n7. बदलाव\nयह नीति समय-समय पर अपडेट की जा सकती है। कृपया इसे नियमित रूप से देखें।</string>
+
+    <string name="home_hero_title">AI से ट्राय-ऑन</string>
+    <string name="home_hero_accent">AI से</string>
+    <string name="home_hero_subtitle">सेकंडों में शानदार पहनावे बनाएँ</string>
+    <string name="home_upload_gallery">गैलरी से अपलोड करें</string>
+    <string name="home_take_photo">फ़ोटो लें</string>
+    <string name="home_recent">हाल की कृतियाँ</string>
 </resources>

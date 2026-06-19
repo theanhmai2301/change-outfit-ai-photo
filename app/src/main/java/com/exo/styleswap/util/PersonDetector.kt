@@ -14,10 +14,14 @@ import java.io.File
 import kotlin.coroutines.resume
 
 /**
- * On-device check that a photo contains a person. Accepts if a human body pose is found
- * (best for full-body shots), OR an image label of "Person"/"Selfie", OR a face is detected.
- * This keeps valid try-on photos (full-body, busy background, sunglasses) from being blocked,
- * while clearly non-person photos (scenery, products) are rejected. Fails open on internal error.
+ * On-device check that a photo contains a person. A person is accepted if a human body
+ * pose is found (best for full-body shots), OR an image label of "Person"/"Selfie", OR a
+ * face is detected — so valid try-on photos (full-body, busy background, sunglasses) pass.
+ *
+ * Each detector returns true (person) / false (no person) / null (the detector errored).
+ * The photo is rejected when at least one detector ran and none found a person. We only
+ * "fail open" (accept) if EVERY detector errored — i.e. ML Kit is unavailable on the device —
+ * so a broken ML Kit never silently lets non-person photos through while it works.
  */
 object PersonDetector {
 
@@ -46,9 +50,16 @@ object PersonDetector {
 
     suspend fun hasPerson(file: File): Boolean {
         val bmp = decode(file) ?: return false
-        if (hasPose(bmp)) return true
-        if (hasPersonLabel(bmp)) return true
-        return hasFace(bmp)
+        val image = InputImage.fromBitmap(bmp, 0)
+        var anyDetectorRan = false
+
+        detectPose(image)?.let { anyDetectorRan = true; if (it) return true }
+        detectLabel(image)?.let { anyDetectorRan = true; if (it) return true }
+        detectFace(image)?.let { anyDetectorRan = true; if (it) return true }
+
+        // No detector found a person. Reject if any detector actually ran; only accept
+        // when all three errored (ML Kit unavailable) so valid photos aren't hard-blocked.
+        return !anyDetectorRan
     }
 
     private fun decode(file: File): Bitmap? = try {
@@ -57,44 +68,47 @@ object PersonDetector {
         null
     }
 
-    private suspend fun hasPose(bmp: Bitmap): Boolean =
+    /** true = body pose found, false = none, null = detector errored. */
+    private suspend fun detectPose(image: InputImage): Boolean? =
         suspendCancellableCoroutine { cont ->
             try {
-                poseDetector.process(InputImage.fromBitmap(bmp, 0))
+                poseDetector.process(image)
                     .addOnSuccessListener { pose ->
                         val strong = pose.allPoseLandmarks.count { it.inFrameLikelihood > 0.5f }
                         if (cont.isActive) cont.resume(strong >= 5)
                     }
-                    .addOnFailureListener { if (cont.isActive) cont.resume(false) }
+                    .addOnFailureListener { if (cont.isActive) cont.resume(null) }
             } catch (e: Exception) {
-                if (cont.isActive) cont.resume(false)
+                if (cont.isActive) cont.resume(null)
             }
         }
 
-    private suspend fun hasPersonLabel(bmp: Bitmap): Boolean =
+    /** true = "Person"/"Selfie" label, false = none, null = detector errored. */
+    private suspend fun detectLabel(image: InputImage): Boolean? =
         suspendCancellableCoroutine { cont ->
             try {
-                labeler.process(InputImage.fromBitmap(bmp, 0))
+                labeler.process(image)
                     .addOnSuccessListener { labels ->
                         val person = labels.any {
                             it.text.equals("Person", true) || it.text.equals("Selfie", true)
                         }
                         if (cont.isActive) cont.resume(person)
                     }
-                    .addOnFailureListener { if (cont.isActive) cont.resume(false) }
+                    .addOnFailureListener { if (cont.isActive) cont.resume(null) }
             } catch (e: Exception) {
-                if (cont.isActive) cont.resume(false)
+                if (cont.isActive) cont.resume(null)
             }
         }
 
-    private suspend fun hasFace(bmp: Bitmap): Boolean =
+    /** true = a face found, false = none, null = detector errored. */
+    private suspend fun detectFace(image: InputImage): Boolean? =
         suspendCancellableCoroutine { cont ->
             try {
-                faceDetector.process(InputImage.fromBitmap(bmp, 0))
+                faceDetector.process(image)
                     .addOnSuccessListener { faces -> if (cont.isActive) cont.resume(faces.isNotEmpty()) }
-                    .addOnFailureListener { if (cont.isActive) cont.resume(true) }
+                    .addOnFailureListener { if (cont.isActive) cont.resume(null) }
             } catch (e: Exception) {
-                if (cont.isActive) cont.resume(true)
+                if (cont.isActive) cont.resume(null)
             }
         }
 }

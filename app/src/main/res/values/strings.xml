@@ -121,7 +121,7 @@
     <string name="settings_privacy_desc">How we handle your data</string>
     <string name="settings_version">Version</string>
     <string name="feedback_subject">Outfitly feedback</string>
-    <string name="share_text">Try outfits with AI on Outfitly! Download now: https://play.google.com/store/apps/details?id=com.exo.styleswap</string>
+    <string name="share_text">Try outfits with AI on Outfitly! Download now: https://play.google.com/store/apps/details?id=com.exo.outfitly</string>
     <string name="cant_open_store">Couldn\'t open the app store.</string>
 
     <!-- Language -->
@@ -129,15 +129,12 @@
     <string name="language_subtitle">Choose your display language</string>
     <string name="lang_continue">Continue</string>
     <string name="language_confirm">Confirm</string>
-    <string name="lang_vi">Tiếng Việt</string>
-    <string name="lang_en">English</string>
 
     <!-- Privacy -->
     <string name="privacy_title">Privacy policy</string>
     <string name="privacy_body">Outfitly respects your privacy. This policy explains how we handle your data.\n\n1. Data we process\nThe photos you choose or capture are used to generate try-on images. Photos are sent to our AI service for processing and returning the result.\n\n2. Storage\nWe do not store your photos long-term; they are processed only temporarily to create the result. Result images are saved to your device gallery only when you tap Save.\n\n3. Permissions\nThe app requests Camera (to take photos) and Photos access (to pick and save images). You may decline and still use other features.\n\n4. Third parties\nPhotos are processed by our AI service to create try-on results. We do not sell your personal data.\n\n5. Children\nThe app is not directed to children under 13.\n\n6. Contact\nFor any questions, contact us at: exostudio24@gmail.com\n\n7. Changes\nThis policy may be updated over time. Please review it periodically.</string>
 
     <!-- Onboarding / first open -->
-    <string name="ob_skip">Skip</string>
     <string name="ob_next">Continue</string>
     <string name="ob_start">Get started</string>
     <string name="ob_tagline">Try on any outfit with AI, in seconds.</string>
@@ -181,14 +178,6 @@
     <string name="ob3_title">Save &amp; share</string>
     <string name="ob3_desc">Save great photos to your gallery and show them off.</string>
 
-    <string name="perm_title">Grant access to start</string>
-    <string name="perm_desc">The app needs a few permissions to work its best.</string>
-    <string name="perm_camera_title">Camera</string>
-    <string name="perm_camera_desc">To take photos directly for try-on</string>
-    <string name="perm_photos_title">Photos &amp; gallery</string>
-    <string name="perm_photos_desc">To pick photos and save results</string>
-    <string name="perm_allow_start">Allow &amp; Start</string>
-
     <!-- Notification permission screen -->
     <string name="perm_notif_title">Stay up to date</string>
     <string name="perm_notif_desc">Allow notifications so we can let you know about new styles and when your photo is ready.</string>
@@ -200,37 +189,5 @@
     <string name="home_hero_subtitle">Create stunning outfits in seconds</string>
     <string name="home_upload_gallery">Upload From Gallery</string>
     <string name="home_take_photo">Take Photo</string>
-    <string name="home_trending">Trending Styles</string>
-    <string name="home_see_all">See all</string>
     <string name="home_recent">Recent Creations</string>
-
-    <!-- Trending style names -->
-    <string name="style_casual">Casual</string>
-    <string name="style_business">Business</string>
-    <string name="style_streetwear">Streetwear</string>
-    <string name="style_anime">Anime</string>
-    <string name="style_wedding">Wedding</string>
-    <string name="style_vintage">Vintage</string>
-    <string name="style_party">Party</string>
-    <string name="style_winter">Winter</string>
-
-    <!-- Edit (redesign) -->
-    <string name="edit_outfit">Edit Outfit</string>
-    <string name="edit_section_type">Choose garment type</string>
-    <string name="edit_section_count">Number of results</string>
-    <string name="generate_outfit">Generate Outfit</string>
-    <string name="before">Before</string>
-    <string name="after">After</string>
-    <string name="vip">VIP</string>
-    <string name="result_singular">Result</string>
-    <string name="result_plural">Results</string>
-
-    <!-- Result (redesign) -->
-    <string name="result_title">Result</string>
-    <string name="result_all">All</string>
-    <string name="action_save">Save</string>
-    <string name="action_share">Share</string>
-    <string name="action_regenerate">Regenerate</string>
-    <string name="action_try_another">Try Another Style</string>
-    <string name="share_via">Share image</string>
 </resources>

@@ -1,15 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Outfitly: AI Outfit Try On</string>
+    <string name="app_brand">Outfitly</string>
+
+    <!-- Picker -->
+    <string name="picker_subtitle">এডিট শুরু করতে একটি ছবি বেছে নিন</string>
+    <string name="tab_library">লাইব্রেরি</string>
+    <string name="tab_camera">ক্যামেরা</string>
+    <string name="upload_from_device">ডিভাইস থেকে আপলোড করুন</string>
+    <string name="your_photo">আপনার ছবি</string>
+    <string name="library_hint">সেরা ট্রাই-অনের জন্য সম্পূর্ণ শরীরসহ একটি স্পষ্ট পোর্ট্রেট বেছে নিন।</string>
+    <string name="starting_camera">ক্যামেরা চালু হচ্ছে…</string>
+    <string name="camera_permission_needed">ছবি তুলতে ক্যামেরার অনুমতি প্রয়োজন।</string>
+    <string name="grant_permission">অনুমতি দিন</string>
+    <string name="photo_captured">✓ ছবি তোলা হয়েছে</string>
+    <string name="retake">আবার তুলুন</string>
+    <string name="use_photo">এই ছবি ব্যবহার করুন</string>
+    <string name="next">পরবর্তী</string>
+
+    <!-- Edit -->
+    <string name="edit_title">ছবি এডিট করুন</string>
+    <string name="edit_subtitle">AI দিয়ে পোশাক পরে দেখুন</string>
+    <string name="not_edited">এডিট করা হয়নি</string>
+    <string name="ai_generated">AI দিয়ে তৈরি</string>
+    <string name="garment_label">পোশাকের ছবি</string>
+    <string name="choose_garment">পোশাকের ছবি বেছে নিন</string>
+    <string name="change_garment">পোশাকের ছবি পরিবর্তন করুন</string>
+    <string name="garment_hint">একটি প্রোডাক্ট শট বা কেউ পরে আছে এমন ছবি — AI শুধু পোশাকটিই নেয়।</string>
+    <string name="category_label">পোশাকের ধরন</string>
+    <string name="poses_label">ভঙ্গি</string>
+    <string name="quality_label">কোয়ালিটি</string>
+    <string name="apply_ai">AI প্রয়োগ করুন</string>
+    <string name="select_garment_first">অনুগ্রহ করে প্রথমে একটি পোশাকের ছবি বেছে নিন</string>
+    <string name="saved">গ্যালারিতে সংরক্ষণ করা হয়েছে</string>
+    <string name="save_failed">সংরক্ষণ ব্যর্থ হয়েছে</string>
+    <string name="restored">আসল ছবি ফিরিয়ে আনা হয়েছে</string>
+
+    <!-- Dialogs -->
+    <string name="save_dialog_title">ছবি সংরক্ষিত হয়েছে</string>
+    <string name="save_dialog_msg">ছবিটি আপনার গ্যালারিতে সংরক্ষণ করা হয়েছে। আপনি কি আরেকটি ছবি বেছে নিতে চান?</string>
+    <string name="save_dialog_positive">আরেকটি বেছে নিন</string>
+    <string name="save_dialog_negative">থাকুন</string>
+    <string name="exit_dialog_title">অসংরক্ষিত ছবি</string>
+    <string name="exit_dialog_msg">আপনি একটি ছবি তৈরি করেছেন কিন্তু সংরক্ষণ করেননি। এখন চলে গেলে এটি হারিয়ে যাবে। তবুও কি চলে যাবেন?</string>
+    <string name="exit_dialog_positive">চলে যান</string>
+    <string name="exit_dialog_negative">থাকুন</string>
+    <string name="restore_confirm_title">আসল ছবি ফিরিয়ে আনবেন?</string>
+    <string name="restore_confirm_msg">এটি AI ফলাফল বাতিল করে আপনার আসল ছবি আবার দেখাবে।</string>
+    <string name="restore_confirm_yes">ফিরিয়ে আনুন</string>
+
+    <!-- Categories -->
+    <string name="cat_auto">অটো</string>
+    <string name="cat_top">টপ</string>
+    <string name="cat_bottom">বটম</string>
+    <string name="cat_dress">ড্রেস</string>
+    <string name="cat_outerwear">আউটারওয়্যার</string>
+    <string name="cat_full">সম্পূর্ণ পোশাক</string>
+
+    <!-- Quality -->
+    <string name="q_low">নিম্ন</string>
+    <string name="q_medium">মাঝারি</string>
+    <string name="q_high">উচ্চ</string>
+
+    <!-- Processing -->
+    <string name="step_analyze">ছবি বিশ্লেষণ করা হচ্ছে…</string>
+    <string name="step_detect">শরীর শনাক্ত করা হচ্ছে…</string>
+    <string name="step_apply">AI পোশাক প্রয়োগ করা হচ্ছে…</string>
+    <string name="step_finish">বিস্তারিত সম্পন্ন করা হচ্ছে…</string>
+
+    <!-- Errors -->
+    <string name="err_network">ইন্টারনেট সংযোগ নেই। অনুগ্রহ করে Wi-Fi/ডেটা পরীক্ষা করে আবার চেষ্টা করুন।</string>
+    <string name="err_timeout">নেটওয়ার্ক ধীর হওয়ায় খুব বেশি সময় লেগেছে। অনুগ্রহ করে আবার চেষ্টা করুন।</string>
+    <string name="err_service_unavailable">ট্রাই-অন কিছুক্ষণের জন্য বিশ্রামে আছে। অনুগ্রহ করে কয়েক মিনিট পর আবার চেষ্টা করুন।</string>
+    <string name="err_server_busy">AI সার্ভার ব্যস্ত আছে। অনুগ্রহ করে কিছুক্ষণ পর আবার চেষ্টা করুন।</string>
+    <string name="err_rate_limited">আপনি খুব দ্রুত করছেন। অনুগ্রহ করে একটু অপেক্ষা করে আবার চেষ্টা করুন।</string>
+    <string name="err_too_large">ছবিটি খুব বড়। অনুগ্রহ করে একটি ছোট ছবি বেছে নিয়ে আবার চেষ্টা করুন।</string>
+
+    <string name="err_garment_invalid">পোশাকের ছবিটি সঠিক নয়। আইটেমটি সোজাসুজি দেখায় এমন একটি স্পষ্ট JPG বা PNG ব্যবহার করুন।</string>
+    <string name="err_garment_unrecognized">AI পোশাকটি চিনতে পারেনি। সরল ব্যাকগ্রাউন্ডে একটি আইটেমের (টপ, বটম, ড্রেস…) স্পষ্ট ছবি ব্যবহার করুন — দৃশ্যপট, অন্ধকার বা জটিল ছবি এড়িয়ে চলুন।</string>
+    <string name="err_image_missing">ছবি অনুপস্থিত। অনুগ্রহ করে আপনার ছবি ও পোশাকের ছবি আবার বেছে নিয়ে চেষ্টা করুন।</string>
+    <string name="err_bad_request">ছবিটি ট্রাই-অনের জন্য উপযুক্ত নয়। একটি স্পষ্ট সম্পূর্ণ শরীরের ছবি ও একটি স্পষ্ট পোশাকের ছবি ব্যবহার করুন।</string>
+
+    <string name="err_read_image">নির্বাচিত ছবিটি পড়া যায়নি। অনুগ্রহ করে অন্য একটি চেষ্টা করুন।</string>
+    <string name="err_read_garment">পোশাকের ছবিটি পড়া যায়নি। অনুগ্রহ করে অন্য একটি বেছে নিন।</string>
+    <string name="err_capture">ছবিটি তোলা যায়নি। অনুগ্রহ করে আবার চেষ্টা করুন।</string>
+
+    <string name="err_generic">ট্রাই-অনে কিছু একটা সমস্যা হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন।</string>
+
+    <!-- Person check -->
+    <string name="checking_person">ছবি পরীক্ষা করা হচ্ছে…</string>
+    <string name="err_no_person">ছবিতে কোনো ব্যক্তি পাওয়া যায়নি। ট্রাই-অনের জন্য স্পষ্ট মুখ &amp; শরীরসহ একটি ছবি বেছে নিন।</string>
+
+    <!-- Report -->
+    <string name="report">রিপোর্ট</string>
+    <string name="report_dialog_title">ছবি রিপোর্ট করুন</string>
+    <string name="report_dialog_msg">ফলাফলটি কি ভুল, অনুপযুক্ত বা আপত্তিকর? উন্নতির জন্য আমাদের একটি রিপোর্ট পাঠান।</string>
+    <string name="report_send">রিপোর্ট পাঠান</string>
+    <string name="report_cancel">বাতিল করুন</string>
+    <string name="report_subject">Outfitly ছবি রিপোর্ট</string>
+    <string name="report_thanks">আপনার রিপোর্টের জন্য ধন্যবাদ!</string>
+    <string name="no_email_app">কোনো ইমেইল অ্যাপ পাওয়া যায়নি।</string>
+
+    <!-- Settings -->
+    <string name="settings_title">সেটিংস</string>
+    <string name="settings_general">সাধারণ</string>
+    <string name="settings_language">ভাষা</string>
+    <string name="settings_theme">থিম</string>
+    <string name="settings_theme_desc">লাইট, ডার্ক বা সিস্টেম</string>
+    <string name="theme_light">লাইট</string>
+    <string name="theme_dark">ডার্ক</string>
+    <string name="theme_system">সিস্টেম ডিফল্ট</string>
+    <string name="settings_support">সহায়তা &amp; তথ্য</string>
+    <string name="settings_share">অ্যাপ শেয়ার করুন</string>
+    <string name="settings_share_desc">আপনার বন্ধুদের অ্যাপ সম্পর্কে জানান</string>
+    <string name="settings_rate">অ্যাপ রেট করুন</string>
+    <string name="settings_rate_desc">আমাদের ৫ স্টার দিন</string>
+    <string name="settings_feedback">মতামত পাঠান</string>
+    <string name="settings_feedback_desc">ইমেইলে আমাদের সাথে যোগাযোগ করুন</string>
+    <string name="settings_privacy">গোপনীয়তা নীতি</string>
+    <string name="settings_privacy_desc">আমরা কীভাবে আপনার ডেটা পরিচালনা করি</string>
+    <string name="settings_version">সংস্করণ</string>
+    <string name="feedback_subject">Outfitly মতামত</string>
+    <string name="share_text">Outfitly-তে AI দিয়ে পোশাক পরে দেখুন! এখনই ডাউনলোড করুন: https://play.google.com/store/apps/details?id=com.exo.outfitly</string>
+    <string name="cant_open_store">অ্যাপ স্টোর খোলা যায়নি।</string>
+
+    <!-- Language -->
     <string name="language_title">ভাষা</string>
     <string name="language_subtitle">আপনার প্রদর্শন ভাষা বেছে নিন</string>
     <string name="lang_continue">চালিয়ে যান</string>
     <string name="language_confirm">নিশ্চিত করুন</string>
 
-    <string name="ob_skip">এড়িয়ে যান</string>
+    <!-- Privacy -->
+    <string name="privacy_title">গোপনীয়তা নীতি</string>
+    <string name="privacy_body">Outfitly আপনার গোপনীয়তাকে সম্মান করে। এই নীতিতে ব্যাখ্যা করা হয়েছে আমরা কীভাবে আপনার ডেটা পরিচালনা করি।\n\n১. আমরা যে ডেটা প্রক্রিয়া করি\nআপনি যে ছবিগুলো বেছে নেন বা তোলেন সেগুলো ট্রাই-অন ছবি তৈরি করতে ব্যবহার করা হয়। ছবিগুলো প্রক্রিয়াকরণ ও ফলাফল ফিরিয়ে দেওয়ার জন্য আমাদের AI সার্ভিসে পাঠানো হয়।\n\n২. সংরক্ষণ\nআমরা আপনার ছবি দীর্ঘমেয়াদে সংরক্ষণ করি না; ফলাফল তৈরি করতে এগুলো শুধু সাময়িকভাবে প্রক্রিয়া করা হয়। আপনি Save-এ ট্যাপ করলেই কেবল ফলাফল ছবিগুলো আপনার ডিভাইসের গ্যালারিতে সংরক্ষণ করা হয়।\n\n৩. অনুমতি\nঅ্যাপটি ক্যামেরা (ছবি তোলার জন্য) ও ফটো অ্যাক্সেস (ছবি বেছে নেওয়া ও সংরক্ষণের জন্য) অনুমতি চায়। আপনি প্রত্যাখ্যান করেও অন্যান্য ফিচার ব্যবহার করতে পারেন।\n\n৪. তৃতীয় পক্ষ\nট্রাই-অন ফলাফল তৈরি করতে ছবিগুলো আমাদের AI সার্ভিস দ্বারা প্রক্রিয়া করা হয়। আমরা আপনার ব্যক্তিগত ডেটা বিক্রি করি না।\n\n৫. শিশু\nঅ্যাপটি ১৩ বছরের কম বয়সী শিশুদের জন্য নয়।\n\n৬. যোগাযোগ\nযেকোনো প্রশ্নের জন্য আমাদের সাথে যোগাযোগ করুন: exostudio24@gmail.com\n\n৭. পরিবর্তন\nএই নীতি সময়ের সাথে আপডেট হতে পারে। অনুগ্রহ করে নিয়মিত এটি পর্যালোচনা করুন।</string>
+
+    <!-- Onboarding / first open -->
     <string name="ob_next">চালিয়ে যান</string>
     <string name="ob_start">শুরু করুন</string>
     <string name="ob_tagline">AI দিয়ে যেকোনো পোশাক কয়েক সেকেন্ডে পরে দেখুন।</string>
 
+    <!-- Survey step 1: styles (pick at least 2) -->
     <string name="survey_title">আপনি কোন স্টাইল পছন্দ করেন?</string>
     <string name="survey_subtitle">পছন্দের অন্তত ২টি বেছে নিন</string>
     <string name="survey_select_hint">অনুগ্রহ করে অন্তত ২টি স্টাইল বেছে নিন</string>
@@ -21,6 +151,7 @@
     <string name="survey_streetwear">স্ট্রিটওয়্যার</string>
     <string name="survey_elegant">এলিগ্যান্ট</string>
 
+    <!-- Survey step 2: occasions -->
     <string name="survey2_title">আপনি কীসের জন্য সাজেন?</string>
     <string name="survey2_subtitle">প্রযোজ্য সবগুলো বেছে নিন</string>
     <string name="survey2_work">কাজ</string>
@@ -30,6 +161,7 @@
     <string name="survey2_event">ইভেন্ট</string>
     <string name="survey2_everyday">প্রতিদিন</string>
 
+    <!-- Survey step 3: goals -->
     <string name="survey3_title">আপনাকে এখানে কী নিয়ে এসেছে?</string>
     <string name="survey3_subtitle">প্রযোজ্য সবগুলো বেছে নিন</string>
     <string name="survey3_tryon">পোশাক পরে দেখা</string>
@@ -43,10 +175,19 @@
     <string name="ob1_desc">নিজের একটি ছবি দিয়েই যেকোনো পোশাক পরে দেখুন।</string>
     <string name="ob2_title">কয়েক সেকেন্ডে পোশাক বদলান</string>
     <string name="ob2_desc">আপনার ছবি ও একটি পোশাকের ছবি বেছে নিন — বাকিটা AI করবে।</string>
-    <string name="ob3_title">সংরক্ষণ ও শেয়ার করুন</string>
+    <string name="ob3_title">সংরক্ষণ &amp; শেয়ার করুন</string>
     <string name="ob3_desc">দারুণ ছবিগুলো আপনার গ্যালারিতে সংরক্ষণ করুন এবং সবাইকে দেখান।</string>
 
+    <!-- Notification permission screen -->
     <string name="perm_notif_title">আপডেট থাকুন</string>
     <string name="perm_notif_desc">নতুন স্টাইল এবং আপনার ছবি প্রস্তুত হলে জানাতে পারার জন্য বিজ্ঞপ্তির অনুমতি দিন।</string>
     <string name="perm_notif_toggle">বিজ্ঞপ্তি চালু করুন</string>
+
+    <!-- Home (redesign) -->
+    <string name="home_hero_title">AI দিয়ে পরে দেখুন</string>
+    <string name="home_hero_accent">AI দিয়ে</string>
+    <string name="home_hero_subtitle">কয়েক সেকেন্ডে অসাধারণ পোশাক তৈরি করুন</string>
+    <string name="home_upload_gallery">গ্যালারি থেকে আপলোড করুন</string>
+    <string name="home_take_photo">ছবি তুলুন</string>
+    <string name="home_recent">সাম্প্রতিক সৃষ্টি</string>
 </resources>

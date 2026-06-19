@@ -125,7 +125,7 @@ abstract class BaseSurveyActivity<VB : ViewBinding> : AppCompatActivity() {
     protected abstract fun currentState(): Int
 
     /** Must select at least this many to continue. */
-    protected open fun minSelect(): Int = 1
+    protected open fun minSelect(): Int = 2
 
     companion object {
         const val EXTRA_SELECTED = "selected_keys"

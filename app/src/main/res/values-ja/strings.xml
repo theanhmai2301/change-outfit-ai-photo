@@ -102,7 +102,7 @@
     <string name="settings_privacy_desc">データの取り扱いについて</string>
     <string name="settings_version">バージョン</string>
     <string name="feedback_subject">Outfitly フィードバック</string>
-    <string name="share_text">OutfitlyでAI試着を楽しもう！今すぐダウンロード：https://play.google.com/store/apps/details?id=com.exo.styleswap</string>
+    <string name="share_text">OutfitlyでAI試着を楽しもう！今すぐダウンロード：https://play.google.com/store/apps/details?id=com.exo.outfitly</string>
     <string name="cant_open_store">アプリストアを開けませんでした。</string>
 
     <string name="language_title">言語</string>
@@ -154,4 +154,21 @@
     <string name="survey3_inspo">スタイルのヒント</string>
     <string name="survey3_save">コーデを保存</string>
     <string name="survey3_explore">とりあえず見るだけ</string>
+
+    <string name="app_brand">Outfitly</string>
+    <string name="restore_confirm_title">元の写真に戻しますか？</string>
+    <string name="restore_confirm_msg">AIの結果を破棄して、元の写真を再び表示します。</string>
+    <string name="restore_confirm_yes">元に戻す</string>
+    <string name="settings_theme">テーマ</string>
+    <string name="settings_theme_desc">ライト、ダーク、またはシステム</string>
+    <string name="theme_light">ライト</string>
+    <string name="theme_dark">ダーク</string>
+    <string name="theme_system">システムの設定に従う</string>
+    <string name="privacy_body">Outfitlyはお客様のプライバシーを尊重します。本ポリシーは、お客様のデータの取り扱いについて説明します。\n\n1. 処理するデータ\nお客様が選択または撮影した写真は、試着画像の生成に使用されます。写真は処理と結果の返却のため、当社のAIサービスに送信されます。\n\n2. 保存\n当社はお客様の写真を長期間保存しません。写真は結果を作成するために一時的にのみ処理されます。結果画像は、お客様が「保存」をタップした場合にのみ、お客様の端末のギャラリーに保存されます。\n\n3. 権限\n本アプリはカメラ（写真の撮影用）と写真へのアクセス（画像の選択と保存用）を要求します。これを拒否しても、その他の機能はご利用いただけます。\n\n4. 第三者\n写真は試着結果を作成するため、当社のAIサービスによって処理されます。当社はお客様の個人データを販売しません。\n\n5. お子様について\n本アプリは13歳未満のお子様を対象としていません。\n\n6. お問い合わせ\nご質問は次の連絡先までお寄せください：exostudio24@gmail.com\n\n7. 変更\n本ポリシーは随時更新される場合があります。定期的にご確認ください。</string>
+    <string name="home_hero_title">AIで試着</string>
+    <string name="home_hero_accent">AIで</string>
+    <string name="home_hero_subtitle">数秒で素敵なコーデを作成</string>
+    <string name="home_upload_gallery">ギャラリーからアップロード</string>
+    <string name="home_take_photo">写真を撮る</string>
+    <string name="home_recent">最近の作品</string>
 </resources>

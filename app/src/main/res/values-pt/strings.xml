@@ -102,7 +102,7 @@
     <string name="settings_privacy_desc">Como tratamos seus dados</string>
     <string name="settings_version">Versão</string>
     <string name="feedback_subject">Feedback do Outfitly</string>
-    <string name="share_text">Experimente roupas com IA no Outfitly! Baixe agora: https://play.google.com/store/apps/details?id=com.exo.styleswap</string>
+    <string name="share_text">Experimente roupas com IA no Outfitly! Baixe agora: https://play.google.com/store/apps/details?id=com.exo.outfitly</string>
     <string name="cant_open_store">Não foi possível abrir a loja de apps.</string>
 
     <string name="language_title">Idioma</string>
@@ -154,4 +154,25 @@
     <string name="survey3_inspo">Ideias de estilo</string>
     <string name="survey3_save">Salvar looks</string>
     <string name="survey3_explore">Apenas explorando</string>
+
+    <string name="app_brand">Outfitly</string>
+
+    <string name="restore_confirm_title">Restaurar original?</string>
+    <string name="restore_confirm_msg">Isso descarta o resultado da IA e mostra sua foto original novamente.</string>
+    <string name="restore_confirm_yes">Restaurar</string>
+
+    <string name="settings_theme">Tema</string>
+    <string name="settings_theme_desc">Claro, escuro ou do sistema</string>
+    <string name="theme_light">Claro</string>
+    <string name="theme_dark">Escuro</string>
+    <string name="theme_system">Padrão do sistema</string>
+
+    <string name="privacy_body">O Outfitly respeita sua privacidade. Esta política explica como tratamos seus dados.\n\n1. Dados que processamos\nAs fotos que você escolhe ou captura são usadas para gerar imagens de prova. As fotos são enviadas ao nosso serviço de IA para processamento e devolução do resultado.\n\n2. Armazenamento\nNão armazenamos suas fotos a longo prazo; elas são processadas apenas temporariamente para criar o resultado. As imagens de resultado são salvas na galeria do seu dispositivo somente quando você toca em Salvar.\n\n3. Permissões\nO app solicita acesso à Câmera (para tirar fotos) e às Fotos (para escolher e salvar imagens). Você pode recusar e ainda usar os outros recursos.\n\n4. Terceiros\nAs fotos são processadas pelo nosso serviço de IA para criar os resultados de prova. Não vendemos seus dados pessoais.\n\n5. Crianças\nO app não é destinado a crianças menores de 13 anos.\n\n6. Contato\nPara qualquer dúvida, entre em contato pelo e-mail: exostudio24@gmail.com\n\n7. Alterações\nEsta política pode ser atualizada ao longo do tempo. Revise-a periodicamente.</string>
+
+    <string name="home_hero_title">Experimente com IA</string>
+    <string name="home_hero_accent">com IA</string>
+    <string name="home_hero_subtitle">Crie looks incríveis em segundos</string>
+    <string name="home_upload_gallery">Enviar da galeria</string>
+    <string name="home_take_photo">Tirar foto</string>
+    <string name="home_recent">Criações recentes</string>
 </resources>

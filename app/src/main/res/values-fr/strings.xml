@@ -102,7 +102,7 @@
     <string name="settings_privacy_desc">Comment nous traitons vos données</string>
     <string name="settings_version">Version</string>
     <string name="feedback_subject">Avis sur Outfitly</string>
-    <string name="share_text">Essayez des tenues avec l’IA sur Outfitly ! Téléchargez maintenant : https://play.google.com/store/apps/details?id=com.exo.styleswap</string>
+    <string name="share_text">Essayez des tenues avec l’IA sur Outfitly ! Téléchargez maintenant : https://play.google.com/store/apps/details?id=com.exo.outfitly</string>
     <string name="cant_open_store">Impossible d’ouvrir la boutique d’applications.</string>
 
     <string name="language_title">Langue</string>
@@ -154,4 +154,20 @@
     <string name="survey3_inspo">Idées de style</string>
     <string name="survey3_save">Enregistrer des looks</string>
     <string name="survey3_explore">Juste explorer</string>
+    <string name="app_brand">Outfitly</string>
+    <string name="restore_confirm_title">Restaurer l\'original ?</string>
+    <string name="restore_confirm_msg">Cela supprime le résultat IA et affiche à nouveau votre photo d\'origine.</string>
+    <string name="restore_confirm_yes">Restaurer</string>
+    <string name="settings_theme">Thème</string>
+    <string name="settings_theme_desc">Clair, sombre ou système</string>
+    <string name="theme_light">Clair</string>
+    <string name="theme_dark">Sombre</string>
+    <string name="theme_system">Par défaut du système</string>
+    <string name="privacy_body">Outfitly respecte votre vie privée. Cette politique explique comment nous traitons vos données.\n\n1. Données que nous traitons\nLes photos que vous choisissez ou prenez sont utilisées pour générer des images d\'essayage. Les photos sont envoyées à notre service IA pour le traitement et le renvoi du résultat.\n\n2. Stockage\nNous ne conservons pas vos photos à long terme ; elles ne sont traitées que temporairement pour créer le résultat. Les images de résultat ne sont enregistrées dans la galerie de votre appareil que lorsque vous appuyez sur Enregistrer.\n\n3. Autorisations\nL\'application demande l\'accès à la Caméra (pour prendre des photos) et aux Photos (pour choisir et enregistrer des images). Vous pouvez refuser et continuer à utiliser les autres fonctionnalités.\n\n4. Tiers\nLes photos sont traitées par notre service IA pour créer les résultats d\'essayage. Nous ne vendons pas vos données personnelles.\n\n5. Enfants\nL\'application ne s\'adresse pas aux enfants de moins de 13 ans.\n\n6. Contact\nPour toute question, contactez-nous à : exostudio24@gmail.com\n\n7. Modifications\nCette politique peut être mise à jour au fil du temps. Veuillez la consulter régulièrement.</string>
+    <string name="home_hero_title">Essayez avec l\'IA</string>
+    <string name="home_hero_accent">avec l\'IA</string>
+    <string name="home_hero_subtitle">Créez de superbes tenues en quelques secondes</string>
+    <string name="home_upload_gallery">Importer depuis la galerie</string>
+    <string name="home_take_photo">Prendre une photo</string>
+    <string name="home_recent">Créations récentes</string>
 </resources>

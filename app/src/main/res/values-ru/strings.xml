@@ -102,7 +102,7 @@
     <string name="settings_privacy_desc">Как мы обрабатываем ваши данные</string>
     <string name="settings_version">Версия</string>
     <string name="feedback_subject">Отзыв Outfitly</string>
-    <string name="share_text">Примеряйте одежду с ИИ в Outfitly! Скачайте сейчас: https://play.google.com/store/apps/details?id=com.exo.styleswap</string>
+    <string name="share_text">Примеряйте одежду с ИИ в Outfitly! Скачайте сейчас: https://play.google.com/store/apps/details?id=com.exo.outfitly</string>
     <string name="cant_open_store">Не удалось открыть магазин приложений.</string>
 
     <string name="language_title">Язык</string>
@@ -154,4 +154,25 @@
     <string name="survey3_inspo">Идеи для стиля</string>
     <string name="survey3_save">Сохранять образы</string>
     <string name="survey3_explore">Просто смотрю</string>
+
+    <string name="app_brand">Outfitly</string>
+
+    <string name="restore_confirm_title">Восстановить оригинал?</string>
+    <string name="restore_confirm_msg">Результат ИИ будет удалён, и снова появится ваше исходное фото.</string>
+    <string name="restore_confirm_yes">Восстановить</string>
+
+    <string name="settings_theme">Тема</string>
+    <string name="settings_theme_desc">Светлая, тёмная или системная</string>
+    <string name="theme_light">Светлая</string>
+    <string name="theme_dark">Тёмная</string>
+    <string name="theme_system">Системная</string>
+
+    <string name="privacy_body">Outfitly уважает вашу конфиденциальность. В этой политике объясняется, как мы обрабатываем ваши данные.\n\n1. Какие данные мы обрабатываем\nВыбранные или снятые вами фото используются для создания изображений примерки. Фото отправляются в наш сервис ИИ для обработки и возврата результата.\n\n2. Хранение\nМы не храним ваши фото долгосрочно; они обрабатываются лишь временно для создания результата. Готовые изображения сохраняются в галерею устройства только при нажатии кнопки «Сохранить».\n\n3. Разрешения\nПриложение запрашивает доступ к Камере (для съёмки фото) и к Фото (для выбора и сохранения изображений). Вы можете отказать и продолжить пользоваться другими функциями.\n\n4. Третьи стороны\nФото обрабатываются нашим сервисом ИИ для создания результатов примерки. Мы не продаём ваши персональные данные.\n\n5. Дети\nПриложение не предназначено для детей младше 13 лет.\n\n6. Контакты\nПо любым вопросам пишите нам: exostudio24@gmail.com\n\n7. Изменения\nЭта политика может со временем обновляться. Периодически просматривайте её.</string>
+
+    <string name="home_hero_title">Примерка с ИИ</string>
+    <string name="home_hero_accent">с ИИ</string>
+    <string name="home_hero_subtitle">Создавайте потрясающие образы за секунды</string>
+    <string name="home_upload_gallery">Загрузить из галереи</string>
+    <string name="home_take_photo">Сделать фото</string>
+    <string name="home_recent">Недавние работы</string>
 </resources>

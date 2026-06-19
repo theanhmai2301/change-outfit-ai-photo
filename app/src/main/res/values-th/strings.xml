@@ -1,15 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Outfitly: AI ลองชุดอัตโนมัติ</string>
+    <string name="app_brand">Outfitly</string>
+
+    <!-- Picker -->
+    <string name="picker_subtitle">เลือกรูปภาพเพื่อเริ่มแก้ไข</string>
+    <string name="tab_library">คลังภาพ</string>
+    <string name="tab_camera">กล้อง</string>
+    <string name="upload_from_device">อัปโหลดจากอุปกรณ์</string>
+    <string name="your_photo">รูปของคุณ</string>
+    <string name="library_hint">เลือกรูปพอร์ตเทรตที่ชัดเจนและเห็นเต็มตัวเพื่อผลลัพธ์การลองชุดที่ดีที่สุด</string>
+    <string name="starting_camera">กำลังเปิดกล้อง…</string>
+    <string name="camera_permission_needed">ต้องอนุญาตการเข้าถึงกล้องเพื่อถ่ายรูป</string>
+    <string name="grant_permission">อนุญาต</string>
+    <string name="photo_captured">✓ ถ่ายรูปแล้ว</string>
+    <string name="retake">ถ่ายใหม่</string>
+    <string name="use_photo">ใช้รูปนี้</string>
+    <string name="next">ถัดไป</string>
+
+    <!-- Edit -->
+    <string name="edit_title">แก้ไขรูปภาพ</string>
+    <string name="edit_subtitle">ลองสวมชุดด้วย AI</string>
+    <string name="not_edited">ยังไม่ได้แก้ไข</string>
+    <string name="ai_generated">สร้างด้วย AI</string>
+    <string name="garment_label">รูปเสื้อผ้า</string>
+    <string name="choose_garment">เลือกรูปเสื้อผ้า</string>
+    <string name="change_garment">เปลี่ยนรูปเสื้อผ้า</string>
+    <string name="garment_hint">รูปสินค้า หรือรูปคนสวมใส่ก็ได้ — AI จะดึงเฉพาะเสื้อผ้าเท่านั้น</string>
+    <string name="category_label">ประเภทเสื้อผ้า</string>
+    <string name="poses_label">ท่าโพส</string>
+    <string name="quality_label">คุณภาพ</string>
+    <string name="apply_ai">ใช้ AI</string>
+    <string name="select_garment_first">กรุณาเลือกรูปเสื้อผ้าก่อน</string>
+    <string name="saved">บันทึกลงแกลเลอรีแล้ว</string>
+    <string name="save_failed">บันทึกไม่สำเร็จ</string>
+    <string name="restored">คืนค่ารูปต้นฉบับแล้ว</string>
+
+    <!-- Dialogs -->
+    <string name="save_dialog_title">บันทึกรูปแล้ว</string>
+    <string name="save_dialog_msg">บันทึกรูปลงในแกลเลอรีของคุณแล้ว ต้องการเลือกรูปอื่นไหม?</string>
+    <string name="save_dialog_positive">เลือกรูปอื่น</string>
+    <string name="save_dialog_negative">อยู่ต่อ</string>
+    <string name="exit_dialog_title">รูปที่ยังไม่ได้บันทึก</string>
+    <string name="exit_dialog_msg">คุณเพิ่งสร้างรูปแต่ยังไม่ได้บันทึก หากออกตอนนี้รูปจะหายไป ต้องการออกหรือไม่?</string>
+    <string name="exit_dialog_positive">ออก</string>
+    <string name="exit_dialog_negative">อยู่ต่อ</string>
+    <string name="restore_confirm_title">คืนค่ารูปต้นฉบับ?</string>
+    <string name="restore_confirm_msg">การทำเช่นนี้จะลบผลลัพธ์จาก AI และแสดงรูปต้นฉบับของคุณอีกครั้ง</string>
+    <string name="restore_confirm_yes">คืนค่า</string>
+
+    <!-- Categories -->
+    <string name="cat_auto">อัตโนมัติ</string>
+    <string name="cat_top">เสื้อ</string>
+    <string name="cat_bottom">กางเกง/กระโปรง</string>
+    <string name="cat_dress">ชุดเดรส</string>
+    <string name="cat_outerwear">เสื้อคลุม</string>
+    <string name="cat_full">ชุดเต็มตัว</string>
+
+    <!-- Quality -->
+    <string name="q_low">ต่ำ</string>
+    <string name="q_medium">ปานกลาง</string>
+    <string name="q_high">สูง</string>
+
+    <!-- Processing -->
+    <string name="step_analyze">กำลังวิเคราะห์รูปภาพ…</string>
+    <string name="step_detect">กำลังตรวจจับร่างกาย…</string>
+    <string name="step_apply">กำลังสวมชุดด้วย AI…</string>
+    <string name="step_finish">กำลังเก็บรายละเอียด…</string>
+
+    <!-- Errors -->
+    <string name="err_network">ไม่มีการเชื่อมต่ออินเทอร์เน็ต กรุณาตรวจสอบ Wi-Fi/เน็ตมือถือแล้วลองใหม่อีกครั้ง</string>
+    <string name="err_timeout">เครือข่ายช้าและใช้เวลานานเกินไป กรุณาลองใหม่อีกครั้ง</string>
+    <string name="err_service_unavailable">บริการลองชุดกำลังพักสักครู่ กรุณาลองใหม่อีกครั้งในอีกไม่กี่นาที</string>
+    <string name="err_server_busy">เซิร์ฟเวอร์ AI กำลังใช้งานหนาแน่น กรุณาลองใหม่อีกครั้งในไม่ช้า</string>
+    <string name="err_rate_limited">คุณดำเนินการเร็วเกินไป กรุณารอสักครู่แล้วลองใหม่อีกครั้ง</string>
+    <string name="err_too_large">รูปภาพมีขนาดใหญ่เกินไป กรุณาเลือกรูปที่เล็กกว่าแล้วลองใหม่อีกครั้ง</string>
+
+    <string name="err_garment_invalid">รูปเสื้อผ้าไม่ถูกต้อง ใช้ไฟล์ JPG หรือ PNG ที่ชัดเจนและเห็นชิ้นงานตรงๆ</string>
+    <string name="err_garment_unrecognized">AI ไม่สามารถระบุเสื้อผ้าได้ ใช้รูปที่ชัดเจนของชิ้นงานเดียว (เสื้อ กางเกง/กระโปรง ชุดเดรส…) บนพื้นหลังเรียบง่าย — หลีกเลี่ยงฉากหลังที่ซับซ้อน รูปมืด หรือรกตา</string>
+    <string name="err_image_missing">ไม่พบรูปภาพ กรุณาเลือกรูปของคุณและรูปเสื้อผ้าใหม่อีกครั้ง แล้วลองใหม่</string>
+    <string name="err_bad_request">รูปนี้ไม่เหมาะกับการลองชุด ใช้รูปเต็มตัวที่ชัดเจนและรูปเสื้อผ้าที่ชัดเจน</string>
+
+    <string name="err_read_image">ไม่สามารถอ่านรูปที่เลือกได้ กรุณาลองใช้รูปอื่น</string>
+    <string name="err_read_garment">ไม่สามารถอ่านรูปเสื้อผ้าได้ กรุณาเลือกรูปอื่น</string>
+    <string name="err_capture">ไม่สามารถถ่ายรูปได้ กรุณาลองใหม่อีกครั้ง</string>
+
+    <string name="err_generic">เกิดข้อผิดพลาดในการลองชุด กรุณาลองใหม่อีกครั้ง</string>
+
+    <!-- Person check -->
+    <string name="checking_person">กำลังตรวจสอบรูปภาพ…</string>
+    <string name="err_no_person">ไม่พบบุคคลในรูปภาพ เลือกรูปที่เห็นใบหน้า &amp; ร่างกายชัดเจนเพื่อการลองชุด</string>
+
+    <!-- Report -->
+    <string name="report">รายงาน</string>
+    <string name="report_dialog_title">รายงานรูปภาพ</string>
+    <string name="report_dialog_msg">ผลลัพธ์ผิดพลาด ไม่เหมาะสม หรือสร้างความไม่พอใจหรือไม่? ส่งรายงานเพื่อให้เราปรับปรุงได้</string>
+    <string name="report_send">ส่งรายงาน</string>
+    <string name="report_cancel">ยกเลิก</string>
+    <string name="report_subject">รายงานรูปภาพ Outfitly</string>
+    <string name="report_thanks">ขอบคุณสำหรับรายงานของคุณ!</string>
+    <string name="no_email_app">ไม่พบแอปอีเมล</string>
+
+    <!-- Settings -->
+    <string name="settings_title">การตั้งค่า</string>
+    <string name="settings_general">ทั่วไป</string>
+    <string name="settings_language">ภาษา</string>
+    <string name="settings_theme">ธีม</string>
+    <string name="settings_theme_desc">สว่าง มืด หรือตามระบบ</string>
+    <string name="theme_light">สว่าง</string>
+    <string name="theme_dark">มืด</string>
+    <string name="theme_system">ค่าเริ่มต้นของระบบ</string>
+    <string name="settings_support">การสนับสนุน &amp; ข้อมูล</string>
+    <string name="settings_share">แชร์แอป</string>
+    <string name="settings_share_desc">บอกต่อเพื่อนๆ เกี่ยวกับแอปนี้</string>
+    <string name="settings_rate">ให้คะแนนแอป</string>
+    <string name="settings_rate_desc">ให้ 5 ดาวกับเรา</string>
+    <string name="settings_feedback">ส่งความคิดเห็น</string>
+    <string name="settings_feedback_desc">ติดต่อเราทางอีเมล</string>
+    <string name="settings_privacy">นโยบายความเป็นส่วนตัว</string>
+    <string name="settings_privacy_desc">เราจัดการข้อมูลของคุณอย่างไร</string>
+    <string name="settings_version">เวอร์ชัน</string>
+    <string name="feedback_subject">ความคิดเห็นเกี่ยวกับ Outfitly</string>
+    <string name="share_text">ลองสวมชุดด้วย AI บน Outfitly! ดาวน์โหลดเลย: https://play.google.com/store/apps/details?id=com.exo.outfitly</string>
+    <string name="cant_open_store">ไม่สามารถเปิดแอปสโตร์ได้</string>
+
+    <!-- Language -->
     <string name="language_title">ภาษา</string>
     <string name="language_subtitle">เลือกภาษาที่ต้องการแสดงผล</string>
     <string name="lang_continue">ดำเนินการต่อ</string>
     <string name="language_confirm">ยืนยัน</string>
 
-    <string name="ob_skip">ข้าม</string>
+    <!-- Privacy -->
+    <string name="privacy_title">นโยบายความเป็นส่วนตัว</string>
+    <string name="privacy_body">Outfitly เคารพความเป็นส่วนตัวของคุณ นโยบายนี้อธิบายวิธีที่เราจัดการข้อมูลของคุณ\n\n1. ข้อมูลที่เราประมวลผล\nรูปภาพที่คุณเลือกหรือถ่ายจะถูกใช้เพื่อสร้างรูปภาพการลองชุด รูปภาพจะถูกส่งไปยังบริการ AI ของเราเพื่อประมวลผลและส่งคืนผลลัพธ์\n\n2. การจัดเก็บ\nเราไม่จัดเก็บรูปภาพของคุณในระยะยาว รูปภาพจะถูกประมวลผลเพียงชั่วคราวเพื่อสร้างผลลัพธ์เท่านั้น รูปภาพผลลัพธ์จะถูกบันทึกลงในแกลเลอรีของอุปกรณ์ของคุณก็ต่อเมื่อคุณแตะบันทึก\n\n3. สิทธิ์การเข้าถึง\nแอปจะขอสิทธิ์เข้าถึงกล้อง (เพื่อถ่ายรูป) และรูปภาพ (เพื่อเลือกและบันทึกรูป) คุณสามารถปฏิเสธและยังคงใช้ฟีเจอร์อื่นได้\n\n4. บุคคลที่สาม\nรูปภาพจะถูกประมวลผลโดยบริการ AI ของเราเพื่อสร้างผลลัพธ์การลองชุด เราไม่ขายข้อมูลส่วนบุคคลของคุณ\n\n5. เด็ก\nแอปนี้ไม่ได้มุ่งเป้าไปที่เด็กอายุต่ำกว่า 13 ปี\n\n6. ติดต่อ\nหากมีคำถามใดๆ ติดต่อเราได้ที่: exostudio24@gmail.com\n\n7. การเปลี่ยนแปลง\nนโยบายนี้อาจมีการอัปเดตเป็นระยะ กรุณาตรวจสอบเป็นครั้งคราว</string>
+
+    <!-- Onboarding / first open -->
     <string name="ob_next">ดำเนินการต่อ</string>
     <string name="ob_start">เริ่มต้นใช้งาน</string>
     <string name="ob_tagline">ลองสวมชุดไหนก็ได้ด้วย AI ภายในไม่กี่วินาที</string>
 
+    <!-- Survey step 1: styles (pick at least 2) -->
     <string name="survey_title">คุณชอบสไตล์แบบไหน?</string>
     <string name="survey_subtitle">เลือกที่คุณชอบอย่างน้อย 2 แบบ</string>
     <string name="survey_select_hint">กรุณาเลือกสไตล์อย่างน้อย 2 แบบ</string>
@@ -21,6 +151,7 @@
     <string name="survey_streetwear">สตรีทแวร์</string>
     <string name="survey_elegant">หรูหรา</string>
 
+    <!-- Survey step 2: occasions -->
     <string name="survey2_title">คุณแต่งตัวเพื่ออะไร?</string>
     <string name="survey2_subtitle">เลือกได้ทุกข้อที่ตรงกับคุณ</string>
     <string name="survey2_work">ทำงาน</string>
@@ -30,6 +161,7 @@
     <string name="survey2_event">งานอีเวนต์</string>
     <string name="survey2_everyday">ใช้ในชีวิตประจำวัน</string>
 
+    <!-- Survey step 3: goals -->
     <string name="survey3_title">อะไรทำให้คุณมาที่นี่?</string>
     <string name="survey3_subtitle">เลือกได้ทุกข้อที่ตรงกับคุณ</string>
     <string name="survey3_tryon">ลองสวมชุด</string>
@@ -46,7 +178,16 @@
     <string name="ob3_title">บันทึก &amp; แชร์</string>
     <string name="ob3_desc">บันทึกรูปสวย ๆ ลงในแกลเลอรีของคุณแล้วอวดให้คนอื่นได้เห็น</string>
 
+    <!-- Notification permission screen -->
     <string name="perm_notif_title">รับข่าวสารล่าสุด</string>
     <string name="perm_notif_desc">อนุญาตการแจ้งเตือนเพื่อให้เราบอกคุณเกี่ยวกับสไตล์ใหม่ ๆ และเมื่อรูปของคุณพร้อมแล้ว</string>
     <string name="perm_notif_toggle">เปิดการแจ้งเตือน</string>
+
+    <!-- Home (redesign) -->
+    <string name="home_hero_title">ลองสวมชุดด้วย AI</string>
+    <string name="home_hero_accent">ด้วย AI</string>
+    <string name="home_hero_subtitle">สร้างชุดสุดปังได้ในไม่กี่วินาที</string>
+    <string name="home_upload_gallery">อัปโหลดจากแกลเลอรี</string>
+    <string name="home_take_photo">ถ่ายรูป</string>
+    <string name="home_recent">ผลงานล่าสุด</string>
 </resources>

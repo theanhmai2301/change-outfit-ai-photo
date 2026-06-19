@@ -1,15 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Outfitly: AI Outfit Try On</string>
+    <string name="app_brand">Outfitly</string>
+
+    <!-- Picker -->
+    <string name="picker_subtitle">Pilih foto untuk mulai mengedit</string>
+    <string name="tab_library">Galeri</string>
+    <string name="tab_camera">Kamera</string>
+    <string name="upload_from_device">Unggah dari perangkat</string>
+    <string name="your_photo">Foto Anda</string>
+    <string name="library_hint">Pilih foto potret yang jelas dengan seluruh tubuh agar hasil coba-pakai terbaik.</string>
+    <string name="starting_camera">Membuka kamera…</string>
+    <string name="camera_permission_needed">Izin kamera diperlukan untuk mengambil foto.</string>
+    <string name="grant_permission">Berikan izin</string>
+    <string name="photo_captured">✓ Foto diambil</string>
+    <string name="retake">Ambil ulang</string>
+    <string name="use_photo">Gunakan foto</string>
+    <string name="next">Berikutnya</string>
+
+    <!-- Edit -->
+    <string name="edit_title">Edit foto</string>
+    <string name="edit_subtitle">Coba pakai busana dengan AI</string>
+    <string name="not_edited">Belum diedit</string>
+    <string name="ai_generated">Dibuat oleh AI</string>
+    <string name="garment_label">Foto busana</string>
+    <string name="choose_garment">Pilih foto busana</string>
+    <string name="change_garment">Ganti foto busana</string>
+    <string name="garment_hint">Foto produk atau foto orang yang mengenakannya — AI hanya mengambil busananya.</string>
+    <string name="category_label">Jenis busana</string>
+    <string name="poses_label">Pose</string>
+    <string name="quality_label">Kualitas</string>
+    <string name="apply_ai">Terapkan AI</string>
+    <string name="select_garment_first">Silakan pilih foto busana terlebih dahulu</string>
+    <string name="saved">Disimpan ke galeri</string>
+    <string name="save_failed">Gagal menyimpan</string>
+    <string name="restored">Foto asli dipulihkan</string>
+
+    <!-- Dialogs -->
+    <string name="save_dialog_title">Foto tersimpan</string>
+    <string name="save_dialog_msg">Foto telah disimpan ke galeri Anda. Apakah Anda ingin memilih foto lain?</string>
+    <string name="save_dialog_positive">Pilih lainnya</string>
+    <string name="save_dialog_negative">Tetap di sini</string>
+    <string name="exit_dialog_title">Foto belum disimpan</string>
+    <string name="exit_dialog_msg">Anda baru saja membuat foto tetapi belum menyimpannya. Keluar sekarang akan menghilangkannya. Tetap keluar?</string>
+    <string name="exit_dialog_positive">Keluar</string>
+    <string name="exit_dialog_negative">Tetap di sini</string>
+    <string name="restore_confirm_title">Pulihkan foto asli?</string>
+    <string name="restore_confirm_msg">Ini akan membuang hasil AI dan menampilkan kembali foto asli Anda.</string>
+    <string name="restore_confirm_yes">Pulihkan</string>
+
+    <!-- Categories -->
+    <string name="cat_auto">Otomatis</string>
+    <string name="cat_top">Atasan</string>
+    <string name="cat_bottom">Bawahan</string>
+    <string name="cat_dress">Gaun</string>
+    <string name="cat_outerwear">Pakaian luar</string>
+    <string name="cat_full">Busana lengkap</string>
+
+    <!-- Quality -->
+    <string name="q_low">Rendah</string>
+    <string name="q_medium">Sedang</string>
+    <string name="q_high">Tinggi</string>
+
+    <!-- Processing -->
+    <string name="step_analyze">Menganalisis gambar…</string>
+    <string name="step_detect">Mendeteksi tubuh…</string>
+    <string name="step_apply">Menerapkan busana AI…</string>
+    <string name="step_finish">Menyelesaikan detail…</string>
+
+    <!-- Errors -->
+    <string name="err_network">Tidak ada koneksi internet. Silakan periksa Wi-Fi/data Anda lalu coba lagi.</string>
+    <string name="err_timeout">Jaringan lambat dan prosesnya terlalu lama. Silakan coba lagi.</string>
+    <string name="err_service_unavailable">Fitur coba-pakai sedang istirahat sebentar. Silakan coba lagi dalam beberapa menit.</string>
+    <string name="err_server_busy">Server AI sedang sibuk. Silakan coba lagi sebentar lagi.</string>
+    <string name="err_rate_limited">Anda terlalu cepat. Silakan tunggu sebentar lalu coba lagi.</string>
+    <string name="err_too_large">Gambar terlalu besar. Silakan pilih yang lebih kecil lalu coba lagi.</string>
+
+    <string name="err_garment_invalid">Foto busana tidak valid. Gunakan JPG atau PNG yang jelas dan menampilkan item dari depan.</string>
+    <string name="err_garment_unrecognized">AI tidak dapat mengenali busana. Gunakan foto jelas dari satu item (atasan, bawahan, gaun…) dengan latar belakang sederhana — hindari pemandangan, foto gelap atau ramai.</string>
+    <string name="err_image_missing">Gambar tidak ada. Silakan pilih ulang foto Anda dan foto busana, lalu coba lagi.</string>
+    <string name="err_bad_request">Foto tidak cocok untuk coba-pakai. Gunakan foto seluruh tubuh yang jelas dan foto busana yang jelas.</string>
+
+    <string name="err_read_image">Tidak dapat membaca foto yang dipilih. Silakan coba foto lain.</string>
+    <string name="err_read_garment">Tidak dapat membaca foto busana. Silakan pilih foto lain.</string>
+    <string name="err_capture">Tidak dapat mengambil foto. Silakan coba lagi.</string>
+
+    <string name="err_generic">Terjadi kesalahan pada coba-pakai. Silakan coba lagi.</string>
+
+    <!-- Person check -->
+    <string name="checking_person">Memeriksa foto…</string>
+    <string name="err_no_person">Tidak ada orang yang ditemukan dalam foto. Pilih foto dengan wajah &amp; tubuh yang jelas untuk coba-pakai.</string>
+
+    <!-- Report -->
+    <string name="report">Laporkan</string>
+    <string name="report_dialog_title">Laporkan gambar</string>
+    <string name="report_dialog_msg">Apakah hasilnya salah, tidak pantas, atau menyinggung? Kirim laporan agar kami dapat meningkatkannya.</string>
+    <string name="report_send">Kirim laporan</string>
+    <string name="report_cancel">Batal</string>
+    <string name="report_subject">Laporan gambar Outfitly</string>
+    <string name="report_thanks">Terima kasih atas laporan Anda!</string>
+    <string name="no_email_app">Tidak ada aplikasi email yang ditemukan.</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Pengaturan</string>
+    <string name="settings_general">Umum</string>
+    <string name="settings_language">Bahasa</string>
+    <string name="settings_theme">Tema</string>
+    <string name="settings_theme_desc">Terang, gelap, atau sistem</string>
+    <string name="theme_light">Terang</string>
+    <string name="theme_dark">Gelap</string>
+    <string name="theme_system">Default sistem</string>
+    <string name="settings_support">Dukungan &amp; Info</string>
+    <string name="settings_share">Bagikan aplikasi</string>
+    <string name="settings_share_desc">Ceritakan aplikasi ini kepada teman Anda</string>
+    <string name="settings_rate">Beri rating aplikasi</string>
+    <string name="settings_rate_desc">Beri kami 5 bintang</string>
+    <string name="settings_feedback">Kirim masukan</string>
+    <string name="settings_feedback_desc">Hubungi kami lewat email</string>
+    <string name="settings_privacy">Kebijakan privasi</string>
+    <string name="settings_privacy_desc">Cara kami menangani data Anda</string>
+    <string name="settings_version">Versi</string>
+    <string name="feedback_subject">Masukan Outfitly</string>
+    <string name="share_text">Coba pakai busana dengan AI di Outfitly! Unduh sekarang: https://play.google.com/store/apps/details?id=com.exo.outfitly</string>
+    <string name="cant_open_store">Tidak dapat membuka toko aplikasi.</string>
+
+    <!-- Language -->
     <string name="language_title">Bahasa</string>
     <string name="language_subtitle">Pilih bahasa tampilan Anda</string>
     <string name="lang_continue">Lanjutkan</string>
     <string name="language_confirm">Konfirmasi</string>
 
-    <string name="ob_skip">Lewati</string>
+    <!-- Privacy -->
+    <string name="privacy_title">Kebijakan privasi</string>
+    <string name="privacy_body">Outfitly menghormati privasi Anda. Kebijakan ini menjelaskan cara kami menangani data Anda.\n\n1. Data yang kami proses\nFoto yang Anda pilih atau ambil digunakan untuk menghasilkan gambar coba-pakai. Foto dikirim ke layanan AI kami untuk diproses dan mengembalikan hasilnya.\n\n2. Penyimpanan\nKami tidak menyimpan foto Anda dalam jangka panjang; foto hanya diproses sementara untuk membuat hasilnya. Gambar hasil disimpan ke galeri perangkat Anda hanya saat Anda menekan Simpan.\n\n3. Izin\nAplikasi meminta akses Kamera (untuk mengambil foto) dan Foto (untuk memilih dan menyimpan gambar). Anda dapat menolaknya dan tetap menggunakan fitur lain.\n\n4. Pihak ketiga\nFoto diproses oleh layanan AI kami untuk membuat hasil coba-pakai. Kami tidak menjual data pribadi Anda.\n\n5. Anak-anak\nAplikasi ini tidak ditujukan untuk anak-anak di bawah 13 tahun.\n\n6. Kontak\nUntuk pertanyaan apa pun, hubungi kami di: exostudio24@gmail.com\n\n7. Perubahan\nKebijakan ini dapat diperbarui dari waktu ke waktu. Silakan tinjau secara berkala.</string>
+
+    <!-- Onboarding / first open -->
     <string name="ob_next">Lanjutkan</string>
     <string name="ob_start">Mulai</string>
     <string name="ob_tagline">Coba pakai busana apa pun dengan AI, dalam hitungan detik.</string>
 
+    <!-- Survey step 1: styles (pick at least 2) -->
     <string name="survey_title">Gaya apa yang Anda suka?</string>
     <string name="survey_subtitle">Pilih minimal 2 yang Anda suka</string>
     <string name="survey_select_hint">Silakan pilih minimal 2 gaya</string>
@@ -21,6 +151,7 @@
     <string name="survey_streetwear">Streetwear</string>
     <string name="survey_elegant">Elegan</string>
 
+    <!-- Survey step 2: occasions -->
     <string name="survey2_title">Untuk acara apa Anda berbusana?</string>
     <string name="survey2_subtitle">Pilih semua yang sesuai</string>
     <string name="survey2_work">Kerja</string>
@@ -30,6 +161,7 @@
     <string name="survey2_event">Acara</string>
     <string name="survey2_everyday">Sehari-hari</string>
 
+    <!-- Survey step 3: goals -->
     <string name="survey3_title">Apa yang membawa Anda ke sini?</string>
     <string name="survey3_subtitle">Pilih semua yang sesuai</string>
     <string name="survey3_tryon">Coba busana</string>
@@ -46,7 +178,16 @@
     <string name="ob3_title">Simpan &amp; bagikan</string>
     <string name="ob3_desc">Simpan foto-foto keren ke galeri Anda dan pamerkan.</string>
 
+    <!-- Notification permission screen -->
     <string name="perm_notif_title">Tetap dapatkan info terbaru</string>
     <string name="perm_notif_desc">Izinkan notifikasi agar kami dapat memberi tahu Anda tentang gaya baru dan saat foto Anda siap.</string>
     <string name="perm_notif_toggle">Aktifkan notifikasi</string>
+
+    <!-- Home (redesign) -->
+    <string name="home_hero_title">Coba dengan AI</string>
+    <string name="home_hero_accent">dengan AI</string>
+    <string name="home_hero_subtitle">Buat busana memukau dalam hitungan detik</string>
+    <string name="home_upload_gallery">Unggah dari Galeri</string>
+    <string name="home_take_photo">Ambil Foto</string>
+    <string name="home_recent">Kreasi Terbaru</string>
 </resources>

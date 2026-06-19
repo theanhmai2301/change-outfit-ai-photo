@@ -8,7 +8,7 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.exo.styleswap"
+        applicationId = "com.exo.outfitly"
         minSdk = 24
         targetSdk = 34
         versionCode = 2

@@ -1,15 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Outfitly: AI Outfit Try On</string>
+    <string name="app_brand">Outfitly</string>
+
+    <!-- Picker -->
+    <string name="picker_subtitle">Wähle ein Foto, um mit dem Bearbeiten zu beginnen</string>
+    <string name="tab_library">Galerie</string>
+    <string name="tab_camera">Kamera</string>
+    <string name="upload_from_device">Vom Gerät hochladen</string>
+    <string name="your_photo">Dein Foto</string>
+    <string name="library_hint">Wähle ein klares Porträt mit dem ganzen Körper für die beste Anprobe.</string>
+    <string name="starting_camera">Kamera wird gestartet…</string>
+    <string name="camera_permission_needed">Für das Aufnehmen von Fotos ist die Kameraberechtigung erforderlich.</string>
+    <string name="grant_permission">Berechtigung erteilen</string>
+    <string name="photo_captured">✓ Foto aufgenommen</string>
+    <string name="retake">Erneut aufnehmen</string>
+    <string name="use_photo">Foto verwenden</string>
+    <string name="next">Weiter</string>
+
+    <!-- Edit -->
+    <string name="edit_title">Foto bearbeiten</string>
+    <string name="edit_subtitle">Outfits mit KI anprobieren</string>
+    <string name="not_edited">Nicht bearbeitet</string>
+    <string name="ai_generated">KI-generiert</string>
+    <string name="garment_label">Kleidungsfoto</string>
+    <string name="choose_garment">Kleidungsfoto auswählen</string>
+    <string name="change_garment">Kleidungsfoto ändern</string>
+    <string name="garment_hint">Ein Produktfoto oder ein Foto von jemandem, der es trägt – die KI übernimmt nur das Kleidungsstück.</string>
+    <string name="category_label">Kleidungsart</string>
+    <string name="poses_label">Posen</string>
+    <string name="quality_label">Qualität</string>
+    <string name="apply_ai">KI anwenden</string>
+    <string name="select_garment_first">Bitte wähle zuerst ein Kleidungsfoto aus</string>
+    <string name="saved">In Galerie gespeichert</string>
+    <string name="save_failed">Speichern fehlgeschlagen</string>
+    <string name="restored">Originalfoto wiederhergestellt</string>
+
+    <!-- Dialogs -->
+    <string name="save_dialog_title">Foto gespeichert</string>
+    <string name="save_dialog_msg">Das Foto wurde in deiner Galerie gespeichert. Möchtest du ein anderes Foto auswählen?</string>
+    <string name="save_dialog_positive">Anderes auswählen</string>
+    <string name="save_dialog_negative">Bleiben</string>
+    <string name="exit_dialog_title">Nicht gespeichertes Foto</string>
+    <string name="exit_dialog_msg">Du hast gerade ein Foto erstellt, es aber noch nicht gespeichert. Wenn du jetzt gehst, geht es verloren. Trotzdem verlassen?</string>
+    <string name="exit_dialog_positive">Verlassen</string>
+    <string name="exit_dialog_negative">Bleiben</string>
+    <string name="restore_confirm_title">Original wiederherstellen?</string>
+    <string name="restore_confirm_msg">Dadurch wird das KI-Ergebnis verworfen und dein Originalfoto wieder angezeigt.</string>
+    <string name="restore_confirm_yes">Wiederherstellen</string>
+
+    <!-- Categories -->
+    <string name="cat_auto">Automatisch</string>
+    <string name="cat_top">Oberteil</string>
+    <string name="cat_bottom">Unterteil</string>
+    <string name="cat_dress">Kleid</string>
+    <string name="cat_outerwear">Oberbekleidung</string>
+    <string name="cat_full">Komplettes Outfit</string>
+
+    <!-- Quality -->
+    <string name="q_low">Niedrig</string>
+    <string name="q_medium">Mittel</string>
+    <string name="q_high">Hoch</string>
+
+    <!-- Processing -->
+    <string name="step_analyze">Bild wird analysiert…</string>
+    <string name="step_detect">Körper wird erkannt…</string>
+    <string name="step_apply">KI-Outfit wird angewendet…</string>
+    <string name="step_finish">Details werden fertiggestellt…</string>
+
+    <!-- Errors -->
+    <string name="err_network">Keine Internetverbindung. Bitte prüfe WLAN/mobile Daten und versuche es erneut.</string>
+    <string name="err_timeout">Das Netzwerk ist langsam und es hat zu lange gedauert. Bitte versuche es erneut.</string>
+    <string name="err_service_unavailable">Die Anprobe macht eine kurze Pause. Bitte versuche es in ein paar Minuten erneut.</string>
+    <string name="err_server_busy">Der KI-Server ist ausgelastet. Bitte versuche es in Kürze erneut.</string>
+    <string name="err_rate_limited">Du bist zu schnell. Bitte warte einen Moment und versuche es erneut.</string>
+    <string name="err_too_large">Das Bild ist zu groß. Bitte wähle ein kleineres und versuche es erneut.</string>
+
+    <string name="err_garment_invalid">Das Kleidungsfoto ist ungültig. Verwende ein klares JPG oder PNG, das den Artikel frontal zeigt.</string>
+    <string name="err_garment_unrecognized">Die KI konnte das Kleidungsstück nicht erkennen. Verwende ein klares Foto eines einzelnen Artikels (Oberteil, Unterteil, Kleid …) auf einfachem Hintergrund – vermeide Landschaften, dunkle oder unruhige Fotos.</string>
+    <string name="err_image_missing">Bild fehlt. Bitte wähle dein Foto und das Kleidungsfoto erneut aus und versuche es noch einmal.</string>
+    <string name="err_bad_request">Das Foto ist nicht für die Anprobe geeignet. Verwende ein klares Ganzkörperfoto und ein klares Kleidungsfoto.</string>
+
+    <string name="err_read_image">Das ausgewählte Foto konnte nicht gelesen werden. Bitte versuche ein anderes.</string>
+    <string name="err_read_garment">Das Kleidungsfoto konnte nicht gelesen werden. Bitte wähle ein anderes aus.</string>
+    <string name="err_capture">Das Foto konnte nicht aufgenommen werden. Bitte versuche es erneut.</string>
+
+    <string name="err_generic">Bei der Anprobe ist etwas schiefgelaufen. Bitte versuche es erneut.</string>
+
+    <!-- Person check -->
+    <string name="checking_person">Foto wird geprüft…</string>
+    <string name="err_no_person">Keine Person auf dem Foto gefunden. Wähle ein Foto mit klarem Gesicht &amp; Körper für die Anprobe.</string>
+
+    <!-- Report -->
+    <string name="report">Melden</string>
+    <string name="report_dialog_title">Bild melden</string>
+    <string name="report_dialog_msg">Ist das Ergebnis falsch, unangemessen oder anstößig? Sende eine Meldung, damit wir uns verbessern können.</string>
+    <string name="report_send">Meldung senden</string>
+    <string name="report_cancel">Abbrechen</string>
+    <string name="report_subject">Outfitly Bildmeldung</string>
+    <string name="report_thanks">Danke für deine Meldung!</string>
+    <string name="no_email_app">Keine E-Mail-App gefunden.</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Einstellungen</string>
+    <string name="settings_general">Allgemein</string>
+    <string name="settings_language">Sprache</string>
+    <string name="settings_theme">Design</string>
+    <string name="settings_theme_desc">Hell, dunkel oder System</string>
+    <string name="theme_light">Hell</string>
+    <string name="theme_dark">Dunkel</string>
+    <string name="theme_system">Systemstandard</string>
+    <string name="settings_support">Support &amp; Info</string>
+    <string name="settings_share">App teilen</string>
+    <string name="settings_share_desc">Erzähle deinen Freunden von der App</string>
+    <string name="settings_rate">App bewerten</string>
+    <string name="settings_rate_desc">Gib uns 5 Sterne</string>
+    <string name="settings_feedback">Feedback senden</string>
+    <string name="settings_feedback_desc">Erreiche uns per E-Mail</string>
+    <string name="settings_privacy">Datenschutzrichtlinie</string>
+    <string name="settings_privacy_desc">Wie wir mit deinen Daten umgehen</string>
+    <string name="settings_version">Version</string>
+    <string name="feedback_subject">Outfitly Feedback</string>
+    <string name="share_text">Probiere Outfits mit KI auf Outfitly aus! Jetzt herunterladen: https://play.google.com/store/apps/details?id=com.exo.outfitly</string>
+    <string name="cant_open_store">Der App-Store konnte nicht geöffnet werden.</string>
+
+    <!-- Language -->
     <string name="language_title">Sprache</string>
     <string name="language_subtitle">Wähle deine Anzeigesprache</string>
     <string name="lang_continue">Weiter</string>
     <string name="language_confirm">Bestätigen</string>
 
-    <string name="ob_skip">Überspringen</string>
+    <!-- Privacy -->
+    <string name="privacy_title">Datenschutzrichtlinie</string>
+    <string name="privacy_body">Outfitly respektiert deine Privatsphäre. Diese Richtlinie erklärt, wie wir mit deinen Daten umgehen.\n\n1. Daten, die wir verarbeiten\nDie Fotos, die du auswählst oder aufnimmst, werden verwendet, um Anprobe-Bilder zu erzeugen. Die Fotos werden zur Verarbeitung und Rückgabe des Ergebnisses an unseren KI-Dienst gesendet.\n\n2. Speicherung\nWir speichern deine Fotos nicht langfristig; sie werden nur vorübergehend verarbeitet, um das Ergebnis zu erstellen. Ergebnisbilder werden nur dann in der Galerie deines Geräts gespeichert, wenn du auf Speichern tippst.\n\n3. Berechtigungen\nDie App fordert Zugriff auf die Kamera (zum Aufnehmen von Fotos) und auf Fotos (zum Auswählen und Speichern von Bildern) an. Du kannst dies ablehnen und trotzdem andere Funktionen nutzen.\n\n4. Dritte\nDie Fotos werden von unserem KI-Dienst verarbeitet, um Anprobe-Ergebnisse zu erstellen. Wir verkaufen deine personenbezogenen Daten nicht.\n\n5. Kinder\nDie App richtet sich nicht an Kinder unter 13 Jahren.\n\n6. Kontakt\nBei Fragen kontaktiere uns unter: exostudio24@gmail.com\n\n7. Änderungen\nDiese Richtlinie kann im Laufe der Zeit aktualisiert werden. Bitte überprüfe sie regelmäßig.</string>
+
+    <!-- Onboarding / first open -->
     <string name="ob_next">Weiter</string>
     <string name="ob_start">Los geht\'s</string>
     <string name="ob_tagline">Probiere jedes Outfit mit KI an – in Sekunden.</string>
 
+    <!-- Survey step 1: styles (pick at least 2) -->
     <string name="survey_title">Welche Stile magst du?</string>
     <string name="survey_subtitle">Wähle mindestens 2 aus, die dir gefallen</string>
     <string name="survey_select_hint">Bitte wähle mindestens 2 Stile aus</string>
@@ -21,6 +151,7 @@
     <string name="survey_streetwear">Streetwear</string>
     <string name="survey_elegant">Elegant</string>
 
+    <!-- Survey step 2: occasions -->
     <string name="survey2_title">Für welche Anlässe kleidest du dich?</string>
     <string name="survey2_subtitle">Wähle alles Zutreffende aus</string>
     <string name="survey2_work">Arbeit</string>
@@ -30,6 +161,7 @@
     <string name="survey2_event">Events</string>
     <string name="survey2_everyday">Alltag</string>
 
+    <!-- Survey step 3: goals -->
     <string name="survey3_title">Was führt dich her?</string>
     <string name="survey3_subtitle">Wähle alles Zutreffende aus</string>
     <string name="survey3_tryon">Outfits anprobieren</string>
@@ -46,7 +178,16 @@
     <string name="ob3_title">Speichern &amp; teilen</string>
     <string name="ob3_desc">Speichere tolle Fotos in deiner Galerie und zeig sie her.</string>
 
+    <!-- Notification permission screen -->
     <string name="perm_notif_title">Bleib auf dem Laufenden</string>
     <string name="perm_notif_desc">Erlaube Benachrichtigungen, damit wir dich über neue Stile informieren können und wenn dein Foto fertig ist.</string>
     <string name="perm_notif_toggle">Benachrichtigungen aktivieren</string>
+
+    <!-- Home (redesign) -->
+    <string name="home_hero_title">Anprobieren mit KI</string>
+    <string name="home_hero_accent">mit KI</string>
+    <string name="home_hero_subtitle">Erstelle in Sekunden beeindruckende Outfits</string>
+    <string name="home_upload_gallery">Aus Galerie hochladen</string>
+    <string name="home_take_photo">Foto aufnehmen</string>
+    <string name="home_recent">Letzte Kreationen</string>
 </resources>

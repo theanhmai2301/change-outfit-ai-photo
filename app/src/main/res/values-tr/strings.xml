@@ -1,15 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Outfitly: AI Outfit Try On</string>
+    <string name="app_brand">Outfitly</string>
+
+    <!-- Picker -->
+    <string name="picker_subtitle">Düzenlemeye başlamak için bir fotoğraf seç</string>
+    <string name="tab_library">Galeri</string>
+    <string name="tab_camera">Kamera</string>
+    <string name="upload_from_device">Cihazdan yükle</string>
+    <string name="your_photo">Fotoğrafın</string>
+    <string name="library_hint">En iyi sonuç için tüm vücudun göründüğü net bir portre seç.</string>
+    <string name="starting_camera">Kamera başlatılıyor…</string>
+    <string name="camera_permission_needed">Fotoğraf çekmek için kamera izni gerekiyor.</string>
+    <string name="grant_permission">İzin ver</string>
+    <string name="photo_captured">✓ Fotoğraf çekildi</string>
+    <string name="retake">Yeniden çek</string>
+    <string name="use_photo">Fotoğrafı kullan</string>
+    <string name="next">İleri</string>
+
+    <!-- Edit -->
+    <string name="edit_title">Fotoğrafı düzenle</string>
+    <string name="edit_subtitle">Yapay zeka ile kombinleri dene</string>
+    <string name="not_edited">Düzenlenmedi</string>
+    <string name="ai_generated">AI Tarafından Oluşturuldu</string>
+    <string name="garment_label">Kıyafet fotoğrafı</string>
+    <string name="choose_garment">Kıyafet fotoğrafı seç</string>
+    <string name="change_garment">Kıyafet fotoğrafını değiştir</string>
+    <string name="garment_hint">Ürün çekimi ya da birinin üzerinde giydiği bir fotoğraf olabilir — yapay zeka yalnızca kıyafeti alır.</string>
+    <string name="category_label">Kıyafet türü</string>
+    <string name="poses_label">Pozlar</string>
+    <string name="quality_label">Kalite</string>
+    <string name="apply_ai">Yapay zekayı uygula</string>
+    <string name="select_garment_first">Lütfen önce bir kıyafet fotoğrafı seç</string>
+    <string name="saved">Galeriye kaydedildi</string>
+    <string name="save_failed">Kaydedilemedi</string>
+    <string name="restored">Orijinal fotoğraf geri yüklendi</string>
+
+    <!-- Dialogs -->
+    <string name="save_dialog_title">Fotoğraf kaydedildi</string>
+    <string name="save_dialog_msg">Fotoğraf galerine kaydedildi. Başka bir fotoğraf seçmek ister misin?</string>
+    <string name="save_dialog_positive">Başka seç</string>
+    <string name="save_dialog_negative">Kal</string>
+    <string name="exit_dialog_title">Kaydedilmemiş fotoğraf</string>
+    <string name="exit_dialog_msg">Az önce bir fotoğraf oluşturdun ama kaydetmedin. Şimdi çıkarsan kaybolur. Yine de çıkılsın mı?</string>
+    <string name="exit_dialog_positive">Çık</string>
+    <string name="exit_dialog_negative">Kal</string>
+    <string name="restore_confirm_title">Orijinal geri yüklensin mi?</string>
+    <string name="restore_confirm_msg">Bu işlem yapay zeka sonucunu siler ve orijinal fotoğrafını yeniden gösterir.</string>
+    <string name="restore_confirm_yes">Geri yükle</string>
+
+    <!-- Categories -->
+    <string name="cat_auto">Otomatik</string>
+    <string name="cat_top">Üst</string>
+    <string name="cat_bottom">Alt</string>
+    <string name="cat_dress">Elbise</string>
+    <string name="cat_outerwear">Dış giyim</string>
+    <string name="cat_full">Tüm kombin</string>
+
+    <!-- Quality -->
+    <string name="q_low">Düşük</string>
+    <string name="q_medium">Orta</string>
+    <string name="q_high">Yüksek</string>
+
+    <!-- Processing -->
+    <string name="step_analyze">Görüntü analiz ediliyor…</string>
+    <string name="step_detect">Vücut algılanıyor…</string>
+    <string name="step_apply">Yapay zeka kombini uygulanıyor…</string>
+    <string name="step_finish">Ayrıntılar tamamlanıyor…</string>
+
+    <!-- Errors -->
+    <string name="err_network">İnternet bağlantısı yok. Lütfen Wi-Fi/veri bağlantını kontrol edip tekrar dene.</string>
+    <string name="err_timeout">Ağ yavaş olduğu için işlem çok uzun sürdü. Lütfen tekrar dene.</string>
+    <string name="err_service_unavailable">Deneme özelliği kısa bir ara veriyor. Lütfen birkaç dakika sonra tekrar dene.</string>
+    <string name="err_server_busy">AI sunucusu meşgul. Lütfen kısa süre sonra tekrar dene.</string>
+    <string name="err_rate_limited">Çok hızlı gidiyorsun. Lütfen biraz bekleyip tekrar dene.</string>
+    <string name="err_too_large">Görüntü çok büyük. Lütfen daha küçük bir tane seçip tekrar dene.</string>
+
+    <string name="err_garment_invalid">Kıyafet fotoğrafı geçersiz. Ürünü düz açıdan gösteren net bir JPG veya PNG kullan.</string>
+    <string name="err_garment_unrecognized">Yapay zeka kıyafeti tanıyamadı. Sade bir arka planda tek bir parçayı (üst, alt, elbise…) gösteren net bir fotoğraf kullan — manzaralı, karanlık veya karmaşık fotoğraflardan kaçın.</string>
+    <string name="err_image_missing">Görüntü eksik. Lütfen fotoğrafını ve kıyafet fotoğrafını yeniden seçip tekrar dene.</string>
+    <string name="err_bad_request">Fotoğraf deneme için uygun değil. Net bir tam boy fotoğraf ve net bir kıyafet fotoğrafı kullan.</string>
+
+    <string name="err_read_image">Seçilen fotoğraf okunamadı. Lütfen başka bir tane dene.</string>
+    <string name="err_read_garment">Kıyafet fotoğrafı okunamadı. Lütfen başka bir tane seç.</string>
+    <string name="err_capture">Fotoğraf çekilemedi. Lütfen tekrar dene.</string>
+
+    <string name="err_generic">Deneme sırasında bir sorun oluştu. Lütfen tekrar dene.</string>
+
+    <!-- Person check -->
+    <string name="checking_person">Fotoğraf kontrol ediliyor…</string>
+    <string name="err_no_person">Fotoğrafta kimse bulunamadı. Deneme için yüzün ve vücudun net göründüğü bir fotoğraf seç.</string>
+
+    <!-- Report -->
+    <string name="report">Bildir</string>
+    <string name="report_dialog_title">Görüntüyü bildir</string>
+    <string name="report_dialog_msg">Sonuç yanlış, uygunsuz veya rahatsız edici mi? Geliştirebilmemiz için bir bildirim gönder.</string>
+    <string name="report_send">Bildirim gönder</string>
+    <string name="report_cancel">İptal</string>
+    <string name="report_subject">Outfitly görüntü bildirimi</string>
+    <string name="report_thanks">Bildirimin için teşekkürler!</string>
+    <string name="no_email_app">E-posta uygulaması bulunamadı.</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Ayarlar</string>
+    <string name="settings_general">Genel</string>
+    <string name="settings_language">Dil</string>
+    <string name="settings_theme">Tema</string>
+    <string name="settings_theme_desc">Açık, koyu veya sistem</string>
+    <string name="theme_light">Açık</string>
+    <string name="theme_dark">Koyu</string>
+    <string name="theme_system">Sistem varsayılanı</string>
+    <string name="settings_support">Destek ve Bilgi</string>
+    <string name="settings_share">Uygulamayı paylaş</string>
+    <string name="settings_share_desc">Arkadaşlarına uygulamadan bahset</string>
+    <string name="settings_rate">Uygulamayı puanla</string>
+    <string name="settings_rate_desc">Bize 5 yıldız ver</string>
+    <string name="settings_feedback">Geri bildirim gönder</string>
+    <string name="settings_feedback_desc">E-posta ile bize ulaş</string>
+    <string name="settings_privacy">Gizlilik politikası</string>
+    <string name="settings_privacy_desc">Verilerini nasıl işliyoruz</string>
+    <string name="settings_version">Sürüm</string>
+    <string name="feedback_subject">Outfitly geri bildirimi</string>
+    <string name="share_text">Outfitly ile kombinleri yapay zeka ile dene! Hemen indir: https://play.google.com/store/apps/details?id=com.exo.outfitly</string>
+    <string name="cant_open_store">Uygulama mağazası açılamadı.</string>
+
+    <!-- Language -->
     <string name="language_title">Dil</string>
     <string name="language_subtitle">Görüntüleme dilinizi seçin</string>
     <string name="lang_continue">Devam et</string>
     <string name="language_confirm">Onayla</string>
 
-    <string name="ob_skip">Atla</string>
+    <!-- Privacy -->
+    <string name="privacy_title">Gizlilik politikası</string>
+    <string name="privacy_body">Outfitly gizliliğine saygı duyar. Bu politika, verilerini nasıl işlediğimizi açıklar.\n\n1. İşlediğimiz veriler\nSeçtiğin veya çektiğin fotoğraflar, deneme görüntüleri oluşturmak için kullanılır. Fotoğraflar işlenmek ve sonucu döndürmek üzere AI hizmetimize gönderilir.\n\n2. Depolama\nFotoğraflarını uzun süre saklamayız; yalnızca sonucu oluşturmak için geçici olarak işlenirler. Sonuç görüntüleri, yalnızca Kaydet\'e dokunduğunda cihazının galerisine kaydedilir.\n\n3. İzinler\nUygulama Kamera (fotoğraf çekmek için) ve Fotoğraflar erişimi (görüntü seçmek ve kaydetmek için) ister. Reddedip diğer özellikleri kullanmaya devam edebilirsin.\n\n4. Üçüncü taraflar\nFotoğraflar, deneme sonuçları oluşturmak için AI hizmetimiz tarafından işlenir. Kişisel verilerini satmayız.\n\n5. Çocuklar\nUygulama 13 yaşın altındaki çocuklara yönelik değildir.\n\n6. İletişim\nSorularınız için bizimle iletişime geçin: exostudio24@gmail.com\n\n7. Değişiklikler\nBu politika zaman içinde güncellenebilir. Lütfen düzenli olarak gözden geçir.</string>
+
+    <!-- Onboarding / first open -->
     <string name="ob_next">Devam et</string>
     <string name="ob_start">Başla</string>
     <string name="ob_tagline">Yapay zeka ile saniyeler içinde her kombini dene.</string>
 
+    <!-- Survey step 1: styles (pick at least 2) -->
     <string name="survey_title">Hangi tarzları seviyorsun?</string>
     <string name="survey_subtitle">Beğendiğin en az 2 tane seç</string>
     <string name="survey_select_hint">Lütfen en az 2 tarz seç</string>
@@ -21,6 +151,7 @@
     <string name="survey_streetwear">Sokak stili</string>
     <string name="survey_elegant">Şık</string>
 
+    <!-- Survey step 2: occasions -->
     <string name="survey2_title">Ne için giyiniyorsun?</string>
     <string name="survey2_subtitle">Uygun olanların tümünü seç</string>
     <string name="survey2_work">İş</string>
@@ -30,6 +161,7 @@
     <string name="survey2_event">Etkinlikler</string>
     <string name="survey2_everyday">Her gün</string>
 
+    <!-- Survey step 3: goals -->
     <string name="survey3_title">Seni buraya ne getirdi?</string>
     <string name="survey3_subtitle">Uygun olanların tümünü seç</string>
     <string name="survey3_tryon">Kombinleri dene</string>
@@ -46,7 +178,16 @@
     <string name="ob3_title">Kaydet ve paylaş</string>
     <string name="ob3_desc">Harika fotoğrafları galerine kaydet ve herkese göster.</string>
 
+    <!-- Notification permission screen -->
     <string name="perm_notif_title">Güncel kal</string>
     <string name="perm_notif_desc">Yeni stilleri ve fotoğrafının hazır olduğunu sana bildirebilmemiz için bildirimlere izin ver.</string>
     <string name="perm_notif_toggle">Bildirimleri etkinleştir</string>
+
+    <!-- Home (redesign) -->
+    <string name="home_hero_title">Yapay zeka ile dene</string>
+    <string name="home_hero_accent">yapay zeka ile</string>
+    <string name="home_hero_subtitle">Saniyeler içinde muhteşem kombinler oluştur</string>
+    <string name="home_upload_gallery">Galeriden Yükle</string>
+    <string name="home_take_photo">Fotoğraf Çek</string>
+    <string name="home_recent">Son Oluşturulanlar</string>
 </resources>

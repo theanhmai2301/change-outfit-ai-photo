@@ -97,7 +97,7 @@ class EditActivity : AppCompatActivity() {
 
         val path = intent.getStringExtra(EXTRA_PERSON_PATH)
         if (path == null || !File(path).exists()) {
-            toast("Không tìm thấy ảnh")
+            toast(getString(R.string.err_read_image))
             finish()
             return
         }

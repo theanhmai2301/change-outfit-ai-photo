@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Outfitly: AI Outfit Try On</string>
+    <string name="app_brand">Outfitly</string>
 
     <!-- Picker -->
     <string name="picker_subtitle">Chọn ảnh để bắt đầu chỉnh sửa</string>
@@ -123,58 +124,37 @@
     <string name="settings_privacy_desc">Cách chúng tôi xử lý dữ liệu</string>
     <string name="settings_version">Phiên bản</string>
     <string name="feedback_subject">Phản hồi Outfitly</string>
-    <string name="share_text">Thử trang phục bằng AI cực vui với Outfitly! Tải ngay: https://play.google.com/store/apps/details?id=com.exo.styleswap</string>
+    <string name="share_text">Thử trang phục bằng AI cực vui với Outfitly! Tải ngay: https://play.google.com/store/apps/details?id=com.exo.outfitly</string>
     <string name="cant_open_store">Không mở được cửa hàng ứng dụng.</string>
 
     <!-- Language -->
     <string name="language_title">Ngôn ngữ</string>
     <string name="language_subtitle">Chọn ngôn ngữ hiển thị</string>
     <string name="lang_continue">Tiếp tục</string>
-    <string name="lang_vi">Tiếng Việt</string>
-    <string name="lang_en">English</string>
+    <string name="language_confirm">Xác nhận</string>
 
     <!-- Privacy -->
     <string name="privacy_title">Chính sách bảo mật</string>
     <string name="privacy_body">Outfitly tôn trọng quyền riêng tư của bạn. Chính sách này mô tả cách chúng tôi xử lý dữ liệu.\n\n1. Dữ liệu chúng tôi xử lý\nẢnh bạn chọn hoặc chụp được dùng để tạo ảnh thử đồ. Ảnh được gửi đến dịch vụ AI để xử lý và trả về kết quả.\n\n2. Lưu trữ\nChúng tôi không lưu trữ ảnh của bạn lâu dài; ảnh chỉ được xử lý tạm thời để tạo kết quả. Ảnh kết quả chỉ được lưu vào thư viện thiết bị khi bạn bấm Lưu.\n\n3. Quyền truy cập\nỨng dụng xin quyền Máy ảnh (để chụp ảnh) và truy cập Ảnh (để chọn và lưu ảnh). Bạn có thể từ chối và vẫn dùng các tính năng khác.\n\n4. Bên thứ ba\nẢnh được xử lý bởi dịch vụ AI để tạo kết quả thử đồ. Chúng tôi không bán dữ liệu cá nhân của bạn.\n\n5. Trẻ em\nỨng dụng không hướng đến trẻ em dưới 13 tuổi.\n\n6. Liên hệ\nMọi thắc mắc, vui lòng liên hệ: exostudio24@gmail.com\n\n7. Thay đổi\nChính sách có thể được cập nhật theo thời gian. Vui lòng kiểm tra lại định kỳ.</string>
 
     <!-- Onboarding / first open -->
-    <string name="ob_skip">Bỏ qua</string>
     <string name="ob_next">Tiếp tục</string>
     <string name="ob_start">Bắt đầu</string>
+    <string name="ob_tagline">Thử mọi trang phục bằng AI chỉ trong vài giây.</string>
 
+    <!-- Survey step 1: styles -->
     <string name="survey_title">Bạn quan tâm phong cách nào nhất?</string>
-    <string name="survey_subtitle">Chọn một hoặc nhiều phong cách bạn thích</string>
+    <string name="survey_subtitle">Chọn ít nhất 2 phong cách bạn thích</string>
+    <string name="survey_select_hint">Vui lòng chọn ít nhất 2 phong cách</string>
+    <string name="survey_select_hint_one">Vui lòng chọn ít nhất 1</string>
     <string name="survey_casual">Thường ngày</string>
     <string name="survey_office">Công sở</string>
     <string name="survey_party">Dự tiệc</string>
     <string name="survey_sport">Thể thao</string>
-
-    <string name="ob1_title">Thử đồ bằng AI</string>
-    <string name="ob1_desc">Mặc thử mọi trang phục chỉ với một tấm ảnh của bạn.</string>
-    <string name="ob2_title">Đổi outfit trong vài giây</string>
-    <string name="ob2_desc">Chọn ảnh người và ảnh trang phục — AI lo phần còn lại.</string>
-    <string name="ob3_title">Lưu &amp; chia sẻ</string>
-    <string name="ob3_desc">Lưu ảnh đẹp vào thư viện và khoe với bạn bè.</string>
-
-    <string name="perm_title">Cấp quyền để bắt đầu</string>
-    <string name="perm_desc">Ứng dụng cần một số quyền để hoạt động tốt nhất.</string>
-    <string name="perm_camera_title">Máy ảnh</string>
-    <string name="perm_camera_desc">Để chụp ảnh trực tiếp khi thử đồ</string>
-    <string name="perm_photos_title">Ảnh &amp; thư viện</string>
-    <string name="perm_photos_desc">Để chọn ảnh và lưu ảnh kết quả</string>
-    <string name="perm_allow_start">Cho phép &amp; Bắt đầu</string>
-
-    <!-- Notification permission screen -->
-    <string name="perm_notif_title">Luôn cập nhật</string>
-    <string name="perm_notif_desc">Cho phép thông báo để chúng tôi báo bạn khi có kiểu mới và khi ảnh của bạn đã sẵn sàng.</string>
-    <string name="perm_notif_toggle">Bật thông báo</string>
-
-    <string name="language_confirm">Xác nhận</string>
-    <string name="ob_tagline">Thử mọi trang phục bằng AI chỉ trong vài giây.</string>
-    <string name="survey_select_hint">Vui lòng chọn ít nhất 2 phong cách</string>
-    <string name="survey_select_hint_one">Vui lòng chọn ít nhất 1</string>
     <string name="survey_streetwear">Streetwear</string>
     <string name="survey_elegant">Thanh lịch</string>
+
+    <!-- Survey step 2: occasions -->
     <string name="survey2_title">Bạn diện đồ cho dịp nào?</string>
     <string name="survey2_subtitle">Chọn tất cả mục phù hợp</string>
     <string name="survey2_work">Đi làm</string>
@@ -183,6 +163,8 @@
     <string name="survey2_gym">Tập gym</string>
     <string name="survey2_event">Sự kiện</string>
     <string name="survey2_everyday">Hằng ngày</string>
+
+    <!-- Survey step 3: goals -->
     <string name="survey3_title">Điều gì đưa bạn đến đây?</string>
     <string name="survey3_subtitle">Chọn tất cả mục phù hợp</string>
     <string name="survey3_tryon">Thử trang phục</string>
@@ -192,43 +174,23 @@
     <string name="survey3_save">Lưu các look</string>
     <string name="survey3_explore">Chỉ khám phá thôi</string>
 
+    <string name="ob1_title">Thử đồ bằng AI</string>
+    <string name="ob1_desc">Mặc thử mọi trang phục chỉ với một tấm ảnh của bạn.</string>
+    <string name="ob2_title">Đổi outfit trong vài giây</string>
+    <string name="ob2_desc">Chọn ảnh người và ảnh trang phục — AI lo phần còn lại.</string>
+    <string name="ob3_title">Lưu &amp; chia sẻ</string>
+    <string name="ob3_desc">Lưu ảnh đẹp vào thư viện và khoe với bạn bè.</string>
+
+    <!-- Notification permission screen -->
+    <string name="perm_notif_title">Luôn cập nhật</string>
+    <string name="perm_notif_desc">Cho phép thông báo để chúng tôi báo bạn khi có kiểu mới và khi ảnh của bạn đã sẵn sàng.</string>
+    <string name="perm_notif_toggle">Bật thông báo</string>
+
     <!-- Home (redesign) -->
     <string name="home_hero_title">Thử đồ với AI</string>
     <string name="home_hero_accent">với AI</string>
     <string name="home_hero_subtitle">Tạo outfit đẹp trong vài giây</string>
     <string name="home_upload_gallery">Tải ảnh từ thư viện</string>
     <string name="home_take_photo">Chụp ảnh</string>
-    <string name="home_trending">Phong cách thịnh hành</string>
-    <string name="home_see_all">Xem tất cả</string>
     <string name="home_recent">Sáng tạo gần đây</string>
-
-    <!-- Trending style names -->
-    <string name="style_casual">Thường ngày</string>
-    <string name="style_business">Công sở</string>
-    <string name="style_streetwear">Đường phố</string>
-    <string name="style_anime">Anime</string>
-    <string name="style_wedding">Cưới</string>
-    <string name="style_vintage">Cổ điển</string>
-    <string name="style_party">Dự tiệc</string>
-    <string name="style_winter">Mùa đông</string>
-
-    <!-- Edit (redesign) -->
-    <string name="edit_outfit">Chỉnh trang phục</string>
-    <string name="edit_section_type">Chọn kiểu trang phục</string>
-    <string name="edit_section_count">Số lượng kết quả</string>
-    <string name="generate_outfit">Tạo trang phục</string>
-    <string name="before">Trước</string>
-    <string name="after">Sau</string>
-    <string name="vip">VIP</string>
-    <string name="result_singular">Kết quả</string>
-    <string name="result_plural">Kết quả</string>
-
-    <!-- Result (redesign) -->
-    <string name="result_title">Kết quả</string>
-    <string name="result_all">Tất cả</string>
-    <string name="action_save">Lưu</string>
-    <string name="action_share">Chia sẻ</string>
-    <string name="action_regenerate">Tạo lại</string>
-    <string name="action_try_another">Thử kiểu khác</string>
-    <string name="share_via">Chia sẻ ảnh</string>
 </resources>

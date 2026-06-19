@@ -42,21 +42,11 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-    <ScrollView
+    <WebView
+        android:id="@+id/webPrivacy"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_marginTop="16dp"
-        android:scrollbars="none">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="5dp"
-            android:paddingBottom="20dp"
-            android:text="@string/privacy_body"
-            android:textColor="@color/muted_foreground"
-            android:textSize="14sp" />
-    </ScrollView>
+        android:layout_marginTop="8dp" />
 
 </LinearLayout>
